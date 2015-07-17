@@ -17,7 +17,7 @@ class AdminController
     {
         $entities = $this->getRepository("FXLQCMBundle:QCM")->findByUser($this->getUser());
 
-        return $this->render("FXLCommonBundle:Component:node.html.twig", array(
+        return $this->render("FXLMagicBundle:Component:node.html.twig", array(
             "entities"   => $entities,
             "level"      => 0
         ));

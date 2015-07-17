@@ -32,7 +32,7 @@ Littérature - {{ parent() }}
                 <img src="/bundles/fxlmusic/images/rss.png" width="24" alt="rss" style="position: relative; bottom: 10px;" />
             </a>
 
-            {% render 'FXLCommonBundle:Component:citation'  %}
+            {# render 'FXLMagicBundle:Component:citation'  #}
         </div><!--/span-->
 
 
@@ -42,7 +42,7 @@ Littérature - {{ parent() }}
 
              {% set content = group.sheets[0].content|split('\n\n') %}
 
-             {% include "FXLCommonBundle:Component:hero.html.twig" with {
+             {% include "FXLMagicBundle:Component:hero.html.twig" with {
                 'name'      : group.name,
                 'updatedAt' : group.updatedAt,
                 'path'      : group.path,
@@ -55,7 +55,7 @@ Littérature - {{ parent() }}
 
             <div class="list-project">
 
-                {% include 'FXLCommonBundle:Component:list.html.twig' with {
+                {% include 'FXLMagicBundle:Component:list.html.twig' with {
                     'pager'       : pager,
                     'pagerLink'   : pagerLink,
                     'nameAttr'    : 'node',
@@ -74,7 +74,7 @@ Littérature - {{ parent() }}
 
       <hr />
 
-      {% include 'FXLCommonBundle:Component:footer.html.twig' %}
+      {% include 'FXLMagicBundle:Component:footer.html.twig' %}
 
     </div><!--/.fluid-container-->
 

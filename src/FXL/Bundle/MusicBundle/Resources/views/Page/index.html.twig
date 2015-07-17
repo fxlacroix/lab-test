@@ -12,13 +12,13 @@ Musique - {{ parent() }}
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3 left-col" >
-            {% include 'FXLCommonBundle:Component:lasts.html.twig'  %}
+            {% include 'FXLMagicBundle:Component:lasts.html.twig'  %}
 
                 <a href="http://www.blogart-magazine.fr/rss">
                 <img src="/bundles/fxlmusic/images/rss.png" width="24" alt="rss" style="position: relative; bottom: 10px;" />
                 </a>
 
-            {% render 'FXLCommonBundle:Component:citation'  %}
+            {# render 'FXLMagicBundle:Component:citation'  #}
         </div><!--/span-->
         <div class="span9 blogart-paper" style="box-shadow: 1px 1px 12px #555;">
 
@@ -28,7 +28,7 @@ Musique - {{ parent() }}
              {% set document = lastDocuments.0 %}
            {% endif %}
 
-           {% include "FXLCommonBundle:Component:hero.html.twig" with {
+           {% include "FXLMagicBundle:Component:hero.html.twig" with {
                 'name'      : document.track.name,
                 'updatedAt' : document.updatedAt,
                 'path'      : path("image_logo_track", {"projectId":document.track.project.id, "trackId":document.track.id}),
@@ -41,7 +41,7 @@ Musique - {{ parent() }}
 
             <div class="list-project">
 
-          {% include 'FXLCommonBundle:Component:list.html.twig' with {
+          {% include 'FXLMagicBundle:Component:list.html.twig' with {
                 'pager'       : pager,
                 'pagerLink'   : pagerLink,
                 'routeName'   : 'fxl_music_project',

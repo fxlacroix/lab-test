@@ -7,7 +7,7 @@ QCM - {{ parent() }}
 
 {% block body %}
 
-        {% include "FXLCommonBundle:Component:breadcrumb.html.twig" with {
+        {% include "FXLMagicBundle:Component:breadcrumb.html.twig" with {
             breadcrumb:[{
             name     : "Laboratoire",
             routeName : "fxl_laboratory_index"
@@ -19,7 +19,7 @@ QCM - {{ parent() }}
         } %}
       <div class="row-fluid">
         <div class="span3 left-col">
-            {% include "FXLCommonBundle:Component:sidebar.html.twig" with {
+            {% include "FXLMagicBundle:Component:sidebar.html.twig" with {
                 title: "Les derniers résultats",
                 items: reviews,
                 options: ['qcmReduce','slugReduce' ,'emend' ]
@@ -30,7 +30,7 @@ QCM - {{ parent() }}
 
         <div class="span9 blogart-paper" style="box-shadow: 1px 1px 12px #555;">
 
-             {% include "FXLCommonBundle:Component:hero.html.twig" with {
+             {% include "FXLMagicBundle:Component:hero.html.twig" with {
                 name      : qcm.name,
                 updatedAt : qcm.updatedAt,
                 path      : qcm.path,
@@ -45,7 +45,7 @@ QCM - {{ parent() }}
 
             <div class="list-project">
 
-                {% include 'FXLCommonBundle:Component:list.html.twig' with {
+                {% include 'FXLMagicBundle:Component:list.html.twig' with {
                     'pager'       : pager,
                     'pagerLink'   : pagerLink,
                     'contentAttr' : 'name',
