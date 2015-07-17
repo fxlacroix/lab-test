@@ -1,0 +1,30 @@
+<div class="maze">
+    {% for x in maze.level %}
+        {% for y in x %}
+            <div class="square {% if y  %}on{% endif %}"></div>
+         {% endfor %}
+         <br class="clearfix" />
+    {% endfor %}
+</div>
+<style>
+    .maze{
+        margin-left: 32%;
+    }
+
+    .square{
+        width: 16px;
+        height: 16px;
+        float: left;
+        border: solid 1px black;
+    }
+    .on{
+        background: cyan;
+    }
+    .off{
+        background: 0;
+    }
+</style>
+
+<script language="javascript">
+
+</script>

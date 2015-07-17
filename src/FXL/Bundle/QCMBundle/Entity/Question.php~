@@ -1,0 +1,38 @@
+<?php
+
+namespace FXL\Bundle\QCMBundle\Entity;
+
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use FXL\Component\Entity\Date;
+/**
+ * @ORM\Entity()
+ * @ORM\Table(name="qcm__question")
+ */
+class Question extends Date
+{
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $content;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Node")
+     * @ORM\JoinColumn(name="node_id", referencedColumnName="id")
+     */
+    private $node;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Answer", mappedBy="question", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id", referencedColumnName="question_id", nullable=true)
+     */
+    private $answers;
+
+     /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $time;
+
+
+}

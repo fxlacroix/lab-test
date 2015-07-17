@@ -1,0 +1,8 @@
+<h1>QCM edit</h1>
+
+<form action="{{ path('admin_ajax_qcm_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+    {{ form_widget(edit_form) }}
+    <p>
+        <button type="submit">Edit</button>
+    </p>
+</form>

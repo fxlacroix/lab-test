@@ -1,0 +1,29 @@
+{% extends "::admin.html.twig" %}
+
+{% block body %}
+
+    {% render 'FXLQCMBundle:Admin:Refresh' %}
+
+
+{% endblock %}
+
+{% block js_ready %}
+    createTree();
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/fxlliteracy/js/overload.js')  }}"></script>
+    {{parent()}}
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.treeview.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.treeview.edit.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.cookie.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlqcm/js/qcm.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlcommon/js/tree.js')  }}"></script>
+{% endblock %}
+
+{% block css %}
+    {{parent()}}
+        <link href="{{ asset('bundles/fxlmusic/css/jquery.treeview.css')  }}" rel="stylesheet"  media="screen, print">
+    <link href="{{ asset('bundles/fxlqcm/css/qcm.css')  }}" rel="stylesheet" media="screen, print">
+
+{% endblock %}

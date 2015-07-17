@@ -1,0 +1,52 @@
+{% extends '::basic.html.twig' %}
+
+{% block body %}
+<p>
+    Bonjour,
+</p>
+<p>
+Voici le résultat de l'examen passé le {{ review.createdAt.format("d/m/y") }} à {{ review.createdAt.format("h:i") }}<br />
+</p>
+
+<p>
+Questionnaire <b>{{ review.qcm.name }}</b><br />
+Candidat: <b>{{ review.name }}</b><br /><br />
+
+{% set score = (review.plusPoint * 20 - review.minusPoint * 5) / review.countRightAnswer %}
+
+Score:  <b>{{ score|number_format(1) }} / 20</b><br />
+Bonnes Réponses: {{ review.plusPoint }} / {{ review.questions|length }}<br />
+Fautes: {{ review.minusPoint }}<br />
+
+
+{% for question in review.questions %}
+
+    <p>
+        <p style="padding: 5px;">{{ question.node.name }} > <b>{{ question.content }}</b></p>
+        <ul>
+    {% for answer in question.answers %}
+
+        {% if answer.right and answer.selected %}
+                <li><p style="color: green">bonne réponse: {{ answer.content }}</p></li>
+        {% elseif answer.right %}
+                <li><p style="color: green">solution: {{ answer.content }}</p></li>
+        {% endif %}
+
+        {% if answer.selected and answer.right == false %}
+                <li><p style="color: red">faute: {{ answer.content }}</p></li>
+        {% endif %}
+    {% endfor %}
+        </ul>
+    </p>
+{% endfor %}
+<br />
+</p>
+
+<p>Merci de votre confiance et à très bientôt sur notre site,</p>
+
+<b>blogart</b><br />
+</p>
+
+ps: Ceci est un email automatique, merci de ne pas y répondre.
+
+{% endblock %}

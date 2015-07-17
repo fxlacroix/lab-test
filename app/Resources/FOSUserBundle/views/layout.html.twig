@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}" media="screen" />
 </head>
 <body>
 <div>
@@ -23,9 +24,12 @@
     {% endfor %}
 {% endfor %}
 
-<div>
+<div class="alert alert-info">
     {% block fos_user_content %}
     {% endblock fos_user_content %}
 </div>
+{%  block javascript %}
+    <script type="text/javascript" src="{{ asset('js/javascript.js') }}"></script>
+{% endblock %}
 </body>
 </html>

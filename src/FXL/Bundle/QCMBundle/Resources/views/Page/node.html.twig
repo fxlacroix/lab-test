@@ -1,0 +1,71 @@
+
+<form id="review" style="width: 100%; float: left;" action="{{ path('fxl_qcm_review_emend', {slug: review.slug }) }}" {{ form_enctype(reviewForm) }} method="POST">
+
+    {{ form_errors(reviewForm) }}
+    {{ form_widget(reviewForm._token) }}
+
+    {% for questionForm in reviewForm.questions %}
+
+        {{ form_widget(questionForm.id) }}
+        {% set question = questionForm.vars.value %}
+
+         <div class="container-question hide" id="container-question-{{ question.id }}" itemid="{{ question.id }}" itemprop="{{ question.time }}">
+            <div class="well-small clearfix">
+
+                <span class="counter badge">{{ loop.index }} / {{ review.questions.count }}</span>
+
+                <span class="label label-info">{{ question.node.name }} </span>
+                <!--span class="label label-warning">{{ question.time }} secondes</span>&nbsp;-->
+                <span style="display: none;"></span>
+
+                <progress id="progressBar-{{ question.id }}" class="pull-right" value="0" max="100"></progress>
+            </div>
+
+            <div class="question well well-large clearfix">
+               {% if question.path %}
+                 <img style="max-width: 100px;  float: left;margin-right: 10px;" src="{{ question.path }}" />
+               {% endif %}
+
+                <h4>{{ question.content }}</h4>
+            </div>
+
+            {% for answerForm in questionForm.answers %}
+
+                {% set answer = answerForm.vars.value %}
+
+                {{ form_widget(answerForm.id) }}
+
+                {% if answer.path is empty %}
+                <div class="span9 answer-dontainer pull-left" itemtype="{{ answer.right|default(0) }}" style="width: 90%;padding: 5px;margin-bottom: 15px;">
+
+                    {{ form_widget(answerForm.selected, {attr: { class:'pull-left' }}) }}
+
+                    &nbsp;
+                    <label  class="pull-left answer answer-{{answer.right|default(0) }}" for="{{ answerForm.selected.vars.id }}">
+
+                            {{ answer.content }}
+
+                    </label>
+                </div>
+                {% else %}
+                 <div class="span3 answer-dontainer pull-left" itemtype="{{ answer.right|default(0) }}" style="width: 12%;padding: 5px;margin-bottom: 15px;">
+                    {{ form_widget(answerForm.selected, {attr: { class:'pull-left' }}) }}
+
+                    &nbsp;
+                    <label  class="pull-left answer answer-{{answer.right|default(0) }}" for="{{ answerForm.selected.vars.id}}">
+                        <img style="" src="{{ answer.path }}" />
+                    </label>
+                </div>
+                {% endif %}
+
+
+            {% endfor %}
+
+            <div class="container-btn span11 clearfix well well-large">
+                <a class="btn btn-primary btn-large pull-left next">Suivant</a>
+                <a class="btn pull-right finish">Terminé</a>
+                <a class="btn pull-right stop" style="margin-right: 5px;">Pause</a>
+            </div>
+          </div>
+    {% endfor %}
+</form>

@@ -1,0 +1,17 @@
+{% block body %}
+<div id="fxl_message" class="emend hide">
+  <div class="bs-docs-example">
+      <div class="well clearfix" style="max-width: 400px; margin: 0 auto 10px;">
+          <h2>Merci !</h2>
+          <br />
+
+          <br />
+          <a href="{{  path('fxl_qcm_review_prepare', { 'slug': review.qcm.slug }) }}" class="btn btn-large btn-primary">Refaire ce QCM</a>
+          <br /><br />
+          <a href="{{  path('fxl_qcm_index') }}" class="btn btn-large">Retour aux QCMs</a>
+
+      </div>
+  </div>
+</div>
+
+{% endblock %}

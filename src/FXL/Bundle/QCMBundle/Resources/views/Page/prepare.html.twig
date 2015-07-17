@@ -1,0 +1,91 @@
+{% extends "::blogart.html.twig" %}
+
+{% block title %}
+
+{{ qcm.name }} -  Qcm - {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+      <div class="row-fluid">
+  <div id="fxl_ready" class="span12">
+
+      <div class="span3 left-col" >
+   
+    </div>
+
+
+    <div id="fxl_message">
+
+       <div class="bs-docs-example">
+
+           <form action="{{ path('fxl_qcm_review_prepare', {slug: qcm.slug}) }}" method="post" {{ form_enctype(form) }}>
+                <div class="well clearfix" style="max-width: 400px; margin: 0 auto 10px;backgroun: url() ;">
+                    <span class="pull-right label label-info">mis à jour le {{ qcm.updatedAt.format("d/m/Y") }}</span>
+                    <h2>{{ qcm.name}}</h2>
+                    <p>
+                        <!--div class='alert alert-danger'>Vous êtes sur le point de passer un examen.</div-->
+
+                         <div class='alert alert-info'>Voici la liste des sujets abordés: <br /> <strong>{{ qcm.getNodesWithQuestion|join(', ')}}</strong></div>
+
+                        <img src="{{ qcm.path }}" style="width: 80px; margin: 10px 10px 0;float: right;white-space:nowrap;" alt="Illustration" />
+
+                         {{ form_errors(form) }}
+
+                         {{ form_row(form.name) }}
+                         {{ form_row(form.email) }}
+
+                         {{ form_row(form.selectionQuestion, {
+                            attr:{
+                                class: 'selection-question'
+                            }})
+                         }}
+                         <div class='pull-left clearfix' id='slider-question'></div>
+
+                         {{ form_widget(form._token) }}
+
+                         <br />
+
+                         <div class='alert alert-notice'><b><span class="slider-result">{{ review.selectionQuestion }}</span></b>&nbsp;questions tirées au hasard parmi <b>{{ qcm.countQuestions}}</b> questions.</div>
+
+                         {{ form_row(form.captcha) }}
+                         <br />
+                    <input type="submit" class="btn ready btn-primary btn-large pull-left btn-block" value="Commencer l'examen {{ qcm.name }}" />
+                </div>
+
+            </form>
+
+        </div>
+            </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_ready %}
+
+    var slider = $("#slider-question").slider({
+      min: 2,
+      max: 30,
+      range: "min",
+      value: $('.selection-question').val(),
+      slide: function( event, ui ) {
+
+       $('.selection-question').val(ui.value);
+       $(".slider-result").html(ui.value);
+      }
+    });
+
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/fxlqcm/css/qcm.css')  }}" rel="stylesheet" media="screen, print" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+{% endblock %}
+
+{% block captcha_widget %}qsdfqs
+    {% spaceless %}qsdf
+{{ form_widget(form) }}qsdfqsdf
+        <img src="{{ captcha_code }}" title="captcha" width="{{ captcha_width }}" height="{{ captcha_height }}" />
+    {% endspaceless %}
+{% endblock %}

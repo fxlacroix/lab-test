@@ -1,0 +1,60 @@
+{% extends "::blogart.html.twig" %}
+
+{% block title %}
+
+{{ review.qcm.name }} -  Qcm - {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+
+{% set total = review.qcm.countQuestions %}
+
+
+      <div class="row-fluid" style="">
+    <div id="fxl_qcm" style="background: white;box-shadow: 1px 1px 12px #555;" >
+
+        <div class="well-small clearfix container_qcm">
+            <h2 class="exam-title">Examen PHP {{'now'|date("d/m/Y H:i") }}</h2>
+          <div class="qcm_result hide clearfix"><br />
+            <span class="pull-left" id="result-by-response-text"></span>
+            <br />
+            <progress id="result-by-response" class="span6 pull-right" value="0" max="100"></progress>
+            <br /> <br />
+        </div>
+            {% include 'FXLQCMBundle:Page:node.html.twig' with {
+                path : null,
+                level: 0,
+                total: total,
+                reviewForm: reviewForm,
+                review: review
+            } only %}
+
+
+        </div>
+
+    </div>
+    {% include 'FXLQCMBundle:Page:emend.html.twig' with { review: review} %}
+
+</div>
+
+{% endblock %}
+
+
+{% block js_ready %}
+
+    startExam();
+
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+ <link href="{{ asset('bundles/fxlqcm/css/qcm.css')  }}" rel="stylesheet" media="screen, print">
+
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/fxlqcm/js/qcm.js')  }}"></script>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+<?php
+
+namespace FXL\Bundle\QCMBundle\Entity;
+
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Doctrine\ORM\Mapping as ORM;
+use FXL\Component\Entity\Described;
+
+/**
+ * @ORM\Entity()
+ * @ORM\Table(name="qcm__qcm")
+ */
+class QCM extends Described
+{
+    /**
+     * @ORM\OneToMany(targetEntity="Node", mappedBy="qcm", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id", referencedColumnName="qcm_id", nullable=true)
+     */
+    private $nodes;
+
+     /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $time;
+}

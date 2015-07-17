@@ -1,0 +1,11 @@
+{% for question in node.questions %}
+    <li>
+        <p class="text-info" style="color: #379EBC;">
+            <i class="icon-question-sign"></i>
+            <a style="text-decoration: none;" href="#" class="fxl-edit-question"  itemprop="">
+
+                question n° {{ question.id }} 
+            </a>
+        </p>
+    </li>
+{% endfor %}
