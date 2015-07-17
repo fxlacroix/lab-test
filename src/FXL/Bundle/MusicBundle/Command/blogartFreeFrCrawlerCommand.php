@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface,
 /**
  * Crawl songs
  */
-class blogartFreeFrCrawlerCommand extends FXLContainerAwareCommand
+class BlogartFreeFrCrawlerCommand extends FXLContainerAwareCommand
 {
     /**
      * Configures the current command.

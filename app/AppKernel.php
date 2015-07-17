@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             //new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new AppBundle\AppBundle(),
+            new FXL\Bundle\MagicBundle\FXLMagicBundle(),
             new FXL\Bundle\UserBundle\FXLUserBundle(),
             new FXL\Bundle\MusicBundle\FXLMusicBundle(),
             new FXL\Bundle\LiteracyBundle\FXLLiteracyBundle(),
