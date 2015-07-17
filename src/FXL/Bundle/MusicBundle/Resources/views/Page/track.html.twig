@@ -1,0 +1,239 @@
+{% extends "::base.html.twig" %}
+
+
+{% block title %}
+
+    {{ track.name }} - {{ track.project.name }} - Musique - {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+
+
+    <div class="container-fluid">
+
+      {% include 'FXLMusicBundle:Component:breadcrumb.html.twig' with {track: track, project: track.project, tags: track.project.tags} %}
+
+      <div class="row-fluid" style="background: white;">
+
+
+        <div class="span3">
+
+            {% include 'FXLMusicBundle:Component:player.html.twig' %}
+            <br />
+
+            {% include "FXLMusicBundle:Component:chords.html.twig" with {track: track, display: "block" } %}
+
+            {% render "FXLCommonBundle:Component:trackList" with {
+                 currentTrackId: track.id,
+                 tracks: track.project.tracks
+               } %}
+
+
+        </div><!--/span-->
+        <div class="span6">
+
+            <div class="tabbable hero-unit track-{{track.slug}}" style=" padding: 20px;">
+
+                <!--span class="label label-info" style="float: right;">{{ track.updatedAt.format("F Y") }}</span-->
+                 <h2>{{ track.name }}
+                    <span class="document_date label label-success right" style="margin-left: 2px;"></span>
+                    <span class="document_version label label-info right"></span>
+                 </h2>
+
+            <div class="tab-content">
+                <br />
+                <ul class="nav nav-tabs" style="margin: 0;" >
+                    {% if track.content is not empty %}
+                        <li><a href="#tab-{{ track.slug }}-1" data-toggle="tab">Paroles</a></li>
+                    {% endif %}
+
+                    {% if track.authors|length > 0 %}
+
+                        <li><a class="nav-tab-li" href="#tab-{{ track.slug }}-2" data-toggle="tab">Auteur</a></li>
+                    {% endif %}
+                </ul>
+
+
+                {% if track.content is defined and track.content is not empty %}
+                <div class="tab-pane vocal" id="tab-{{ track.slug }}-1">
+
+                    <p class="small">
+                        {{ track.content|raw }}
+                    </p>
+                </div>
+                {% endif %}
+
+                <div class="tab-pane" id="tab-{{ track.slug }}-2">
+                    {% if track.authors is defined and track.authors is not empty %}
+                    <p>
+                        {% set randomAuthor = random(track.authors|length - 1) %}
+
+                        {% if track.authors.0.assets.0 is defined %}
+
+                            {% set author =  track.authors[randomAuthor] %}
+                            {% set assetParam = random(track.authors[randomAuthor].assets|length) %}
+
+                            {% if author.assets[assetParam] is not defined %}
+                                {% set assetParam = assetParam - 1 %}
+                            {% endif %}
+
+                            {% set selected = author.assets[assetParam] %}
+
+                            <img style="margin: 10px;float: right; width: 200px;" src="{{ selected.path  }}" />
+                        {% endif %}
+
+
+                    {{ track.authors[randomAuthor].description|raw }}</p>
+                    {% endif %}
+                    <div class="clearfix">&nbsp;</div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+        </div><!--/span-->
+
+        <div class="span3">
+
+            {% render "FXLCommonBundle:Component:imageCarousel" with { track: track} %}
+
+            {% render "FXLCommonBundle:Component:projectList" with {currentProjectId: track.project.id} %}
+
+        </div>
+
+      </div><!--/row-->
+
+      <hr>
+
+      {% include 'FXLMusicBundle:Component:footer.html.twig' %}
+
+    </div><!--/.fluid-container-->
+
+    <style>
+
+     .tab-pane{
+         float: left;
+         background: white;
+         padding: 20px;
+         border-left: solid 1px #cdcdcd;
+     }
+     .vocal{
+         width: 92%;
+     }
+
+    </style>
+
+{% endblock %}
+
+
+{% block js_ready %}
+
+    {{ parent() }}
+    var playlist = new jPlayerPlaylist({
+        jPlayer: "#jquery_jplayer",
+        cssSelectorAncestor: "#jp_container"
+    }, [
+        {% for document in track.documents %}
+        {
+            title: '<span class="{{document.track.slug}}" itemref="{{ document.updatedAt|localizeddate('short', 'none')}}" itemprop="{{document.track.name}}" itemscope="{{ document.version }}">{{track.name}} ( v. {{ document.version }} )</span>'+
+                       '<span style="float: right"><small>{{document.track.updatedAt|localizeddate('short', 'none')}}</small>&nbsp;</span>',
+            mp3: "{{ document.path|raw  }}"
+        },
+        {% endfor %}
+
+    ], {
+        swfPath: "/bundles/fxlmusic/js",
+        supplied: "mp3",
+        wmode: "window"
+
+    });
+
+
+    var lastDiese = self.location.href.lastIndexOf("#");
+
+    if(lastDiese == -1){
+        lastDiese = self.location.href.length;
+    }
+
+    var baseProjectUrl = self.location.href.substr(0, lastDiese);
+    var baseProjectTitle = $('title').html();
+
+
+    $('.carousel-inner .item').first().addClass("active");
+
+     $("#jquery_jplayer").bind($.jPlayer.event.play, function(event) {
+
+        var trackUri =  $(".jp-playlist-current span").attr("class");
+        var trackTitle =  $(".jp-playlist-current span").attr("itemprop");
+        var pageTitle = trackTitle + " v." + $(".jp-playlist-current span").attr('itemscope') + " - " + baseProjectTitle;
+
+        window.history.pushState(null, pageTitle, baseProjectUrl + "#/"+ $(".jp-playlist-current span").attr('itemscope') + "/" + trackUri);
+
+        $('title').html(pageTitle);
+
+        blogart_analytics();
+
+    });
+
+
+    var didOne = false;
+    $("#jquery_jplayer").bind($.jPlayer.event.loadeddata, function(){
+
+
+        $(".document_version").html("version " + $(".jp-playlist-current span").attr('itemscope'));
+        $(".document_date").html($(".jp-playlist-current span").attr('itemref'));
+
+        if(lastDiese > 0 && ! didOne){
+
+            didOne = true;
+            var launch = self.location.href.substr(lastDiese, self.location.href.length);
+
+            var pattern = /\/(\d*)/;
+
+            if(pattern.test(launch)){
+
+                var launchVersion = pattern.exec(launch);
+                var pattern = /\/\d*\/(.*)/;
+                var launchTrack = pattern.exec(launch);
+
+                $(".jp-playlist ." + launchTrack[1]).each(function(){
+
+                    if($(this).attr("itemscope") == launchVersion[1]){
+
+                        $(this).click();
+
+                    }
+                });
+
+            }
+        }
+
+
+    });
+
+    $('.nav-tabs').each(function(){
+
+        $(this).children().first().children().first().click();
+
+    });
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.jplayer.min.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jplayer.playlist.min.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.jplayer.js')  }}"></script>
+
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/fxlmusic/css/music.css')  }}" rel="stylesheet"  media="screen, print">
+    <link href="{{ asset('bundles/fxlmusic/images/jplayer/jplayer.light.css')  }}" rel="stylesheet"  media="screen, print">
+{% endblock %}

@@ -1,0 +1,32 @@
+
+{% if nodes is defined and nodes is not empty %}
+    {% for node in nodes %}
+        <li><span>
+                {% if level is defined and level==0 %}
+                <i class="icon-book"></i>
+                {% else %}
+                <i class="icon-folder"></i>
+                {% endif %}
+
+                &nbsp;{{ node.name }}
+                <a class="edit" itemprop="/admin/ajax/node/{{ node.id }}/edit"><i class="icon-edit"></i></a>
+
+                {% if node.sons is not empty or node.groups is empty and node.sons is empty %}
+                    <a class="new" itemprop="/admin/ajax/node/{{ node.id}}/node/new"><i class="icon-folder-close"></i></a>
+                {% endif %}
+
+                {% if node.groups is not empty or node.groups is empty and node.sons is empty %}
+                    <a class="new" itemprop="/admin/ajax/group/node/{{ node.id}}/new"><i class="icon-file"></i></a>
+                {% endif %}
+
+                <a class="delete" itemprop="/admin/ajax/node/{{ node.id }}/delete"><i class="icon-trash"></i></a></span>
+            <ul id="folder21">
+
+                {% include 'FXLLiteracyBundle:Folder:list.html.twig' with {nodes: node.sons, level: level+1} only %}
+                {% include 'FXLLiteracyBundle:Folder:group.html.twig' with {groups: node.groups} only %}
+
+             </ul>
+        </li>
+    {% endfor %}
+
+{% endif %}

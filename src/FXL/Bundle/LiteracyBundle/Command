@@ -1,0 +1,133 @@
+<?php
+
+namespace FXL\Bundle\LiteracyBundle\Command;
+
+use Symfony\Component\Console\Input\InputInterface,
+    Symfony\Component\Console\Output\OutputInterface;
+use Doctrine\Common\Annotations\AnnotationReader;
+use FXL\Component\Command\BaseCommand;
+
+/**
+ * Crawl citations
+ */
+class DoctrinePathCommand extends BaseCommand
+{
+    var $relation = array();
+    var $todo = array();
+    var $done = array();
+    var $path;
+
+    /**
+     * Configures the current command.
+     *
+     * @return void
+     *
+     * @see Symfony\Component\Console\Command\Command::configure()
+     */
+    protected function configure()
+    {
+        $this
+            ->setName('fxl:doctrine:path')
+            ->setDescription('Give a path bettween two entity')
+            ->addOption("from")
+            ->addOption("to");
+    }
+
+    /**
+     * Executes the current command.
+     *
+     * @param InputInterface  $input  An InputInterface instance
+     * @param OutputInterface $output An OutputInterface instance
+     *
+     * @return integer 0 if everything went fine, or an error code
+     */
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $this->em = $this->getEntityManager();
+
+        $current = $this->getClass($input->getOption("from"));
+        
+        $this->getRelationFor($current);
+
+            $this->path .= $current;
+        while (count($this->todo) > 0) {
+
+
+            //var_dump($this->relation);
+            //var_dump($this->done);
+            //var_dump($this->todo);
+
+            $this->pointer = &$this->relation[$current];
+
+            $current = array_shift($this->todo);
+
+
+            $this->getRelationFor($current);
+
+            $this->path .= " -> ".$current;
+            /*var_dump($this->relation);
+            var_dump("*".$current."*");
+            var_dump($this->pointer);*/
+
+            //var_dump($this->done);
+
+        }
+
+        var_dump($this->path);
+    }
+
+    public function getRelationFor($current){
+
+        $associationMapping = $this->em->getClassMetadata($current)->associationMappings;
+
+        foreach ($associationMapping as $mapping) {
+
+            $mapping['targetEntity'] = "\\".$mapping['targetEntity'];
+
+            if( !in_array($mapping['targetEntity'], $this->done)) {
+
+                if( !in_array($mapping['targetEntity'], $this->todo)) {
+
+                    //$this->debug($current);
+                    //$this->debug($mapping['targetEntity']);
+
+                    if($mapping['targetEntity'] != $current){
+
+                        $this->todo[] = $mapping['targetEntity'];
+                        $this->pointer[$current][] = $mapping['targetEntity'];
+
+                    }
+                }
+            }
+        }
+
+        $this->done[] = $current;
+    }
+
+    public function getClass($input)
+    {
+
+        return "\\" . str_replace("/", "\\", $input);
+    }
+
+    public function containsSlash($string)
+    {
+
+        if (preg_match("#\\\#", $string)) {
+
+            return true;
+        }
+        return false;
+    }
+
+    public function suppressNamespace($stringWithNamespace, $namespace)
+    {
+        $stringWithNamespace = var_export($stringWithNamespace, true);
+
+        $a = explode(".", $stringWithNamespace);
+
+
+        return trim(str_replace("'", "", $a[count($a) - 1]));
+    }
+
+}

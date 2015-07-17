@@ -1,0 +1,38 @@
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $('.author-list select').filterByText($('#fxl_musicbundle_authortype_lookup'));
+
+
+        $("#add-author").click(function(){
+
+            if($(".author-list select option:not(:selected)").length == 0){
+
+
+
+                $.ajax({
+                    url: "/admin/ajax/author/",
+                    type: "POST",
+                    data: {
+                        "fxl_musicbundle_authortype[name]": $("#fxl_musicbundle_authortype_name").val(),
+                        "fxl_musicbundle_authortype[description]": $('#fxl_musicbundle_authortype_description').val(),
+                        "fxl_musicbundle_authortype[wikipediaId]": $('#fxl_musicbundle_authortype_wikipediaId').val(),
+                    },
+                    dataType: 'json',
+                    success: function(json) {
+                        if(json.success) {
+
+                            $(".author-list select").append($("<option>")
+                                .text(json.data.text)
+                                .val(json.data.value)
+                            );
+                            $('.author-list select').filterByText($('#fxl_musicbundle_authortype_lookup'));
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>

@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\Loader;
 class FXLMusicExtension extends Extension
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function load(array $configs, ContainerBuilder $container)
     {

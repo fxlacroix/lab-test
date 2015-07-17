@@ -1,0 +1,5 @@
+{% extends 'FXLPhotoBundle::base.html.twig' %}
+{% block title %}Photos de {{ userName }} - Azax{% endblock title %}
+{% block navbar %}
+    {{ render(controller('FXLPhotoBundle:Component:menu', { "routeAttributes": app.request.attributes})) }}
+{% endblock %}

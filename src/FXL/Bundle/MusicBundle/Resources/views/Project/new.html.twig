@@ -1,0 +1,34 @@
+
+<h1>Project creation</h1>
+
+<form action="{{ path('admin_ajax_project_create') }}" method="post" {{ form_enctype(form) }}>
+
+    <div class="left_admin_form">
+        {{ form_row(form.name) }}
+        {{ form_row(form.type) }}
+        {{ form_row(form.tags) }}
+
+    </div>
+    <div class="right_admin_form">
+
+        {{ form_row(form.description)  }}
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="plain_admin_form">
+    {{ form_row(form.content)  }}
+    </div>
+
+    <div class="clearfix"></div>
+    &nbsp;
+    <p>
+
+        {{ form_rest(form) }}
+
+        <button type="submit">Create</button>
+    </p>
+
+    </div>
+</form>
+
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}

@@ -1,0 +1,66 @@
+{% extends 'MopaBootstrapBundle::base.html.twig' %}
+
+{% block head_style %}
+    {% stylesheets
+    '@MopaBootstrapBundle/Resources/public/bootstrap/dist/css/bootstrap.min.css'
+    '@MopaBootstrapBundle/Resources/public/bootstrap/dist/css/bootstrap-theme.min.css'
+    '@SonatajQueryBundle/Resources/public/themes/flick/jquery-ui-1.8.16.custom.css'
+    '@FXLMagicBundle/Resources/public/css/jquery.treeview.css'
+    '@FXLPhotoBundle/Resources/public/css/photo.css' %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen"/>
+    {% endstylesheets %}
+{% endblock head_style %}
+{% block head_script %}
+    {% javascripts
+    'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    '@MopaBootstrapBundle/Resources/public/bootstrap/dist/js/bootstrap.min.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4B4qKuccc0aqpksApLmh_AL7NcInamo"></script>
+    <style>
+        @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+    </style>
+{% endblock head_script %}
+{% block body %}
+    {% block navbar %}
+        {{ render(controller('FXLPhotoBundle:Component:menu', { "routeAttributes": app.request.attributes})) }}
+    {% endblock %}
+    <div class="container">
+        {% for typeMessage in ['info', 'success', 'danger'] %}
+            {% for flashMessage in app.session.flashbag.get(typeMessage) %}
+                <div class="alert alert-{{ typeMessage }}">
+                    <em>Information</em>: {{ flashMessage }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <div class="col-md-12 photo-container">
+            {% block content %}
+            {% endblock %}
+        </div>
+        {% block footer %}
+            <p><hr /><small>AVERTISSEMENT: les photos de ce site sont soumises à un copyright et ne sont pas libres de droit, pour toute utilisation en faire la demande au photographe.</small></p>
+        {% endblock %}
+    </div> <!-- /container -->
+    {% block foot_script_assetic %}
+        {% javascripts
+        '@SonatajQueryBundle/Resources/public/jquery-ui-1.8.23.js'
+        '@FXLMagicBundle/Resources/public/js/jquery.loadmask.js'
+        '@FXLMagicBundle/Resources/public/js/jquery.tinymce.js'
+        '@FXLMagicBundle/Resources/public/js/jquery.treeview.js'
+        '@FXLMagicBundle/Resources/public/js/jquery.treeview.edit.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block foot_script %}
+        <script>
+            $(document).ready(function () {
+                {% block jquery_ready %}
+                {% endblock %}
+            });
+
+        </script>
+    {% endblock %}
+
+{% endblock %}

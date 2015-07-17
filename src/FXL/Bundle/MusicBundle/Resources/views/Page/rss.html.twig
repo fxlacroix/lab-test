@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+  <title>blogart-magazine</title>
+  <link>http://blogart-magazine.fr</link>
+  <description>Enregistrements divers</description>
+
+   {% for document in documents %}
+   <item>
+      <title>{{ document.track.name }}</title>
+      <link>
+      {{ url("track", {
+        "slugProject": document.track.project.slug,
+        "slugTrack": document.track.slug }) }}
+     </link>
+      <description>{{ document.track.content }}</description>
+      <guid isPermaLink="true">
+        {{ url("track", {
+            "slugProject": document.track.project.slug,
+            "slugTrack": document.track.slug }) }}
+      </guid>
+      <pubDate>{{ document.updatedAt.format("D, d M Y H:i:s O") }}</pubDate>
+   </item>
+  {% endfor %}
+
+  {% for group in groups %}
+   <item>
+      <title>{{ group.name }}</title>
+      <link>
+      {{ url("details_literacy_node", {
+        "slug": group.slug}) }}
+     </link>
+     {% set content = group.sheets[0].content|split('\n\n') %}
+      <description>{{ content.0|raw|slice(0,500) }}</description>
+      <guid isPermaLink="true">
+         {{ url("details_literacy_node", {
+        "slug": group.slug}) }}
+      </guid>
+      <pubDate>{{ group.updatedAt.format("D, d M Y H:i:s O") }}</pubDate>
+   </item>
+  {% endfor %}
+
+
+  </channel>
+</rss>

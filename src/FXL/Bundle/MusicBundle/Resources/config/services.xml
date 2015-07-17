@@ -5,12 +5,14 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <!--
+    <parameters>
+        <parameter key="fxl_music.example.class">FXL\Bundle\MusicBundle\Example</parameter>
+    </parameters>
+    -->
     <services>
-        <service id="fxl_music.example" class="FXL\Bundle\MusicBundle\Example">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+         <service id="twig.extension.nl1br" class="FXL\Bundle\MusicBundle\Twig\Extension\MusicExtension">
+            <tag name="twig.extension" />
         </service>
     </services>
-    -->
+
 </container>

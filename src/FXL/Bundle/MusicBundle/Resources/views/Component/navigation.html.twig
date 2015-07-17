@@ -1,0 +1,43 @@
+
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+    <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="{{ url('fxl_home') }}">Blogart-Magazine</a>
+        <div class="nav-collapse">
+        <ul class="nav">
+            {% for item in menu %}
+
+                <li {% if item.routeName == routeName %}class="active" {% endif %}><a href="{{ url(item.routeName)}}">{{ item.label }}</a></li>
+
+            {% endfor %}
+        </ul>
+        </div><!--/.nav-collapse -->
+
+
+        {% for key, message in app.session.getFlashes() %}
+        <div class="{{ key }}">
+            {{ message|trans({}, 'FOSUserBundle') }}
+        </div>
+        {% endfor %}
+
+        <div style="float: right;margin-top: 10px;">
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ app.user.username }} | <a href="{{ url('fxl_admin') }}">Tableau de bord</a> |
+                <a href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% else %}
+                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+            {% endif %}
+        </div>
+
+    </div>
+    </div>
+
+</div>

@@ -1,0 +1,76 @@
+2:
+  name: The Kid
+  description: A comedy with a smile—and perhaps a tear [Chaplin]
+  content: Un travail d’arrangement pour piano sur la bande son phénoménale du film original de Charlie Chaplin. L’orchestration tente d’être imitée en gardant l’approche classique, la tonalité est gardée, en général des tonalités peu commodes mais qui donnent la tonalité du film sur les do#, lab, re#, si... mais ceci n’est qu’un point de départ. L’évolution du même thème suit à chaque fois une transposition différente sur un demi ton supérieur et ce tant que la scène du film se prolonge ; parfois un ton supérieur, parfois une tierce mineur supérieur... des modifictions sont à prévoir, un arrangement se renouvelle et se recherche sans cesse, jusqu’à ce qu’on le trouve enfin ?
+  logo:  "/logos/thekid.jpeg"
+  tracks:
+    0:
+      name: L'enfant
+      documents:
+        0:
+          version: 1
+    1:
+      name: La femme
+      documents:
+        0:
+          version: 1
+    2:
+      name: Les voleurs
+      documents:
+        0:
+          version: 1
+    3:
+      name: Le vagabond
+      documents:
+        0:
+          version: 1
+    4:
+      name: Le remord
+      documents:
+        0:
+          version: 1
+    5:
+      name: L'enfance
+      documents:
+        0:
+          version: 1
+    6:
+      name: La jeunesse
+      documents:
+        0:
+          version: 1
+    7:
+      name: La combine
+      documents:
+        0:
+          version: 1
+    8:
+      name: L'essor
+      documents:
+        0:
+          version: 1
+    9:
+      name: La bagarre
+      documents:
+        0:
+          version: 1
+    10:
+      name: L'enlèvement
+      documents:
+        0:
+          version: 1
+    11:
+      name: La débâcle
+      documents:
+        0:
+          version: 1
+    12:
+      name: La nuit
+      documents:
+        0:
+          version: 1
+    13:
+      name: Le rêve
+      documents:
+        0:
+          version: 1

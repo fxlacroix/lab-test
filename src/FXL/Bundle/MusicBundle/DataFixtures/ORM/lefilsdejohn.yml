@@ -1,0 +1,26 @@
+2:
+  name: Le fils de John
+  description: Du blues Au stride
+  content: Du BLUES... un hommage aux Johnson’s, un retour aux sources... depuis sa création jusqu’à sa présence dans tant de styles musicaux, et poètes accomplis, l’envie est de retracer de manière plutôt réaliste, ceux qui ont, comme disait Victor Hugo, "porté le chaînon de la chaîne éternelle " du blues...
+  logo:  "/logos/lefilsdejohn.jpeg"
+  tracks:
+    0:
+      name: Snowy morning Blues
+      documents:
+        0:
+          version: 1
+    1:
+      name: Echoes of spring
+      documents:
+        0:
+          version: 1
+    2:
+      name: Black beauty
+      documents:
+        0:
+          version: 1
+    3:
+      name: North of the sunset
+      documents:
+        0:
+          version: 1

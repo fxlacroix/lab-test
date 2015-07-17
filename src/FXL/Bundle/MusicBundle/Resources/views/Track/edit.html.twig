@@ -1,0 +1,54 @@
+<h1>Track edit</h1>
+
+<form action="{{ path('admin_ajax_track_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+
+
+        <div class="left_admin_form">
+
+        {{ form_row(edit_form.name) }}
+        {{ form_row(edit_form.number) }}
+
+         {{ form_label(edit_form.authors) }}
+            <input id="fxl_musicbundle_authortype_lookup" type="text" style="width: 68%;" />
+            <input id="fxl_musicbundle_authortype_name" type="hidden" style="width: 68%;" />
+            <input id="fxl_musicbundle_authortype_description" type="hidden" style="width: 68%;" />
+            <input id="fxl_musicbundle_authortype_wikipediaId" type="hidden" style="width: 68%;" />
+
+            <button id="add-author" type="button" style="position: relative; bottom: 3px;">add</button>
+            <div class="author-list">
+                {{ form_widget(edit_form.authors) }}
+            </div>
+        </div>
+
+        <div class="right_admin_form">
+
+            {{ form_row(edit_form.description) }}
+        </div>
+
+        <div  class="clearfix"></div>
+
+        <div class="plain_admin_form">
+        {{ form_row(edit_form.content) }}
+         <div  class="clearfix"></div>&nbsp;
+        {{ form_row(edit_form.chords) }}
+        </div>
+        {{ form_row(edit_form.project) }}
+
+    <p>
+        <button type="submit">Edit</button>
+    </p>
+</form>
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $('.author-list select').filterByText($('#filter-authors'));
+
+    });
+</script>
+
+
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}
+{% include 'FXLMusicBundle:Component:js/add_author.html.twig' %}
+{% include 'FXLMusicBundle:Component:js/add_author_list.html.twig' %}

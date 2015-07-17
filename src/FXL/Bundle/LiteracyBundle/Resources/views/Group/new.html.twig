@@ -1,0 +1,5 @@
+<h1>Group creation</h1>
+
+<form action="{{ path('admin_ajax_group_create') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+</form>

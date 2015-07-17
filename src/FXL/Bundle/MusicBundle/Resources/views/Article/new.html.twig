@@ -1,0 +1,27 @@
+<h1>Article creation</h1>
+
+<form action="{{ path('admin_ajax_article_create') }}" method="post" {{ form_enctype(form) }}>
+
+    <div class="left_admin_form">
+        {{ form_row(form.name) }}
+        {{ form_row(form.number) }}
+        {{ form_row(form.published) }}
+        </div>
+
+        <div class="right_admin_form">
+        {{ form_row(form.description) }}
+        </div>
+
+        <div  class="clearfix"></div>
+
+        <div class="plain_admin_form">
+        {{ form_row(form.content) }}
+        </div>
+
+        <div class="clearfix"></div>
+        &nbsp;
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}

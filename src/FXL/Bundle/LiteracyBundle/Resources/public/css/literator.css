@@ -1,0 +1,224 @@
+
+.literator{
+    padding: 0 15px 15px 15px;
+    margin-top: -20px;
+
+}
+
+
+textarea.content{
+
+    color: #0F056B;
+    font-size: 13px;
+    height: 520px;
+    width: 450px;
+    padding: 40px;
+    margin-left: 60px;
+}
+
+.tab-pane.chapter{
+
+    overflow: auto;
+    padding: 10px;
+    height: 510px;
+    /*border: solid 1px #eee;
+    border-top: 0;*/
+    /*height: 430px;*/
+
+    border: solid 1px #eee;
+    border-top: 0;
+}
+
+.plan{
+    margin-left: 50px;
+    width: 450px;
+    height: 560px;
+    float: left;
+    padding: 15px;
+    overflow-y: auto;
+    border-left: dashed #cdcdcd 1px;
+    border-right: dashed #cdcdcd 1px;
+}
+
+.tab-pane.sub{
+
+    margin-bottom: 20px;
+    overflow: auto;
+    height: 340px;
+}
+
+
+#modal_full_screen{
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: 1050;
+  overflow: auto;
+  width: 760px;
+  margin: -200px 0 0 -230px;
+}
+
+
+#modal_full_screen .modal-body {
+  overflow-y: auto;
+  max-height: 600px;
+  padding: 15px;
+}
+
+#modal_full_screen .modal-body .resize_tool{
+    width: 92%;
+
+}
+
+#modal_full_screen .modal-body .resize_tool i.icon-resize-full{
+    display: none;
+}
+
+.resize_tool .tabbable{
+    border: 0;
+}
+
+
+.icon-resize-full{
+    cursor: pointer;
+}
+
+.filetree li.expandable i.icon-folder{ background-position: -384px -120px;}
+
+.filetree li i.icon-folder {background-position: -408px -120px;}
+
+.text_toolbar{
+    width: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+#browser a{
+    text-decoration: none;
+}
+
+
+
+#myModal textarea{
+    width: 95%;
+    height: 200px;
+}
+
+.pager .previous{
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+
+.pager .next{
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.nav-tabs.sub a{
+    display: none;
+
+}
+
+.tools{
+    padding: 0;
+    background: white;
+    display: none;
+}
+
+.definition ul li{
+
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.anagram li,
+.scrabble li,
+.rhyme li,
+.synonym li{
+    display: block;
+    width: 160px;
+    float: left;
+}
+
+textarea.bigger{
+
+
+}
+
+.left_shadow{
+    background:-webkit-gradient(radial, 580 0, 0, 200 -167, 465, from(#FFFFFF), to(#F0EEEE));
+    -moz-box-shadow: -2px 3px 2px #666;
+    -webkit-box-shadow: -2px 3px 2px #666;
+    box-shadow: -2px 3px 2px #666;
+}
+
+.right_shadow{
+    -moz-box-shadow: 2px 3px 2px #666;
+    -webkit-box-shadow: 2px 3px 2px #666;
+    box-shadow: 2px 3px 2px #666;
+    background:-webkit-gradient(radial, 100 0, 0, 120 -257, 465, from(#FFFFFF), to(#F0EEEE));
+}
+
+textarea.note{
+    background:-webkit-gradient(radial, 100 0, 0, 120 -257, 465, from(#FFFFFF), to(#FEFEE2));
+    padding:8px;
+    font-size: 14px;
+    width: 96%;
+    height: 94%;
+    color: #960018;
+}
+
+.right .thumbnail{
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 140px;
+}
+
+.nav.sub .active a{
+
+    background: #eee;
+}
+
+.thumbnail .image{
+    max-height: 100px;
+    overflow-y: hidden;
+}
+
+.literator > .thumbnails,
+.images{
+    margin: 0 auto 0 auto;
+}
+
+.images{
+    text-align: center;
+    padding: 0;
+}
+
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+
+.rhyme,
+.synonym,
+.motif{
+}
+
+.label{
+    cursor: crosshair;
+}
+
+#right_destination{
+    position: absolute;
+    left: 0;
+    top: center;
+}

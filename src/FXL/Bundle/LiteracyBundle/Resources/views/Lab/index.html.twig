@@ -1,0 +1,69 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+<div class="literator">
+
+
+    <ul class="pager" style="height: 0;">
+        <li class="previous">
+            <a href="#">&larr;</a>
+        </li>
+        <li class="next">
+            <a href="#">&rarr;</a>
+        </li>
+    </ul>
+
+    <div class="left plan">
+
+        {% render "FXLLiteracyBundle:Folder:index" %}
+
+    </div>
+
+
+
+    <div class="left content-area">
+
+        <textarea class="content right_shadow"></textarea>
+    </div>
+
+    <div class="text_toolbar left" >
+        <a class="sheet_save"><i class="icon-ok-sign"></i></a><br />
+        <a class="word-search"><i class="icon-search"></i></a><br />
+        <a class="sheet_align_left"><i class="icon-align-left"></i></a><br />
+        <a class="sheet_align_center"><i class="icon-align-center"></i></a><br />
+        <!--a class="sheet_tag"><i class="icon-tags"></i></a><br />-->
+
+        <a class="sheet_publish"><i class="icon-plus"></i></a><br />
+        <!--<a class="sheet_minus"><i class="icon-minus"></i></a><br /-->
+
+    </div>
+
+    {% include "FXLLiteracyBundle:Lab:tool.html.twig" %}
+
+
+
+{% endblock %}
+
+
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/fxlliteracy/js/overload.js')  }}"></script>
+    {{parent()}}
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.treeview.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.treeview.edit.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.cookie.js')  }}"></script>
+
+    <script src="{{ asset('bundles/fxlliteracy/js/tree.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlliteracy/js/literator.js')  }}"></script>
+
+
+{% endblock %}
+
+{% block css %}
+    {{parent()}}
+        <link href="{{ asset('bundles/fxlmusic/css/jquery.treeview.css')  }}" rel="stylesheet"  media="screen, print">
+<link href="{{ asset('bundles/fxlliteracy/css/literator.css')  }}" rel="stylesheet" media="screen, print">
+
+{% endblock %}
+

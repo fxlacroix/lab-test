@@ -1,0 +1,150 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+    <div class="container-fluid">
+
+        <!--a href="#/page/1" style=""><i class="icon-home"></i></a-->
+        <div class="row-fluid">
+
+
+        <div class="span3">
+
+            {% include 'FXLMusicBundle:Component:player.html.twig' %}
+
+        </div><!--/span-->
+        <div class="span9" style="padding-top: 20px; padding-bottom: 10px; background: url(/bundles/fxlmusic/images/booklet/book-2.png) no-repeat;">
+
+
+            <div id="mybook" style="margin-left: 29px;">
+                <div>
+                        <h2>{{ project.name }}</h2>
+                        <p>{{ project.description }}</p>
+                        <img src="{{ project.logo}}"
+                             style="margin-left: 15px; width: 300px; height: 200px;" />
+                        <br /><br />
+                        <p>{{ project.content }}</p>
+                </div>
+                <div>
+                    <h2>Sommaire</h2>
+
+                    <ul class="sommaire">
+                        {% for track in project.tracks %}
+                            <li>
+                            <a href="#" class="{{track.slug}}" />{{track.name}}</a><br />
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+                {% set counter = 2 %}
+                {% for track in project.tracks %}
+
+                    {% set counter = counter+1 %}
+                    {% set parts = track.content|nl2br|cutText %}
+
+                        <div style="text-align: center;" rel="{{ track.name }}">
+                        <h2  class="chapter-{{track.slug}}">{{track.name}}</h2>
+                        <br />
+                        {% for part in parts %}
+
+                            <p>{{ part|raw }}</p>
+                            </div>
+                            <div style="text-align: center;"><br />
+
+                        {% endfor %}
+
+                        <h2>Détails</h2>
+                        <br />
+                        <p>Author: <strong>{{track.author}}</strong></p>
+                        <p>Interprète(s): <strong>{{track.lookFor}}</strong></p>
+                        <p>Version: <strong></strong></p>
+
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        </div><!--/span-->
+
+      </div><!--/row-->
+
+      <hr />
+
+      {% include 'FXLMusicBundle:Component:footer.html.twig' %}
+
+    </div><!--/.fluid-container-->
+
+{% endblock %}
+
+{% block js_ready %}
+
+    {{ parent() }}
+    var playlist = new jPlayerPlaylist({
+        jPlayer: "#jquery_jplayer",
+        cssSelectorAncestor: "#jp_container"
+    }, [
+        {% for track in project.tracks %}
+        {
+            title: "{{track.name}}",
+            {% if track.documents|length %}
+                mp3: "{{track.documents[0].path|raw }}"
+             {% endif %}
+
+        },
+        {% endfor %}
+
+    ], {
+        swfPath: "/bundles/fxlmusic/js",
+        supplied: "mp3",
+        wmode: "window"
+
+    });
+
+{% endblock %}
+
+{% block css %}
+
+    {{ parent() }}
+    <link href="{{ asset('bundles/fxlmusic/css/jquery.booklet.css')  }}" rel="stylesheet"  media="screen, print">
+
+{% endblock %}
+
+
+
+{% block javascripts %}
+
+    {{ parent() }}
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.booklet.js') }}"></script>
+
+{% endblock %}
+
+{% block js_ready %}
+
+    {{ parent() }}
+	//single book
+	$('#mybook').booklet({
+        //keyboard: true,
+        width: 861,
+        //startingPage: 5,
+        height: 540,
+        overlays:true,
+        shadows: true,
+        hash: true
+    });
+
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/fxlmusic/images/jplayer/jplayer.light.css')  }}" rel="stylesheet"  media="screen, print">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.jplayer.min.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jplayer.playlist.min.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.jplayer.js')  }}"></script>
+
+{% endblock %}

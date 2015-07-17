@@ -1,0 +1,86 @@
+2:
+  name: old sounds
+  description: Une repercussion d'anciens sons
+  content: Les vieux sons à refaire comme tout le reste d'ailleurs
+  logo:  "/logos/old.jpeg"
+  tracks:
+    0:
+      name: Black Coffe
+      documents:
+        0:
+          version: 1
+    1:
+      name: C'est si bon
+      documents:
+        0:
+          version: 1
+    2:
+      name: khoayyam
+      documents:
+        0:
+          version: 1
+    3:
+      name: Country Love
+      documents:
+        0:
+          version: 1
+    4:
+      name: Albatros
+      documents:
+        0:
+          version: 1
+    5:
+      name: Fokerhead
+      documents:
+        0:
+          version: 1
+    6:
+      name: Forest
+      documents:
+        0:
+          version: 1
+    7:
+      name: Le chat perché
+      documents:
+        0:
+          version: 1
+    8:
+      name: Tour
+      documents:
+        0:
+          version: 1
+    9:
+      name: De toi à moi
+      documents:
+        0:
+          version: 1
+    10:
+      name: Sampling Foot
+      documents:
+        0:
+          version: 1
+    11:
+      name: Traverse
+      documents:
+        0:
+          version: 1
+    12:
+      name: Stressos
+      documents:
+        0:
+          version: 1
+    13:
+      name: Anneaux
+      documents:
+        0:
+          version: 1
+    14:
+      name: Amazone
+      documents:
+        0:
+          version: 1
+    15:
+      name: Skunk
+      documents:
+        0:
+          version: 1

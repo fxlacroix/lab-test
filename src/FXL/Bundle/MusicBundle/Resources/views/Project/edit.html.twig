@@ -1,0 +1,30 @@
+<h1>Project edit</h1>
+
+<form action="{{ path('admin_ajax_project_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+
+         {{ form_errors(edit_form) }}
+
+        <div class="left_admin_form">
+        {{ form_row(edit_form.name) }}
+        {{ form_row(edit_form.type) }}
+        {{ form_row(edit_form.authors) }}
+        {{ form_row(edit_form.tags) }}
+        </div>
+        <div class="right_admin_form">
+        {{ form_row(edit_form.description) }}
+        {{ form_row(edit_form.user) }}
+        </div>
+
+        <div class="plain_admin_form">
+        {{ form_row(edit_form.content) }}
+        </div>
+
+
+
+        <div class="clearfix"></div>
+        &nbsp;
+       <p>
+        <button type="submit">Edit</button>
+    </p>
+</form>
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}

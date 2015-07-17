@@ -1,0 +1,64 @@
+
+<script type="text/javascript">
+
+    $('form').submit(function() {
+
+        $("form").mask("Waiting...");
+
+        //$("form").attr("style", "background: gray");
+
+        var dataForm = $(this).serializefiles();
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: $(this).attr('method'),
+            data: dataForm,
+            dataType: 'html',
+
+            cache: false,
+            contentType: false,
+            processData: false,
+
+            success: function(html) {
+
+               $("#ajax_form").html(html);
+
+               $("form").unmask("Waiting...");
+                //make_tree();
+                refresh_tree();
+            }
+        });
+        return false;
+    });
+
+    $("[id*=description]").height($(".left_admin_form").last().height() - 40);
+
+</script>
+
+<style>
+
+
+.plain_admin_form{
+    width: 99%;
+    float: left;
+}
+
+.left_admin_form{
+    float: left;
+    width: 30%;
+}
+.right_admin_form{
+    float: left;
+    width: 69%;
+
+}
+
+.plain_admin_form textarea,
+.right_admin_form textarea{
+    width: 100%;
+    height: 300px;
+    background: transparent;
+}
+</style>
+
+{{ tinymce_init() }}

@@ -1,0 +1,26 @@
+<h1>Document creation</h1>
+
+<form action="{{ path('admin_ajax_document_create') }}" method="post" {{ form_enctype(form) }}>
+
+
+    <div class="left_admin_form">
+        {{ form_row(form.name) }}
+        {{ form_row(form.version) }}
+        {{ form_row(form.file) }}
+        {{ form_row(form.path) }}
+
+    </div>
+    <div class="right_admin_form">
+
+        {{ form_row(form.description)  }}
+
+    </div>
+    <span style="display: none;">
+    {{ form_widget(form.track) }}
+    </span>
+
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}

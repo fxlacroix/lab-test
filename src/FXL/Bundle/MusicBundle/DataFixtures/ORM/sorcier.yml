@@ -1,0 +1,518 @@
+2:
+  name: Les sorciers du verbe
+  description: Comédies et poésies musicales
+  content: Un regroupement de poèmes connus sous une forme chansonnée, et parsemé de poèmes moins connus, comme ceux de bib la sauce, avec guitare, piano et peut être quelque tentative d’orchestration...
+  logo:  "/logos/sorcier.jpeg"
+  tracks:
+    0:
+      name: A la musique
+      content: |
+        Sur la place taillée en mesquines pelouses,
+        Square où tout est correct, les arbres et les fleurs,
+        Tous les bourgeois poussifs qu’étranglent les chaleurs
+        Portent, les jeudis soirs, leurs bêtises jalouses.
+
+        - L’orchestre militaire, au milieu du jardin,
+        Balance ses schakos dans la Valse des fifres :
+        - Autour, aux premiers rangs, parade le gandin ; *
+        Le notaire pend à ses breloques à chiffres.
+
+        Des rentiers à lorgnons soulignent tous les couacs :
+        Les gros bureaux bouffis traînent leurs grosses dames
+        Auprès desquelles vont, officieux cornacs,
+        Celles dont les volants ont des airs de réclames ;
+
+        Sur les bancs verts, des clubs d’épiciers retraités
+        Qui tisonnent le sable avec leur canne à pomme,
+        Fort sérieusement discutent les traités,
+        Puis prisent en argent, et reprennent : "En somme !..."
+
+        Épatant sur son banc les rondeurs de ses reins,
+        Un bourgeois à boutons clairs, bedaine flamande,
+        Savoure son onnaing d’où le tabac par brins
+        Déborde - vous savez, c’est de la contrebande ; -
+
+        Le long des gazons verts ricanent les voyous ;
+        Et, rendus amoureux par le chant des trombones,
+        Très naïfs, et fumant des roses, les pioupious
+        Caressent les bébés pour enjôler les bonnes...
+
+        - Moi, je suis, débraillé comme un étudiant,
+        Sous les marronniers verts les alertes fillettes :
+        Elles le savent bien ; et tournent en riant,
+        Vers moi, leurs yeux tout pleins de choses indiscrètes.
+
+        Je ne dis pas un mot : je regarde toujours
+        La chair de leurs cous blancs brodés de mèches folles :
+        Je suis, sous le corsage et les frêles atours,
+        Le dos divin après la courbe des épaules.
+
+        J’ai bientôt déniché la bottine, le bas...
+        - Je reconstruis les corps, brûlé de belles fièvres.
+        Elles me trouvent drôle et se parlent tout bas...
+        - Et mes désirs brutaux s’accrochent à leurs lèvres...
+      documents:
+        0:
+          version: 1
+    1:
+      name: Bartok
+      content: |
+        Je repense à Béla Bartok
+        Tant la pauvreté de mon stock,
+        Regarde vers Vladivostock
+        Regarde vers Vladivostock
+
+        Tisane et foyer qui tisonne,
+        Un de ces sommeils ou résonne,
+        L’écho qui déraisonne.
+        Nous apprenons par moins cinquante
+        A réchauffer quelques vacantes,
+        Amazones ou Bacchantes
+
+        Funambule en ubiquité
+        Une au coeur gentil m’a quitté
+        Pour de l’antiquité
+
+        Il parait que des cas de peste
+        Ont villipendé ce qu’il reste
+        De leur amour vers l’Est
+
+        Blanche neige et source tarie,
+        Ou donc est neige Marie,
+        Neige mère et chérie
+        Notre sommeil nous aime tant
+        Porte moi conseil et détend
+        Moi pour la nuit des temps
+
+        Ou mourrir le cas échéant
+        Comme tout ce qui chut séant
+        Regagne l’océan.
+      documents:
+        0:
+          version: 1
+    2:
+      name: Epitaphe
+      content: |
+        Il a vécu tantôt gai comme un sansonnet,
+        Tour à tour amoureux insoucieux et tendre,
+        Tantôt sombre et rêveur comme un triste Clitandre.
+        Un jour il entendit qu’à sa porte on sonnait.
+
+        C’était la Mort ! Alors il la pria d’attendre
+        Qu’il eût posé le point à son dernier sonnet ;
+        Et puis sans s’émouvoir, il s’en alla s’étendre
+        Au fond du coffre froid où son corps frissonnait.
+
+        Il était paresseux, à ce que dit l’histoire,
+        Il laissait trop sécher l’encre dans l’écritoire.
+        Il voulait tout savoir mais il n’a rien connu.
+
+        Et quand vint le moment où, las de cette vie,
+        Un soir d’hiver, enfin l’âme lui fut ravie,
+        Il s’en alla disant : Pourquoi suis-je venu ?
+      documents:
+        0:
+          version: 1
+    3:
+      name: Nerval
+      content: |
+        Il a vécu tantôt gai comme un sansonnet,
+        Tour à tour amoureux insoucieux et tendre,
+        Tantôt sombre et rêveur comme un triste Clitandre.
+        Un jour il entendit qu’à sa porte on sonnait.
+
+        C’était la Mort ! Alors il la pria d’attendre
+        Qu’il eût posé le point à son dernier sonnet ;
+        Et puis sans s’émouvoir, il s’en alla s’étendre
+        Au fond du coffre froid où son corps frissonnait.
+
+        Il était paresseux, à ce que dit l’histoire,
+        Il laissait trop sécher l’encre dans l’écritoire.
+        Il voulait tout savoir mais il n’a rien connu.
+
+        Et quand vint le moment où, las de cette vie,
+        Un soir d’hiver, enfin l’âme lui fut ravie,
+        Il s’en alla disant : Pourquoi suis-je venu ?
+      documents:
+        0:
+          version: 1
+    4:
+      name: Les joujoux de la morte
+      content: |
+        La petite Marie est morte,
+        Et son cercueil est si peu long
+        Qu’il tient sous le bras qui l’emporte
+        Comme un étui de violon.
+
+        Sur le tapis et sur la table
+        Traîne l’héritage enfantin.
+        Les bras ballants, l’air lamentable,
+        Tout affaissé, gît le pantin.
+
+        Et si la poupée est plus ferme,
+        C’est la faute de son bâton ;
+        Dans son oeil une larme germe,
+        Un soupir gonfle son carton.
+
+        Une dînette abandonnée
+        Mêle ses plats de bois verni
+        A la troupe désarçonnée
+        Des écuyers de Franconi.
+
+        La boîte à musique est muette ;
+        Mais, quand on pousse le ressort
+        Où se posait sa main fluette,
+        Un murmure plaintif en sort.
+
+        L’émotion chevrote et tremble
+        Dans : Ah ! vous dirai-je maman !
+        Le Quadrille des Lanciers semble
+        Triste comme un enterrement,
+
+        Et des pleurs vous mouillent la joue
+        Quand la Donna é mobile,
+        Sur le rouleau qui tourne et joue,
+        Expire avec un son filé.
+
+        Le coeur se navre à ce mélange
+        Puérilement douloureux,
+        Joujoux d’enfant laissés par l’ange,
+        Berceau que la tombe a fait creux !
+      documents:
+        0:
+          version: 1
+    5:
+      name: La ballade de la mauvaise réputation
+      content: |
+        Il eut des temps quelques argents
+        Et régla ses camarades
+        D’un sexe ou deux, intelligents
+        Ou charmants, ou bien les deux grades,
+        Si que dans les esprits malades
+        Sa bonne réputation
+        Subit que de dégringolades !
+        Lucullus ? Non. Trimalcion.
+
+        Sous ses lambris, c’étaient des chants
+        Et des paroles point trop fades.
+        Eros et Bacchos indulgents
+        Présidaient à ces sérénades
+        Qu’accompagnaient des embrassades.
+        Puis chœurs et conversation
+        Cessaient pour des fins peu maussades.
+        Lucullus ? Non. Trimalcion.
+
+        L’aube pointait et ces méchants
+        La saluaient par cent aubades
+        Qui réveillaient au loin les gens
+        De bien, et par mille rasades.
+        Cependant de vagues brigades
+        — Zèle ou dénonciation —
+        Verbalisaient chez des alcades.
+        Lucullus ? Non. Trimalcion.
+
+        Envoi
+
+        Prince, ô très haut marquis de Sade,
+        Un souris pour votre scion
+        Fier derrière sa palissade.
+        Lucullus ? Non. Trimalcion.
+      documents:
+        0:
+          version: 1
+    6:
+      name: La vie antérieur
+      content: |
+        J’ai longtemps habité sous de vastes portiques
+        Que les soleils marins teignaient de mille feux,
+        Et que leurs grands piliers, droits et majestueux,
+        Rendaient pareils, le soir, aux grottes basaltiques.
+
+        Les houles, en roulant les images des cieux,
+        Mêlaient d’une façon solennelle et mystique
+        Les tout-puissants accords de leur riche musique
+        Aux couleurs du couchant reflété par mes yeux.
+
+        C’est là que j’ai vécu dans les voluptés calmes,
+        Au milieu de l’azur, des vagues, des splendeurs
+        Et des esclaves nus, tout imprégnés d’odeurs,
+
+        Qui me rafraîchissaient le front avec des palmes,
+        Et dont l’unique soin était d’approfondir
+        Le secret douloureux qui me faisait languir.
+      documents:
+        0:
+          version: 1
+    7:
+      name: Le pont Mirabeau
+      content: |
+        Sous le pont Mirabeau coule la Seine
+        Et nos amours faut-il qu’il m’en souvienne
+        La joie venait toujours après la peine
+
+        Les mains dans les mains restons face à face
+        Tandis que sous le pont de nos bras passe
+        Des éternels regards l’onde si lasse
+
+        Vienne la nuit, sonne l’heure
+        Les jours s’en vont, je demeure
+
+        L’amour s’en va comme cette eau courante
+        L’amour s’en va comme la vie est lente
+        Et comme l’espérance est violente
+
+        Vienne la nuit, sonne l’heure
+        Les jours s’en vont, je demeure
+
+        Passent les jours et passent les semaines
+        Ni temps passé ni les amours reviennent
+        Sous le pont Mirabeau coule la Seine
+      documents:
+        0:
+          version: 1
+    8:
+      name: Per Amica Silentia
+      content: |
+        Les longs rideaux de blanche mousseline
+        Que la lueur pâle de la veilleuse
+        Fait fluer comme une vague opaline
+        Dans l’ombre mollement mystérieuse,
+
+        Les grands rideaux du grand lit d’Adeline
+        Ont entendu, Claire, ta voix rieuse,
+        Ta douce voix argentine et câline
+        Qu’une autre voix enlace, furieuse.
+
+        " Aimons, aimons ! " disaient vos voix mêlées,
+        Claire, Adeline, adorables victimes
+        Du noble voeu de vos âmes sublimes.
+
+        Aimez, aimez ! ô chères Esseulées,
+        Puisqu’en ces jours de malheur, vous encore,
+        Le glorieux Stigmate vous décore.
+      documents:
+        0:
+          version: 1
+
+    9:
+      name: Quand tu dors
+      content: |
+        Toi tu dors la nuit
+        moi j’ai de l’insomnie
+        je te vois dormis
+        ça me fait souffrir
+
+        Tes yeux fermés ton grand corpsallongé
+        c’est drôle mais ça fait pleurer
+        et soudain voilà que tu ris
+        tu ris aux éclats en dormant
+        où donc es-tu en ce moment
+        où donc es-tu parti vraiment
+        peut-être avec une autre femme
+        trés loin dans un autre pays
+        et qu’avec elle c’est de moi que tu ris
+
+        Toi tu dors la nuit
+        moi j’ai de l’insomnie
+        je te vois dormir
+        ça me fait souffrir
+
+        Lorsque u dors je ne sais pas si tu m’aimes
+        t’es tout prés mais si loin quand même
+        je suis toute serrée contre toi
+        mais c’est comme si j’étais pas là
+        j’entends pourtant ton coeur qui bat
+        Je ne sais pas s’il bat pour moi
+        je ne sais je ne sais plus
+        je voudrais qu’il ne batte plus ton coeur
+        si jamais un jour tu ne m’aimais plus
+
+        Toi tu rêves la nuit
+        moi j’ai de l’insomnie
+        je te vois rêver
+        ça me fait pleurer
+
+        Toutes les nuits je pleure toute la nuit
+        et toi tu rêves et tu souris
+        mais cela ne peut plus durer
+        une nuit sûrement je te tuerai
+        tes rêves alors seront finis
+        et comme je me tuerai aussi
+        finie aussi mon insomnie
+        nos deux cadavres réunis
+        dormiront ensemble dans notre grand lit
+
+        Toi tu rêves la nuit
+        moi je de l’insomnie
+        je te vois rêver
+        ça me fait pleurer
+
+        Voilà le jour et soudain tu t’éveilles
+        et c’est à moi que tu souris
+        tu souris avec le soleil
+        et je ne pense plus à la nuit
+        tu dis les mots toujours pareils
+        "As-tu passé une bonne nuit"
+        et je réponds comme la veille
+        "Oui mon chéri j’ai bien dormi
+        et j’ai rêve de toi comme chaque nuit".
+      documents:
+        0:
+          version: 1
+
+    10:
+      name: Sensation
+      content: |
+        Par les soirs bleus d’été, j’irai dans les sentiers
+        Picoté par les blés, fouler l’herbe menue :
+        Rêveur, j’en sentirai la fraîcheur à mes pieds.
+        Je laisserai le vent baigner ma tête nue.
+
+        Je ne parlerai pas, je ne penserai rien :
+        Mais l’amour infini me montera dans l’âme,
+        Et j’irai loin, bien loin, comme un bohémien,
+        Par la nature, - heureux comme avec une femme.
+      documents:
+        0:
+          version: 1
+
+    11:
+      name: Soir
+      content: |
+        Le soir ramène le silence.
+        Assis sur ces rochers déserts,
+        Je suis dans le vague des airs
+        Le char de la nuit qui s’avance.
+
+        Vénus se lève à l’horizon ;
+        A mes pieds l’étoile amoureuse.
+        De sa lueur mystérieuse
+        Blanchit les tapis de gazon.
+
+        De ce hêtre au feuillage sombre
+        J’entends frissonner les rameaux :
+        On dirait autour des tombeaux
+        Qu’on entend voltiger une ombre.
+
+        Tout à coup détaché des cieux,
+        Un rayon de l’astre nocturne,
+        Glissant sur mon front taciturne,
+        Vient mollement toucher mes yeux.
+
+        Doux reflet d’un globe de flamme,
+        Charmant rayon, que me veux-tu ?
+        Viens-tu dans mon sein abattu
+        Porter la lumière à mon âme ?
+
+        Descends-tu pour me révéler
+        Des mondes le divin mystère ?
+        Les secrets cachés dans la sphère
+        Où le jour va te rappeler ?
+
+        Une secrète intelligence
+        T’adresse-t-elle aux malheureux ?
+        Viens-tu la nuit briller sur eux
+        Comme un rayon de l’espérance ?
+
+        Viens-tu dévoiler l’avenir
+        Au coeur fatigué qui t’implore ?
+        Rayon divin, es-tu l’aurore
+        Du jour qui ne doit pas finir ?
+
+        Mon coeur à ta clarté s’enflamme,
+        Je sens des transports inconnus,
+        Je songe à ceux qui ne sont plus
+        Douce lumière, es-tu leur âme ?
+
+        Peut-être ces mânes heureux
+        Glissent ainsi sur le bocage ?
+        Enveloppé de leur image,
+        Je crois me sentir plus près d’eux !
+
+        Ah ! si c’est vous, ombres chéries !
+        Loin de la foule et loin du bruit,
+        Revenez ainsi chaque nuit
+        Vous mêler à mes rêveries.
+
+        Ramenez la paix et l’amour
+        Au sein de mon âme épuisée,
+        Comme la nocturne rosée
+        Qui tombe après les feux du jour.
+
+        Venez !... mais des vapeurs funèbres
+        Montent des bords de l’horizon :
+        Elles voilent le doux rayon,
+        Et tout rentre dans les ténèbres.
+      documents:
+        0:
+          version: 1
+    11:
+      name: Soir
+      content: |
+        J’ai bien assez vécu, puisque dans mes douleurs
+        Je marche, sans trouver de bras qui me secourent,
+        Puisque je ris à peine aux enfants qui m’entourent,
+        Puisque je ne suis plus réjoui par les fleurs ;
+
+        Puisqu’au printemps, quand Dieu met la nature en fête,
+        J’assiste, esprit sans joie, à ce splendide amour ;
+        Puisque je suis à l’heure où l’homme fuit le jour,
+        Hélas ! et sent de tout la tristesse secrète ;
+
+        Puisque l’espoir serein dans mon âme est vaincu ;
+        Puisqu’en cette saison des parfums et des roses,
+        Ô ma fille ! j’aspire à l’ombre où tu reposes,
+        Puisque mon coeur est mort, j’ai bien assez vécu.
+
+        Je n’ai pas refusé ma tâche sur la terre.
+        Mon sillon ? Le voilà. Ma gerbe ? La voici.
+        J’ai vécu souriant, toujours plus adouci,
+        Debout, mais incliné du côté du mystère.
+
+        J’ai fait ce que j’ai pu ; j’ai servi, j’ai veillé,
+        Et j’ai vu bien souvent qu’on riait de ma peine.
+        Je me suis étonné d’être un objet de haine,
+        Ayant beaucoup souffert et beaucoup travaillé.
+
+        Dans ce bagne terrestre où ne s’ouvre aucune aile,
+        Sans me plaindre, saignant, et tombant sur les mains,
+        Morne, épuisé, raillé par les forçats humains,
+        J’ai porté mon chaînon de la chaîne éternelle.
+
+        Maintenant, mon regard ne s’ouvre qu’à demi ;
+        Je ne me tourne plus même quand on me nomme ;
+        Je suis plein de stupeur et d’ennui, comme un homme
+        Qui se lève avant l’aube et qui n’a pas dormi.
+
+        Je ne daigne plus même, en ma sombre paresse,
+        Répondre à l’envieux dont la bouche me nuit.
+        Ô Seigneur, ! ouvrez-moi les portes de la nuit,
+        Afin que je m’en aille et que je disparaisse !
+      documents:
+        0:
+          version: 1
+
+    12:
+      name: Sans titre
+      content: |
+        Separons-nous ici, vous etes arrive
+        Voici le lieu, voici l’arbre, voici la porte.
+        Compagnon, nous avons marche de bonne sorte,
+        Coursant ainsi, depuis que le jour s’est leve.
+
+        Eh bien, c’est la le toit qui fut par vous trouve
+        Dites : C’est moi ! criez, heurtez l’huis a main forte !
+        La femme et le repas vous attendent. Qu’importe
+        Le compagnon d’un jour ? Vous etes arrive.
+
+        La vieille mere est la ; l’epouse douce et sage
+        Est la ; prenez-les dans vos bras. Le reste est vain.
+        L’enfant nouveau vous met les mains sur le visage.
+
+        Adieu. Riez, soyez heureux jusqu’a la fin.
+        Mangez de votre pain, buvrz a votre verre.
+        Pour moi un long chemin encor me reste a faire.
+      documents:
+        0:
+          version: 1
+

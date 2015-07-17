@@ -1,0 +1,25 @@
+<h1>Créer un tag</h1>
+<form action="{{ path('admin_ajax_tag_create') }}" method="post" {{ form_enctype(form) }}>
+
+    <div class="left_admin_form">
+
+        {{ form_row(form.name) }}
+        {{ form_row(form.parent) }}
+        {{ form_row(form.file) }}
+        {{ form_row(form.path) }}
+        {{ form_row(form.projects) }}
+     </div>
+
+    <div class="right_admin_form">
+
+        {{ form_row(form.description) }}
+    </div>
+
+    <div class="clearfix"></div>
+
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}

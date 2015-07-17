@@ -1,0 +1,94 @@
+{% extends "::base.html.twig" %}
+
+
+{% block title %}
+
+Musique - {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 left-col" >
+            {% include 'FXLCommonBundle:Component:lasts.html.twig'  %}
+
+                <a href="http://www.blogart-magazine.fr/rss">
+                <img src="/bundles/fxlmusic/images/rss.png" width="24" alt="rss" style="position: relative; bottom: 10px;" />
+                </a>
+
+            {% render 'FXLCommonBundle:Component:citation'  %}
+        </div><!--/span-->
+        <div class="span9 blogart-paper" style="box-shadow: 1px 1px 12px #555;">
+
+           {% if random is defined and random is not null %}
+             {% set document = random %}
+           {% else %}
+             {% set document = lastDocuments.0 %}
+           {% endif %}
+
+           {% include "FXLCommonBundle:Component:hero.html.twig" with {
+                'name'      : document.track.name,
+                'updatedAt' : document.updatedAt,
+                'path'      : path("image_logo_track", {"projectId":document.track.project.id, "trackId":document.track.id}),
+                'url'       : path("fxl_music_project", {"slug":document.track.project.slug }),
+                'content'   : document.track.project.content,
+                'user'      : document.track.project.user,
+                'tags'      : document.track.project.tags,
+                'labelLink' : document.track.project.name
+            } only %}
+
+            <div class="list-project">
+
+          {% include 'FXLCommonBundle:Component:list.html.twig' with {
+                'pager'       : pager,
+                'pagerLink'   : pagerLink,
+                'routeName'   : 'fxl_music_project',
+                'attr'        : 'projectId',
+                'tagsAttr'    :  'tags',
+                'image_path'            : 'image_logo_project',
+                'image_pathrouteParam'  : 'id'
+
+
+           } only %}
+                </div>
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+<hr />
+
+      {% include 'FXLMusicBundle:Component:footer.html.twig' %}
+
+    </div><!--/.fluid-container-->
+
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/fxlmusic/css/music.css')  }}" rel="stylesheet"  media="screen, print">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.jplayer.min.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jplayer.playlist.min.js')  }}"></script>
+    <script src="{{ asset('bundles/fxlmusic/js/jquery.jplayer.js')  }}"></script>
+
+{% endblock %}
+
+
+{% block js_ready %}
+    {{ parent() }}
+    $('audio').bind('play', function () {
+
+        var trackTitle = "{{ lastDocuments[0].track.name }}";
+        var pageTitle = trackTitle + " v.{{lastDocuments[0].version}}" + " - " + "{{lastDocuments[0].track.project.name}}" +  " - blogart-magazine";
+        $('title').html(pageTitle);
+
+        blogart_analytics();
+    });
+
+{% endblock %}

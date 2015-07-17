@@ -1,0 +1,1221 @@
+0:
+  name: "Brassenserie"
+  description: "Non ce n’était pas son radeau, mais celui de Lord Byron"
+  content: "Un passage en revue des chansons préférées de Georges Brassens, dans un souci de retrouver son swing rocailleux autant que pour y apporter un nouvel angle de vision, qui je l’espère ne lassera pas de choquer les gueux."
+  logo:  "/logos/brassenserie.jpeg"
+  tracks:
+    0:
+      name: Histoire de faussaire
+      description: "Non ce n’était pas son radeau, mais celui de Lord Byron"
+      content: |
+        Se découpant sur champ d’azur
+        La ferme était fausse bien sûr,
+        Et le chaume servant de toit
+        Synthétique comme il se doit.
+        Au bout d’une allée de faux buis,
+        On apercevait un faux puits
+        Du fond duquel la vérité
+        N’avait jamais dû remonter.
+
+        Et la maîtresse de céans
+        Dans un habit, ma foi, seyant
+        De fermière de comédie
+        A ma rencontre descendit,
+        Et mon petit bouquet, soudain,
+        Parut terne dans ce jardin
+        Près des massifs de fausses fleurs
+        Offrant les plus vives couleurs.
+
+        Ayant foulé le faux gazon,
+        Je la suivis dans la maison
+        Où brillait sans se consumer
+        Un genre de feu sans fumée.
+        Face au faux buffet Henri deux,
+        Alignés sur les rayons de
+        La bibliothèque en faux bois,
+        Faux bouquins achetés au poids.
+
+        Faux Aubusson, fausses armures,
+        Faux tableaux de maîtres au mur,
+        Fausses perles et faux bijoux
+        Faux grains de beauté sur les joues,
+        Faux ongles au bout des menottes,
+        Piano jouant des fausses notes
+        Avec des touches ne devant
+        Pas leur ivoire aux éléphants.
+
+        Aux lueurs des fausses chandelles
+        Enlevant ses fausses dentelles,
+        Elle a dit, mais ce n’était pas
+        Sûr, tu es mon premier faux pas.
+        Fausse vierge, fausse pudeur,
+        Fausse fièvre, simulateurs,
+        Ces anges artificiels
+        Venus d’un faux septième ciel.
+
+        La seule chose un peu sincère
+        Dans cette histoire de faussaire
+        Et contre laquelle il ne faut
+        Peut-être pas s’inscrire en faux,
+        C’est mon penchant pour elle et mon
+        Gros point du côté du poumon
+        Quand amoureuse elle tomba
+        D’un vrai marquis de Carabas.
+
+        En l’occurrence Cupidon
+        Se conduisit en faux-jeton,
+        En véritable faux témoin,
+        Et Vénus aussi, néanmoins
+        Ce serait sans doute mentir
+        Par omission de ne pas dire
+        Que je leur dois quand même une heure
+        Authentique de vrai bonheur.
+      documents:
+        0:
+          version: 1
+    1:
+      name: Saturne
+      content: |
+        Il est morne, il est taciturne
+        Il préside aux choses du temps
+        Il porte un joli nom, Saturne
+        Mais c’est Dieu fort inquiétant
+        Il porte un joli nom, Saturne
+        Mais c’est Dieu fort inquiétant
+
+        En allant son chemin, morose
+        Pour se désennuyer un peu
+        Il joue à bousculer les roses
+        Le temps tue le temps comme il peut
+        Il joue à bousculer les roses
+        Le temps tue le temps comme il peut
+
+        Cette saison, c’est toi, ma belle
+        Qui a fait les frais de son jeu
+        Toi qui a dû payer la gabelle
+        Un grain de sel dans tes cheveux
+        Toi qui a dû payer la gabelle
+        Un grain de sel dans tes cheveux
+
+        C’est pas vilain, les fleurs d’automne
+        Et tous les poètes l’ont dit
+        Je regarde et je donne
+        Mon billet qu’ils n’ont pas menti
+        Je regarde et je donne
+        Mon billet qu’ils n’ont pas menti
+
+        Viens encore, viens ma favorite
+        Descendons ensemble au jardin
+        Viens effeuiller la marguerite
+        De l’été de la Saint-Martin
+        Viens effeuiller la marguerite
+        De l’été de la Saint-Martin
+
+        Je sais par cœur toutes tes grâces
+        Et pour me les faire oublier
+        Il faudra que Saturne en fasse
+        Des tours d’horloge, de sablier
+        Et la petite pisseuse d’en face
+        Peut bien aller se rhabiller...
+      documents:
+        0:
+          version: 1
+    2:
+      name: A l'ombre des maris
+      content: |
+        Les dragons de vertu n’en prennent pas ombrage,
+        Si j’avais eu l’honneur de commander aù bord,
+        A bord du Titanic quand il a fait naufrage,
+        J’aurais crié :"Les femm’s adultères d’abord !"
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière ...
+
+        Car, pour combler les vœux, calmer la fievre ardente
+        Du pauvre solitaire et qui n’est pas de bois,
+        Nulle n’est comparable à l’epouse inconstante.
+        Femmes de chefs de gar’, c’est vous la fleur des bois.
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Quant à vous, messeigneurs, aimez à votre guise,
+        En ce qui me concerne, ayant un jour compris
+        Qu’une femme adultère est plus qu’une autre exquise,
+        Je cherche mon bonheur à l’ombre des maris.
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        A l’ombre des maris mais, cela va sans dire,
+        Pas n’importe lesquels, je les tri’, les choisis.
+        Si madame Dupont, d’aventure, m’attire,
+        Il faut que, par surcroit, Dupont me plaise aussi !
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Il convient que le bougre ait une bonne poire
+        Sinon, me ravisant, je détale à grands pas,
+        Car je suis difficile et me refuse à boire
+        Dans le verr ; d’un monsieur qui ne me revient pas.
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Ils sont loins mes débuts ou, manquant de pratique,
+        Sur des femmes de flics je mis mon dévolu.
+        Je n’étais pas encore ouvert à l’esthétique.
+        Cette faute de gout je ne la commets plus.
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Oui, je suis tatillon, pointilleux, mais j’estime
+        Que le mari doit être un gentleman complet,
+        Car on finit tous deux par devenir intimes
+        A force, à force de se passer le relais
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Mais si l’on tombe, hélas ! sur des maris infâmes,
+        Certains sont si courtois, si bons si chaleureux,
+        Que, même après avoir cessé d’aimer leur femme,
+        On fait encore semblant uniquement pour eux.
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        C’est mon cas ces temps-ci, je suis triste, malade,
+        Quand je dois faire honneur à certaine pécore.
+        Mais, son mari et moi, c’est Oreste et Pylade,
+        Et, pour garder l’ami, je la cajole encore.
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Non contente de me dé plaire, elle me trompe,
+        Et les jours ou, furieux, voulant tout mettre à bas
+        Je cri :"La coupe est pleine, il est temps que je rompe !"
+        Le mari me suppli’ :"Non ne me quittez pas !"
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Et je reste, et, tous deux, ensemble on se flagorne.
+        Moi, je lui dis :"C’est vous mon cocu préféré."
+        Il me réplique alors :"Entre toutes mes cornes,
+        Celles que je vous dois, mon cher, me sont sacrées."
+
+        Ne jetez pas la pierre à la femme adultère,
+        Je suis derrière...
+
+        Et je reste et, parfois, lorsque cette pimbeche
+        S’attarde en compagni’ de son nouvel amant,
+        Que la nurse est sorti’, le mari à la pêche,
+        C’est moi, pauvre de moi ! qui garde les enfants.
+
+        Ne jetez pas la pierre à la femme adultère
+      documents:
+        0:
+          version: 1
+    3:
+      name: J'ai rendez vous avec vous
+      content: |
+        Monseigneur l’astre solaire,
+        Comme je n’l’admire pas beaucoup
+        M’enlève son feu, oui mais, d’son feu, moi j’m’en fous,
+        J’ai rendez-vous avec vous
+        La lumière que je préfère,
+        C’est celle de vos yeux jaloux
+        Tout le restant m’indiffère,
+        J’ai rendez-vous avec vous !
+
+        Monsieur mon propriétaire,
+        Comme je lui dévaste tout
+        M’chasse de son toit, oui mais, d’son toit, moi j’m’en fous,
+        J’ai rendez-vous avec vous
+        La demeure que je préfère,
+        C’est votre robe à froufrous
+        Tout le restant m’indiffère,
+        J’ai rendez-vous avec vous !
+
+        Madame ma gargotière,
+        Comme je lui dois trop de sous
+        M’chasse de sa table, oui mais, d’sa table, moi j’m’en fous,
+        J’ai rendez-vous avec vous
+        Le menu que je préfère,
+        C’est la chair de votre cou
+        Tout le restant m’indiffère,
+        J’ai rendez-vous avec vous !
+
+        Sa Majesté financière,
+        Comme je n’fais rien à son goût
+        Garde son or, or, de son or, moi j’m’en fous,
+        J’ai rendez-vous avec vous
+        La fortune que je préfère,
+        C’est votre cœur d’amadou
+        Tout le restant m’indiffère,
+        J’ai rendez-vous avec vous !
+      documents:
+        0:
+          version: 1
+    4:
+      name: Je me suis fais tout petit
+      content: |
+        Je n’avais jamais ôté mon chapeau
+        Devant personne
+        Maintenant je rampe et je fait le beau
+        Quand ell’ me sonne
+        J’étais chien méchant, ell’ me fait manger
+        Dans sa menotte
+        J’avais des dents d’loup, je les ai changées
+        Pour des quenottes
+
+        Je m’suis fait tout p’tit devant un’ poupée
+        Qui ferm’ les yeux quand on la couche
+        Je m’suis fait tout p’tit devant un’ poupée
+        Qui fait Maman quand on la touche
+
+        J’était dur à cuire, ell’ m’a converti
+        La fine bouche
+        Et je suis tombé tout chaud, tout rôti
+        Contre sa bouche
+        Qui a des dents de lait quand elle sourit
+        Quand elle chante
+        Et des dents de loup quand elle est furie
+        Qu’elle est méchante
+
+        R.
+
+        Je subis sa loi, je file tout doux
+        Sous son empire
+        Bien qu’ell’ soit jalouse au-delà de tout
+        Et même pire
+        Un’ jolie pervenche qui m’avait paru
+        Plus jolie qu’elle
+        Un’ jolie pervenche un jour en mourut
+        A coup d’ombrelle
+
+        R.
+
+        Tous les somnambules, tous les mages m’ont
+        Dit sans malice
+        Qu’en ses bras en croix, je subirais mon
+        Dernier supplice
+        Il en est de pir’s il en est d’meilleures
+        Mais à tout prendre
+        Qu’on se pende ici, qu’on se pende ailleurs
+        S’il faut se pendre
+
+        R.
+      documents:
+        0:
+          version: 1
+    5:
+      name: L'assassinat
+      content: |
+        C’est pas seulement à Paris
+        Que le crime fleurit
+        Nous, au village, aussi, l’on a
+        De beaux assassinats
+
+        Il avait la tête chenue
+        Et le coeur ingénu
+        Il eut un retour de printemps
+        Pour une de vingt ans
+
+        Mais la chair fraîch’, la tendre chair
+        Mon vieux, ça coûte cher
+        Au bout de cinq à six baisers
+        Son or fut épuisé
+
+        Quand sa menotte elle a tendue
+        Triste, il a répondu
+        Qu’il était pauvre comme Job
+        Elle a remis sa rob’
+
+        Elle alla quérir son coquin
+        Qu’avait l’appât du gain
+        Sont revenus chez le grigou
+        Faire un bien mauvais coup
+
+        Et pendant qu’il le lui tenait
+        Elle l’assassinait
+        On dit que, quand il expira
+        La langue ell’ lui montra
+
+        Mirent tout sens dessus dessous
+        Trouvèrent pas un sou
+        Mais des lettres de créanciers
+        Mais des saisies d’huissiers
+
+        Alors, prise d’un vrai remords
+        Elle eut chagrin du mort
+        Et, sur lui, tombant à genoux,
+        Ell’ dit : " Pardonne-nous ! "
+
+        Quand les gendarm’s sont arrivés
+        En pleurs ils l’ont trouvée
+        C’est une larme au fond des yeux
+        Qui lui valut les cieux
+
+        Et le matin qu’on la pendit
+        Ell’ fut en paradis
+        Certains dévots, depuis ce temps
+        Sont un peu mécontents
+
+        C’est pas seulement à Paris
+        Que le crime fleurit
+        Nous, au village, aussi, l’on a
+        De beaux assassinats
+      documents:
+        0:
+          version: 1
+    6:
+      name: L'orage
+      content: |
+        Parlez-moi de la pluie et non pas du beau temps
+        Le beau temps me dégoute et m’fait grincer les dents
+        Le bel azur me met en rage
+        Car le plus grand amour qui m’fut donné sur terr’
+        Je l’dois au mauvais temps, je l’dois à Jupiter
+        Il me tomba d’un ciel d’orage
+
+        Par un soir de novembre, à cheval sur les toits
+        Un vrai tonnerr’ de Brest, avec des cris d’putois
+        Allumait ses feux d’artifice
+        Bondissant de sa couche en costume de nuit
+        Ma voisine affolée vint cogner à mon huis
+        En réclamant mes bons offices
+
+        " Je suis seule et j’ai peur, ouvrez-moi, par pitié
+        Mon époux vient d’partir faire son dur métier
+        Pauvre malheureux mercenaire
+        Contraint d’coucher dehors quand il fait mauvais temps
+        Pour la bonne raison qu’il est représentant
+        D’un’ maison de paratonnerres "
+
+        En bénissant le nom de Benjamin Franklin
+        Je l’ai mise en lieu sûr entre mes bras câlins
+        Et puis l’amour a fait le reste
+        Toi qui sèmes des paratonnerr’s à foison
+        Que n’en as-tu planté sur ta propre maison
+        Erreur on ne peut plus funeste
+
+        Quand Jupiter alla se faire entendre ailleurs
+        La belle, ayant enfin conjuré sa frayeur
+        Et recouvré tout son courage
+        Rentra dans ses foyers fair’ sécher son mari
+        En m’donnant rendez-vous les jours d’intempérie
+        Rendez-vous au prochain orage
+
+        A partir de ce jour j’n’ai plus baissé les yeux
+        J’ai consacré mon temps à contempler les cieux
+        A regarder passer les nues
+        A guetter les stratus, à lorgner les nimbus
+        A faire les yeux doux aux moindres cumulus
+        Mais elle n’est pas revenue
+
+        Son bonhomm’ de mari avait tant fait d’affair’s
+        Tant vendu ce soir-là de petits bouts de fer
+        Qu’il était dev’nu millionnaire
+        Et l’avait emmenée vers des cieux toujours bleus
+        Des pays imbécil’s où jamais il ne pleut
+        Où l’on ne sait rien du tonnerre
+
+        Dieu fass’ que ma complainte aille, tambour battant
+        Lui parler de la pluie, lui parler du gros temps
+        Auxquels on a t’nu tête ensemble
+        Lui conter qu’un certain coup de foudre assassin
+        Dans le mill’ de mon coeur a laissé le dessin
+        D’un’ petit’ fleur qui lui ressemble
+      documents:
+        0:
+          version: 1
+    7:
+      name: La ballade des cimetières
+      content: |
+        J’ai des tombeaux en abondance
+        Des sépultur’s à discrétion
+        Dans tout cim’tièr’ d’quelque importance
+        J’ai ma petite concession
+        De l’humble tertre au mausolée
+        Avec toujours quelqu’un dedans
+        J’ai des p’tit’s boss’s plein les allées
+        Et je suis triste, cependant...
+
+        Car je n’en ai pas, et ça m’agace
+        Et ça défrise mon blason
+        Au cimetièr’ du Montparnasse
+        A quatre pas de ma maison
+
+        J’en possède au Père-Lachaise
+        A Bagneux, à Thiais, à Pantin
+        Et jusque, ne vous en déplaise
+        Au fond du cimetièr’ marin
+        A la vill’ comme à la campagne
+        Partout où l’on peut faire un trou
+        J’ai mêm’ des tombeaux en Espagne
+        Qu’on me jalouse peu ou prou...
+
+        Mais j’n’en ai pas la moindre trace
+        Le plus humble petit soupçon
+        Au cimetièr’ du Montparnasse
+        A quatre pas de ma maison
+
+        Le jour des morts, je cours, je vole
+        Je vais infatigablement
+        De nécropole en nécropole
+        De pierr’ tombale en monument
+        On m’entrevoit sous un’ couronne
+        D’immortelles à Champerret
+        Un peu plus tard, c’est à Charonne
+
+        Mais, seul, un fourbe aura l’audace
+        De dir’ : "J’l’ai vu à l’horizon
+        Du cimetièr’ du Montparnasse
+        A quatre pas de sa maison"
+
+        Devant l’château d’ma grand-tante
+        La marquise de Carabas
+        Ma saint’ famille languit d’attente
+        "Mourra-t-ell’, mourra-t-elle pas ?"
+        L’un veut son or, l’autre veut ses meubles
+        Qui ses bijoux, qui ses bib’lots
+        Qui ses forêts, qui ses immeubles
+        Qui ses tapis, qui ses tableaux...
+
+        Moi je n’implore qu’une grâce
+        C’est qu’ell’ pass’ la morte-saison
+        Au cimetièr’ du Montparnasse
+        A quatre pas de ma maison
+
+        Ainsi chantait, la mort dans l’âme
+        Un jeune homm’ de bonne tenue
+        En train de ranimer la flamme
+        Du soldat qui lui était connu
+        Or, il advint qu’le ciel eut marr’ de
+        L’entendre parler d’ses caveaux
+        Et Dieu fit signe à la camarde
+        De l’expédier rue Froidevaux...
+
+        Mais les croqu’-morts, qui étaient de Chartres
+        Funeste erreur de livraison
+        Menèr’nt sa dépouille à Montmartre
+        De l’autr’ côté de sa maison
+      documents:
+        0:
+          version: 1
+    8:
+      name: La fessée
+      content: |
+        La veuve et l’orphelin, quoi de plus émouvant ?
+        Un vieux copain d’école étant mort sans enfants,
+        Abandonnant au monde une épouse épatante,
+        J’allai rendre visite à la désespérée.
+        Et puis, ne sachant plus où finir ma soirée,
+        Je lui tins compagnie dans la chapelle ardente.
+
+        Pour endiguer ses pleurs, pour apaiser ses maux,
+        Je me mis à blaguer, à sortir des bons mots,
+        Tous les moyens sont bons au médecin de l’âme...
+        Bientôt, par la vertu de quelques facéties,
+        La veuve se tenait les côtes, Dieu merci !
+        Ainsi que des bossus, tous deux nous rigolâmes.
+
+        Ma pipe dépassait un peu de mon veston.
+        Aimable, elle m’encouragea "Bourrez-la donc,
+        Qu’aucun impératif moral ne vous arrête,
+        Si mon pauvre mari détestait le tabac,
+        Maintenant la fumée ne le dérange pas !
+        Mais où diantre ai-je mis mon porte-cigarettes ?"
+
+        A minuit, d’une voix douce de séraphin,
+        Elle me demanda si je n’avais pas faim.
+        "Ça le ferait-il revenir, ajouta-t-elle,
+        De pousser la piété jusqu’à l’inanition :
+        Que diriez-vous d’une frugale collation ?"
+        Et nous fîmes un petit souper aux chandelles.
+
+        "Regardez s’il est beau ! Dirait-on point qu’il dort.
+        Ce n’est certes pas lui qui me donnerait tort
+        De noyer mon chagrin dans un flot de champagne."
+        Quand nous eûmes vidé le deuxième magnum,
+        La veuve était émue, nom d’un petit bonhomme !
+        Et son esprit se mit à battre la campagne...
+
+        "Mon Dieu, ce que c’est tout de même que de nous !"
+        Soupira-t-elle, en s’asseyant sur mes genoux.
+        Et puis, ayant collé sa lèvre sur ma lèvre,
+        "Me voilà rassurée, fit-elle, j’avais peur
+        Que, sous votre moustache en tablier d’sapeur,
+        Vous ne cachiez coquettement un bec-de-lièvre..."
+
+        Un tablier d’sapeur, ma moustache, pensez !
+        Cette comparaison méritait la fessée.
+        Retroussant l’insolente avec nulle tendresse,
+        Conscient d’accomplir, somme toute, un devoir,
+        Mais en fermant les yeux pour ne pas trop en voir,
+        Paf ! j’abattis sur elle une main vengeresse !
+
+        "Aïe ! vous m’avez fêlé le postérieur en deux !"
+        Se plaignit-elle, et je baissai le front, piteux,
+        Craignant avoir frappé de façon trop brutale.
+        Mais j’appris, par la suite, et j’en fus bien content,
+        Que cet état de choses durait depuis longtemps
+        Menteuse ! la fêlure était congénitale.
+
+        Quand je levai la main pour la deuxième fois,
+        Le cœur n’y était plus, j’avais perdu la foi,
+        Surtout qu’elle s’était enquise, la bougresse
+        "Avez-vous remarqué que j’avais un beau cul ?"
+        Et ma main vengeresse est retombée, vaincue !
+        Et le troisième coup ne fut qu’une caresse.
+        "Avez-vous remarqué que j’avais un beau cul ?"
+        Et ma main vengeresse est retombée, vaincue !
+        Et le troisième coup ne fut qu’une caresse.
+      documents:
+        0:
+          version: 1
+    9:
+      name: La maitresse d'école
+      content: |
+        A l’école où nous avons appris l’A B C
+        La maîtresse avait des méthodes avancées.
+        Comme il fut doux le temps, bien éphémère, hélas.
+        Où cette bonne fée régna sur notre dasse,
+        Régna sur notre classe.
+
+        Avant elle, nous étions tous des paresseux,
+        Des lève-nez, des cancres, des crétins crasseux.
+        En travaillant exclusivement que pour nous,
+        Les marchands de bonnets d’âne étaient sur les genoux,
+        Étaient sur les genoux.
+
+        La maîtresse avait des méthodes avancées :
+        Au premier de la classe elle promit un baiser,
+        Un baiser pour de bon, un baiser libertin,
+        Un baiser sur la bouche, enfin bref, un patin,
+        Enfin bref, un patin.
+
+        Aux pupitres alors, quelque chose changea,
+        L’école buissonnière eut plus jamais un chat.
+        Et les pauvres marchands de bonnets d’âne, crac !
+        Connurent tout à coup la faillite, le krach,
+        La faillite, le krach.
+
+        Lorsque le proviseur, à la fin de l’année,
+        Nous lut les résultats, il fut bien étonné.
+        La maîtresse, elle, rougit comme un coquelicot,
+        Car nous étions tous prix d’excellence ex-aequo,
+        D’excellence ex-aequo.
+
+        A la récréation, la bonne fée se mit
+        En devoir de tenir ce qu’elle avait promis.
+        Et comme elle embrassa quarante lauréats,
+        Jusqu’à une heure indue la séance dura,
+        La séance dura.
+
+        Ce système bien sûr ne fut jamais admis
+        Par l’imbécile alors recteur d’académie.
+        De l’école, en dépit de son beau palmarès,
+        On chassa pour toujours notre chère maîtresse,
+        Notre chère maîtresse.
+
+        La cancre fit alors sa réapparition,
+        Le fort en thème est redevenu l’exception.
+        A la fin de l’année suivante, quel fiasco !
+        Nous étions tous derniers de la classe ex-aequo,
+        De la classe ex-aequo !
+
+        A l’école où nous avons appris l’A B C
+        La maîtresse avait des méthodes avancées.
+        Comme il Fut doux le temps bien éphémère, hélas !
+        Où cette bonne fée régna sur notre classe,
+        Régna sur notre classe.
+      documents:
+        0:
+          version: 1
+    10:
+      name: La marche nuptiale
+      content: |
+        Mariage d’amour, mariage d’argent
+        J’ai vu se marier toutes sortes de gens
+        Des gens de basse source et des grands de la terre
+        Des prétendus coiffeurs, des soi-disant notaires
+
+        Quand même je vivrai jusqu’à la fin des temps
+        Je garderais toujours le souvenir content
+        Du jour de pauvre noce où mon père et ma mère
+        S’allèrent épouser devant Monsieur le Maire
+
+        C’est dans un char à bœufs, s’il faut parler bien franc
+        Tiré par les amis, poussé par les parents
+        Que les vieux amoureux firent leurs épousailles
+        Après long temps d’amour, long temps de fiançailles
+
+        Cortège nuptial hors de l’ordre courant
+        La foule nous couvait d’un œil protubérant
+        Nous étions contemplés par le monde futile
+        Qui n’avait jamais vu de noces de ce style
+
+        Voici le vent qui souffle emportant, crève-cœur
+        Le chapeau de mon père et les enfants de chœur
+        Voilà la pluie qui tombe en pesant bien ses gouttes
+        Comme pour empêcher la noc’, coûte que coûte
+
+        Je n’oublierai jamais la mariée en pleurs
+        Berçant comme un’ poupée son gros bouquet de fleurs
+        Moi, pour la consoler, moi, de toute ma morgue
+        Sur mon harmonica jouant les grandes orgues
+
+        Tous les garçons d’honneur, montrant le poing aux nues
+        Criaient : " Par Jupiter, la noce continue ! "
+        Par les homm’s décriée, par les dieux contrariée
+        La noce continue et Viv’ la mariée !
+      documents:
+        0:
+          version: 1
+
+    11:
+      name: La marine
+      content: |
+        On les r’trouve en raccourci, dans nos p’tites amours d’un jour
+        Toutes les joies, tous les soucis, des amours qui durent toujours
+        C’est là l’sort de la marine, et de toutes nos p’tites chéries
+        On accoste, vite un bec, pour nos baisers, l’corps avec
+
+        Et les joies et les bouderies, les fâcheries, les bons retours
+        Il y a tout, en raccourci, des grandes amours dans nos p’tits
+        On a ri, on s’est baisés, sur les neunoeils, les nénés
+        Dans les ch’veux à plein bécots, pondus comme des oeufs tout chauds
+
+        Tout c’qu’on fait dans un seul jour ! Et comme on allonge le temps !
+        Plus d’trois fois, dans un seul jour, content, pas content, content
+        Y a dans la chambre une odeur, d’amour tendre et de goudron
+        Ça vous met la joie au cœur, la peine aussi, et c’est bon
+
+        On n’est pas là pour causer, mais on pense, même dans l’amour
+        On pense que d’main il fera jour, et qu’c’est une calamité
+        C’est là l’sort de la marine, et de toutes nos p’tites chéries
+        On s’accoste. Mais on devine, qu’ça n’sera pas le paradis
+
+        On aura beau s’dépêcher, faire, bon Dieu ! la pige au temps
+        Et l’bourrer de tous nos péchés, ça n’sera pas ça ; et pourtant
+        Toutes les joies, tous les soucis, des amours qui durent toujours !
+        On les r’trouve en raccourci, dans nos p’tits amours d’un jour...
+      documents:
+        0:
+          version: 1
+
+    12:
+      name: Le fossoyeur
+      content: |
+        Dieu sait qu’je n’ai pas le fond méchant
+        Je ne souhait’ jamais la mort des gens
+        Mais si l’on ne mourait plus
+        J’crèv’rais de faim sur mon talus
+
+        J’suis un pauvre fossoyeur
+
+        Les vivants croient qu’je n’ai pas d’remords
+        A gagner mon pain sur l’dos des morts
+        Mais ça m’tracasse et d’ailleurs
+        J’les enterre à contrecœur
+
+        J’suis un pauvre fossoyeur
+
+        Et plus j’lâch’ la bride à mon émoi
+        Et plus les copains s’amus’nt de moi
+        Y m’dis’nt : " Mon vieux, par moments
+        T’as un’ figur’ d’enterr’ment"
+
+        J’suis un pauvre fossoyeur
+
+        J’ai beau m’dir’ que rien n’est éternel
+        J’peux pas trouver ça tout naturel
+        Et jamais je ne parviens
+        A prendr’ la mort comme ell’ vient
+
+        J’suis un pauvre fossoyeur
+
+        Ni vu ni connu, brav’ mort adieu !
+        Si du fond d’la terre on voit l’Bon Dieu
+        Dis-lui l’mal que m’a coûté
+        La dernière pelletée
+
+        J’suis un pauvre fossoyeur
+      documents:
+        0:
+          version: 1
+
+    13:
+      name: Le modeste
+      content: |
+        Les pays, c’est pas ça qui manque,
+        On vient au monde à Salamanque
+        A Paris, Bordeaux, Lille, Brest(e).
+        Lui, la nativité le prit
+        Du côté des Saintes-Maries,
+        C’est un modeste.
+
+        Comme jadis a fait un roi,
+        Il serait bien fichu, je crois,
+        De donner le trône et le reste
+        Contre un seul cheval camarguais
+        Bancal, vieux, borgne, fatigué,
+        C’est un modeste.
+
+        Suivi de son pin parasol,
+        S’il fuit sans mêm’ toucher le sol
+        Le moindre effort comme la peste,
+        C’est qu’au chantier ses bras d’Hercule
+        Rendraient les autres ridicules,
+        C’est un modeste.
+
+        A la pétanque, quand il perd
+        Te fais pas de souci, pépère,
+        Si d’aventure il te conteste.
+        S’il te boude, s’il te rudoie,
+        Au fond, il est content pour toi,
+        C’est un modeste.
+
+        Si, quand un emmerdeur le met
+        En rogne, on ne le voit jamais
+        Lever sur l’homme une main leste.
+        C’est qu’il juge pas nécessaire
+        D’humilier un adversaire,
+        C’est un modeste.
+
+        Et quand il tombe amoureux fou
+        Y a pas de danger qu’il l’avoue
+        Les effusions, dame, il déteste.
+        Selon lui, mettre en plein soleil
+        Son cœur ou son cul c’est pareil,
+        C’est un modeste.
+
+        Quand on enterre un imbécile
+        De ses amis, s’il raille, s’il
+        A l’œil sec et ne manifeste
+        Aucun chagrin, t’y fie pas trop :
+        Sur la patate, il en a gros,
+        C’est un modeste.
+
+        Et s’il te traite d’étranger
+        Que tu sois de Naples, d’Angers
+        Ou d’ailleurs, remets pas la veste.
+        Lui, quand il t’adopte, pardi !
+        Il veut pas que ce soit le dit,
+        C’est un modeste.
+      documents:
+        0:
+          version: 1
+
+    14:
+      name: Le petit joueur de flûteau
+      content: |
+        Le petit joueur de flûteau
+        Menait la musique au château
+        Pour la grâce de ses chansons
+        Le roi lui offrit un blason
+        Je ne veux pas être noble
+        Répondit le croque-note
+        Avec un blason à la clé
+        Mon la se mettrait à gonfler
+        On dirait par tout le pays
+        Le joueur de flûte a trahi
+
+        Et mon pauvre petit clocher
+        Me semblerait trop bas perché
+        Je ne plierais plus les genoux
+        Devant le bon Dieu de chez nous
+        Il faudrait à ma grande âme
+        Tous les saints de Notre-Dame
+        Avec un évêque à la clé
+        Mon la se mettrait à gonfler
+        On dirait par tout le pays
+        Le joueur de flûte a trahi
+
+        Et la chambre où j’ai vu la jour
+        Me serait un triste séjour
+        Je quitterai mon lit mesquin
+        Pour une couche à baldaquin
+        Je changerais ma chaumière
+        Pour une gentilhommière
+        Avec un manoir à la clé
+        Mon la se mettrait à gonfler
+        On dirait par tout le pays
+        Le joueur de flûte a trahi
+
+        Je serai honteux de mon sang
+        Des aïeux de qui je descends
+        On me verrait bouder dessus
+        La branche dont je suis issu
+        Je voudrais un magnifique
+        Arbre généalogique
+        Avec du sang bleu a la clé
+        Mon la se mettrait à gonfler
+        On dirait par tout le pays
+        Le joueur de flûte a trahi
+
+        Je ne voudrais plus épouser
+        Ma promise, ma fiancée
+        Je ne donnerais pas mon nom
+        A une quelconque Ninon
+        Il me faudrait pour compagne
+        La fille d’un grand d’Espagne
+        Avec un’ princesse à la clé
+        Mon la se mettrait à gonfler
+        On dirait par tout le pays
+        Le joueur de flûte a trahi
+
+        Le petit joueur de flûteau
+        Fit la révérence au château
+        Sans armoiries, sans parchemin
+        Sans gloire il se mit en chemin
+        Vers son clocher, sa chaumine
+        Ses parents et sa promise
+        Nul ne dise dans le pays
+        Le joueur de flûte a trahi
+        Et Dieu reconnaisse pour sien
+        Le brave petit musicien
+      documents:
+        0:
+          version: 1
+
+    15:
+      name: Le vin
+      content: |
+        Avant de chanter, Ma vie, de faire des, Harangues
+        Dans ma gueule de bois, J’ai tourné sept fois, Ma langue
+        J’suis issu de gens, Qui étaient pas du genre sobre
+        On conte que j’eus, La tétée au jus, D’octobre ...
+
+        Mes parents ont dû, M’trouver au pied d’u- ne souche
+        Et non dans un chou, Comme ces gens plus ou, Moins louches
+        En guise de sang, ( O noblesse sans, Pareille ! )
+        Il coule en mon cœur, La chaude liqueur, D’la treille ...
+
+        Quand on est un sage, et qu’on a du savoir-boire
+        On se garde à vue, En cas de soif, u- ne poire ...
+        Une poire ... ou deux, Mais en forme de, Bonbonne
+        Au ventre replet, Rempli du bon lait, D’l’automne ...
+
+        Jadis, aux Enfers, Certes, il a souffert, Tantale
+        Quand l’eau refusa, D’arroser ses amygdales
+        Être assoiffé d’eau, C’est triste, mais faut, Bien dire
+        Que, l’être de vin, C’est encore vingt, Fois pire ...
+
+        Hélas ! il ne pleut, Jamais du gros bleu, Qui tache
+        Qu’elles donnent du vin, J’irai traire enfin, Les vaches ...
+        Que vienne le temps, Du vin coulant dans, La Seine !
+        Les gens, par milliers, Courront y noyer, Leur peine ...
+      documents:
+        0:
+          version: 1
+
+    16:
+      name: Les quatre bacheliers
+      content: |
+        Nous étions quatre bacheliers
+        Sans vergogne,
+        La vraie crème des écoliers,
+        Des ecoliers.
+
+        Pour offrir aux filles des fleurs,
+        Sans vergogne,
+        Nous nous fîmes un peu voleurs,
+        Un peu voleurs.
+
+        Les sycophantes du pays,
+        Sans vergogne,
+        Aux gendarmes nous ont trahis,
+        Nous ont trahis.
+
+        Et l’on vit quatre bacheliers
+        Sans vergogne,
+        Qu’on emmène, les mains liées,
+        Les mains liées.
+
+        On fit venir à la prison,
+        Sans vergogne,
+        Les parents des mauvais garçons,
+        Mauvais garçons.
+
+        Les trois premiers pères, les trois,
+        Sans vergogne,
+        En perdirent tout leur sang-froid,
+        Tout leur sang-froid.
+
+        Comme un seul ils ont déclaré,
+        Sans vergogne,
+        Qu’on les avait déshonorée,
+        Déshonorés.
+
+        Comme un seul ont dit " C’est fini,
+        Sans vergogne,
+        Fils indigne, je te renie,
+        Je te renie. "
+
+        Le quatrième des parents,
+        Sans vergogne,
+        C’était le plus gros, le plus grand,
+        Le plus grand.
+
+        Quand il vint chercher son voleur
+        Sans vergogne,
+        On s’attendait à un malheur,
+        A un malheur.
+
+        Mais il n’a pas déclaré, non,
+        Sans vergogne,
+        Que l’on avait sali son nom,
+        Sali son nom.
+
+        Dans le silence on l’entendit,
+        Sans vergogne,
+        Qui lui disait : " Bonjour, petit,
+        Bonjour petit. "
+
+        On le vit, on le croirait pas,
+        Sans vergogne,
+        Lui tendre sa blague à tabac,
+        Blague à tabac.
+
+        Je ne sais pas s’il eut raison,
+        Sans vergogne,
+        D’agir d’une telle façon,
+        Telle façon.
+
+        Mais je sais qu’un enfant perdu,
+        Sans vergogne,
+        A de la corde de pendu,
+        De pendu,
+
+        A de la chance quand il a,
+        Sans vergogne,
+        Un père de ce tonneau-là,
+        Ce tonneau-là.
+
+        Et si les chrétiens du pays,
+        Sans vergogne,
+        Jugent que cet homme a failli,
+        Homme a failli.
+
+        Ça laisse à penser que, pour eux,
+        Sans vergogne,
+        L’Evangile, c’est de l’hébreu,
+        C’est de l’hébreu.
+      documents:
+        0:
+          version: 1
+    17:
+      name: P... de toi
+      content: |
+        En ce temps-là, je vivais dans la lune,
+        Les bonheurs d’ici-bas m’étaient tous défendus
+        Je semais des violettes et chantais pour des prunes,
+        Et tendais la patte aux chats perdus.
+
+        Refrain :
+        Ah ah ah ah putain de toi, Ah ah ah ah ah pauvre de moi...
+
+        Un soir de pluie v’là qu’on gratte à ma porte,
+        Je m’empresse d’ouvrir, sans doute un nouveau chat !
+        Nom de dieu l’beau félin que l’orage m’apporte,
+        C’était toi, c’était toi, c’était toi.
+
+        Refrain
+
+        Les yeux fendus et couleur de pistache,
+        T’as posé sur mon cœur ta patte de velours
+        Fort heureusement pour moi t’avais pas de moustache,
+        Et ta vertu ne pesait pas trop lourd.
+
+        Refrain
+
+        Aux quatre coins de ma vie de bohème,
+        T’as prom’né, t’as prom’né le feu de tes vingt ans.
+        Et pour moi, pour mes chats, pour mes fleurs, mes poèmes,
+        C’était toi la pluie et le beau temps...
+
+        Refrain
+
+        Mais le temps passe et fauche à l’aveuglette.
+        Notre amour mûrissait à peine que déjà,
+        Tu brûlais mes chansons, crachais sur mes viollettes,
+        Et faisais des misères à mes chats.
+
+        Refrain
+
+        Le comble enfin, misérable salope,
+        Comme il n’restait plus rien dans le garde-manger,
+        T’as couru sans vergogne, et pour une escalope,
+        Te jeter dans le lit du boucher.
+
+        Refrain
+
+        C’était fini, t’avais passé les bornes.
+        Et, r’nonçant aux amours frivoles d’ici-bas,
+        J’suis r’monté dans la lune en emportant mes cornes,
+        Mes chansons, et mes fleurs, et mes chats.
+
+        Refrain
+      documents:
+        0:
+          version: 1
+    18:
+      name: Philistins
+      content: |
+        Philistins, épiciers, tandis que vous caressiez, vos femmes
+        En songeant aux petits, que vos grossiers appétits, engendrent
+
+        Vous pensiez : « Ils seront, menton rasé, ventre rond, notaires »
+        Mais pour bien vous punir, un jour vous voyez venir, sur terre
+
+        Des enfants non voulus, qui deviennent chevelus, poètes...
+        Vous pensiez : « Ils seront, menton rasé, ventre rond, notaires »
+
+        Mais pour bien vous punir, un jour vous voyez venir, sur terre
+        Des enfants non voulus, qui deviennent chevelus, poètes...
+      documents:
+        0:
+          version: 1
+    19:
+      name: Supplique pour être entérré sur la plage de Sète
+      content: |
+        La Camarde qui ne m’a jamais pardonné
+        D’avoir semé des fleurs dans les trous de son nez
+        Me poursuit d’un zèle imbécile
+        Alors cerné de près par les enterrements
+        J’ai cru bon de remettre à jour mon testament
+        De me payer un codicille
+
+        Trempe dans l’encre bleue du Golfe du Lion
+        Trempe trempe ta plume ô mon vieux tabellion
+        Et de ta plus belle écriture
+        Note ce qu’il faudra qu’il advint de mon corps
+        Lorsque mon âme et lui ne seront plus d’accord
+        Que sur un seul point la rupture
+
+        Quand mon âme aura pris son vol à l’horizon
+        Vers celle de Gavroche et de Mimi Pinson
+        Celles des titis des grisettes
+        Que vers le sol natal mon corps soit ramené
+        Dans un sleeping du Paris-Méditerranée
+        Terminus en gare de Sète
+
+        Mon caveau de famille hélas ! n’est pas tout neuf
+        Vulgairement parlant il est plein comme un œuf
+        Et d’ici que quelqu’un n’en sorte
+        Il risque de se faire tard et je ne peux
+        Dire à ces braves gens poussez-vous donc un peu
+        Place aux jeunes en quelque sorte
+
+        Juste au bord de la mer à deux pas des flots bleus
+        Creusez si c’est possible un petit trou moelleux
+        Une bonne petite niche
+        Auprès de mes amis d’enfance les dauphins
+        Le long de cette grève où le sable est si fin
+        Sur la plage de la corniche
+
+        C’est une plage où même à ses moments furieux
+        Neptune ne se prend jamais trop au sérieux
+        Où quand un bateau fait naufrage
+        Le capitaine crie "Je suis le maître à bord !
+        Sauve qui peut le vin et le pastis d’abord
+        Chacun sa bonbonne et courage"
+
+        Et c’est là que jadis à quinze ans révolus
+        À l’âge où s’amuser tout seul ne suffit plus
+        Je connus la prime amourette
+        Auprès d’une sirène une femme-poisson
+        Je reçu de l’amour la première leçon
+        Avalai la première arête
+
+        Déférence gardée envers Paul Valéry
+        Moi l’humble troubadour sur lui je renchéris
+        Le bon maître me le pardonne
+        Et qu’au moins si ses vers valent mieux que les miens
+        Mon cimetière soit plus marin que le sien
+        Et n’en déplaise aux autochtones
+
+        Cette tombe en sandwich entre le ciel et l’eau
+        Ne donnera pas une ombre triste au tableau
+        Mais un charme indéfinissable
+        Les baigneuses s’en serviront de paravent
+        Pour changer de tenue et les petits enfants
+        Diront chouette un château de sable !
+
+        Est-ce trop demander sur mon petit lopin
+        Planter je vous en prie une espèce de pin
+        Pin parasol de préférence
+        Qui saura prémunir contre l’insolation
+        Les bons amis venus faire sur ma concession
+        D’affectueuses révérences
+
+        Tantôt venant d’Espagne et tantôt d’Italie
+        Tous chargés de parfums de musiques jolies
+        Le Mistral et la Tramontane
+        Sur mon dernier sommeil verseront les échos
+        De villanelle un jour un jour de fandango
+        De tarentelle de sardane
+
+        Et quand prenant ma butte en guise d’oreiller
+        Une ondine viendra gentiment sommeiller
+        Avec rien que moins de costume
+        J’en demande pardon par avance à Jésus
+        Si l’ombre de sa croix s’y couche un peu dessus
+        Pour un petit bonheur posthume
+
+        Pauvres rois pharaons pauvre Napoléon
+        Pauvres grands disparus gisant au Panthéon
+        Pauvres cendres de conséquence
+        Vous envierez un peu l’éternel estivant
+        Qui fait du pédalo sur la plage en rêvant
+        Qui passe sa mort en vacances
+        Vous envierez un peu l’éternel estivant
+        Qui fait du pédalo sur la plage en rêvant
+        Qui passe sa mort en vacances
+      documents:
+        0:
+          version: 1
+
+    20:
+      name: Tonton Nestor
+      content: |
+        Tonton Nestor, Vous eûtes tort, Je vous le dis tout net.
+        Vous avez mis La zizanie Aux noces de Jeannette.
+        Je vous l’avoue, Tonton, vous vous, Comportâtes comme un
+        Mufle achevé, Rustre fieffé, Un homme du commun.
+
+        Quand la fiancée, Les yeux baissés, Des larmes pleins les cils,
+        S’apprêtait à Dire « Oui da ! », A l’officier civil,
+        Qu’est-c’qui vous prit, Vieux malappris, D’aller, sans retenue,
+        Faire un pinçon, Cruel en son, Éminence charnue ?
+
+        Se retournant, Incontinent, Elle souffleta, flic-flac !
+        L’ garçon d’honneur, Qui, par bonheur, Avait une tête à claque,
+        Mais au lieu du « Oui » attendu, Elle s’écria : « Maman »
+        Et l’maire lui dit : « Non, mon petit, Ce n’est pas le moment. »
+
+        Quand la fiancée, Les yeux baissés, D’une voix solennelle
+        S’apprêtait à Dire « Oui da ! », Par-devant l’Éternel,
+        Voilà me chef, Que, derechef, Vous osâtes porter
+        Votre fichue, Patte crochue, Sur sa rotondité.
+
+        Se retournant, Incontinent, Elle moucha le nez
+        D’un enfant d’chœur, Qui, par bonheur, Était enchifrené,
+        Mais au lieu du « Oui » attendu, De sa pauvre voix lasse,
+        Au tonsuré, Désemparé, Elle a dit « Merde », hélas !
+
+        Quoiqu’elle usât, Qu’elle abusât, Du droit d’être fessue,
+        En la pinçant, Mauvais plaisant, Vous nous avez déçus.
+        Aussi, ma foi, La prochaine fois, Qu’on mariera Jeannette,
+        On s’pass’ra d’vous. Tonton, je vous, Je vous le dis tout net.
+      documents:
+        0:
+          version: 1
+

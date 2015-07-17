@@ -1,0 +1,103 @@
+
+<div class="left span6 tools super-tool">
+    <i class="icon-resize-full" style="float: right;margin-right: 5px;"></i>
+    <div class="tabbable left-tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs" >
+            <li class="active" style=""><a href="#main_tab1" data-toggle="tab">Mot</a></li>
+            <li><a href="#main_tab4" data-toggle="tab">Wikipédia</a></li>
+            <li><a href="#main_tab5" data-toggle="tab">Figures</a></li>
+            <li><a href="#main_tab6" data-toggle="tab">Notes</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane chapter active" id="main_tab1">
+                <ul class="nav nav-pills left" style="">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            tampon
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu memory-item"></ul>
+                    </li>
+                </ul>
+                <ul class="thumbnails left" style="padding: 0;margin-top: 4px;">
+                    <li class="span4"  style="background: white;">
+                        <div class="thumbnail">
+
+                            <h4 style="display: inline;"><span class="motif"></span>
+                            </h4>/<span class="phonetic"></span>/
+
+                        </div>
+                    </li>
+                </ul>
+
+                <br style="clear: both;" />
+
+                <div class="tabbable"> <!-- Only required for left/right tabs -->
+                    <ul class="nav nav-tabs sub" style="font-weight: bold;">
+                        <li class="active" ><a href="#tab1" class="tab-definition" style="border: 0;" data-toggle="tab">Larousse</a></li>
+                        <li><a class="tab-synonym" href="#tab2" data-toggle="tab"  style="border: 0;" >Synonymes</a></li>
+                        <li><a class="tab-rhyme" href="#tab3" data-toggle="tab"  style="border: 0;" >Rimes</a></li>
+                        <li><a class="tab-anagram" href="#tab4" data-toggle="tab"  style="border: 0;" >Anagramme</a></li>
+                        <li><a class="tab-scrabble" href="#tab5" data-toggle="tab"  style="border: 0;" >Scrabble</a></li>
+                        <li><a class="tab-image" href="#tab6" data-toggle="tab">Images</a></li>
+                        <!--li><a class="tab-synonym" href="#tab6" data-toggle="tab"  style="border: 0;" >Notes</a></li-->
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane sub active" id="tab1">
+                            <div class="definition" style="padding: 10px;"></div>
+                        </div>
+                        <div class="tab-pane sub" id="tab2">
+                            <ul class="synonym" style="padding: 0;"></ul>
+                        </div>
+                        <div class="tab-pane sub" id="tab3">
+                            <ul class="rhyme" style="padding: 0;"></ul>
+                        </div>
+
+                        <div class="tab-pane sub" id="tab4">
+                            <ul class="anagram" style="padding: 0;"></ul>
+                        </div>
+                        <div class="tab-pane sub" id="tab5">
+                            <ul class="scrabble" style="padding: 0;"></ul>
+                        </div>
+
+                        <div class="tab-pane sub" id="tab6">
+                            <ul class="image" style="padding: 0;"></ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane chapter" id="main_tab4">
+
+                <div class="ui-widget" style="padding: 5px;color: #1E7FCB;">
+                    <label style="padding: 4px;float: left;margin-right: 10px;">Recherche </label>
+                    <input id="state" style="padding: 2px; border: solid 1px #cdcdcd;" />
+                </div>
+                <br />
+                <div class="wikipedia-definition">
+
+                </div>
+            </div>
+
+            <div class="tab-pane chapter" id="main_tab5" style="padding: 20px;">
+            {% include "FXLLiteracyBundle:Lab:figures.html.twig" %}
+            </div>
+
+            <div class="tab-pane chapter" id="main_tab6">
+                <textarea class="note"></textarea>
+            </div>
+
+        </div>
+    </div>
+    <!-- static -->
+    <div id="right_destination"></div>
+
+</div>
+
+{% include "FXLCommonBundle:Component:modal.html.twig" with {
+    buttonSave  : false,
+    id          : "modal_full_screen"
+} %}

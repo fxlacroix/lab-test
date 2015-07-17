@@ -1,0 +1,8 @@
+ {% for sheet in sheets %}
+    <li><span class="file">&nbsp;<a class="super-editor" itemprop="/admin/ajax/sheet/{{sheet.id}}/content">{% if sheet.position is defined and sheet.position is not empty %}{{ sheet.position }} {{ sheet.name }}{% else %}<span style="color: red;">{{ sheet.name }}</span>{% endif %}</a>
+    <a class="edit" itemprop="/admin/ajax/sheet/{{ sheet.id }}/edit"><i class="icon-edit"></i></a>
+    <a class="delete" itemprop="/admin/ajax/sheet/{{ sheet.id }}/delete"><i class="icon-trash"></i></a>
+
+
+    </span></li>
+{% endfor %}

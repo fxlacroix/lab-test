@@ -1,0 +1,92 @@
+{% extends "::base.html.twig" %}
+
+
+{% block title %}
+
+Littérature - {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 left-col" >
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Dernières publications</li>
+                    {% for literacy in all  %}
+                        <li style="font-size: 12px;">
+                            <a href="{{ path("details_literacy_node", { "slug": literacy.slug}) }}">
+
+                                {% set pubName = literacy.name ~ " - " ~ literacy.node.name %}
+
+                                {% if pubName|length < 35 %}{{ pubName }}{% else %}{{ pubName|slice(0, 32) }}...{% endif %}</a></li>
+
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="http://www.blogart-magazine.fr/rss">
+                <img src="/bundles/fxlmusic/images/rss.png" width="24" alt="rss" style="position: relative; bottom: 10px;" />
+            </a>
+
+            {% render 'FXLCommonBundle:Component:citation'  %}
+        </div><!--/span-->
+
+
+        <div class="span9 blogart-paper" style="box-shadow: 1px 1px 12px #555;">
+
+             {% set group = all.0%}
+
+             {% set content = group.sheets[0].content|split('\n\n') %}
+
+             {% include "FXLCommonBundle:Component:hero.html.twig" with {
+                'name'      : group.name,
+                'updatedAt' : group.updatedAt,
+                'path'      : group.path,
+                'url'       : path("details_literacy_node", {"slug":group.slug }),
+                'content'   : content[0],
+                'user'      : group.findUser(),
+                'tags'      : [group.node],
+                'labelLink' : group.node.name
+            } only %}
+
+            <div class="list-project">
+
+                {% include 'FXLCommonBundle:Component:list.html.twig' with {
+                    'pager'       : pager,
+                    'pagerLink'   : pagerLink,
+                    'nameAttr'    : 'node',
+                    'contentAttr' : 'sheets',
+                    'tagsAttr'    :  'node',
+                    'routeName'   : 'details_literacy_node'
+
+                } only %}
+
+
+
+            </div>
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr />
+
+      {% include 'FXLCommonBundle:Component:footer.html.twig' %}
+
+    </div><!--/.fluid-container-->
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+{% endblock %}
+
+
+{% block js_ready %}
+    {{ parent() }}
+
+{% endblock %}

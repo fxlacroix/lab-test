@@ -1,0 +1,69 @@
+
+<div class="row-fluid">
+
+    {% for project in pager.getCurrentPageResults  %}
+
+    <div class="span5" style="width: 390px; margin-left: 30px; margin-right: 15px; height: 140px;position: relative;">
+
+        <img alt="logo" src="" style="margin-left: 5px; max-width: 120px; height: 80px;float: right;background: white;border:double 5px #cdcdcd;-moz-border-radius: 0px;-webkit-border-radius: 0px;border-radius: 0px;" />
+{{ path("", {"projectId":project.id }) }}
+        <span class="label label-info" style="float: left;">
+
+            {% for track in project.tracks %}
+
+                {% set lastDate = "1111-01-01" %}
+                {% for document in track.documents %}
+
+                    {% if document.updatedAt > lastDate %}
+
+                        {% set lastDate = document.updatedAt %}
+
+                    {% endif %}
+                    {{ lastDate|localizeddate('short', 'none') }}
+                {% endfor %}
+
+            {% endfor %}
+
+
+        </span>
+
+        {% for tag in project.tags|reverse %}
+
+        <span class="label label-inverse" style="float: left;margin-left: 2px;">
+            {{ tag.name }}
+        </span>&nbsp;
+
+        {% endfor %}
+
+
+        <span class="label label-warning" style="float: left;margin-left: 2px;">
+            {{ project.user.name }}
+        </span>&nbsp;
+
+
+        <h2>{{ project.name }}</h2>
+
+        <p style="height: 28px;">{{ project.description }} </p>
+        <p><a class="btn" href="{{ path("project", { "slug": project.slug}) }}">{{ project.name }}  &raquo;</a></p>
+
+    </div><!--/span-->
+
+    {% endfor %}
+    <div class="clearfix">&nbsp;</div>
+
+    <div class="clearfix">&nbsp;</div>
+
+
+    <div style="text-align: center;">
+        {% if pager.haveToPaginate %}
+            {{ pagerLink|raw }}
+        {% endif %}
+    </div>
+</div><!--/row-->
+<style>
+
+    .pagination ul{
+        background: white;
+    }
+
+</style>

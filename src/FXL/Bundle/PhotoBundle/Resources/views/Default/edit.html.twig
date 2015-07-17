@@ -1,0 +1,8 @@
+{% extends 'FXLPhotoBundle::base.html.twig' %}
+{% block title %}Edition page présentation de {{ userName }} - Azax{% endblock title %}
+{% block content %}
+    <form action="{{ path('photo_user_edit', {'userName': userName}) }}" method="POST" id="contact_form">
+    {{ form(form) }}
+    <br />
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+
+.navbar-inner{
+    display: none;
+}
+
+.td-action, .sf-toolbar, form, ul, br{
+    display: none;
+}
+
+.new-page{
+    line-break: always;
+}

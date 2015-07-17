@@ -1,0 +1,17 @@
+
+<ul class="breadcrumb">
+    <li><a href="/"><i class="icon-home"></i></a><span class="divider">/<span></li>
+
+    {% if project is defined %}
+        <li><a href="{{ path("fxl_music_project", {'slug': project.slug}) }}">{{ project.name }}</a><span class="divider">/</span></li>
+    {% endif %}
+    {% if track is defined %}
+        <li><a href="{{ path("fxl_music_track", {'slugProject': project.slug, 'slugTrack': track.slug}) }}">{{ track.name }}</a></li>
+    {% endif %}
+
+
+    {% for tag in tags %}
+    <li style="float: right;">&nbsp;<span class="label label-inverse">{{ tag.name }}</span></li>
+    {% endfor %}
+
+</ul>

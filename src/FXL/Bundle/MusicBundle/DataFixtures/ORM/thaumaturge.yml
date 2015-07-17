@@ -1,0 +1,294 @@
+2:
+  name: Le thaumaturge
+  description: Transhumance d’états...
+  content: la première oeuvre publiée de Bib la sauce, à 500 exemplaires, mis en musique par blogart dans un style plus ou moins lié à la petite production, enregistrement live, pas de retouche, sans additif, pas de drogue...
+  logo:  "/logos/thaumaturge.jpeg"
+  tracks:
+    0:
+      name: Le thaumaturge
+      content: |
+        Viens tu du péristyle où dort l’antiquité,
+        Respires-tu du fond de la mythologie,
+        Es-tu l’instigateur de ta vitalité ?
+        Le vivificateur de ta propre énergie.
+
+        Atome de la vie dans sa thaumaturgie,
+        As-tu pour hôte une âme au don d’ubiquité
+        Qui puisse t’affranchir de ta psychologie
+        Pour te plonger au cœur de la réalité ?
+
+        Es- tu le Dieu qui hurle au fond de toi mon frère ?
+        Te rends tu digne au moins devant la nouvelle ère
+        Du socle minéral aux sources de ton être ?
+
+        Qu’attends tu le déluge, ô mon frère il se trame !
+        Il est temps de déscendre en toi même, ou connaitre
+        Et saisir ou percer ton mystère et son drame.
+      documents:
+        0:
+          version: 1
+    1:
+      name: La matière
+      content: |
+        A l’intérieur de tout, bat le pouls des atomes,
+        Car l’inertie de la matière est convulsive.
+        L’épilepsie repose, une charge explosive
+        Est cachée dans la mousse et tous ses péristomes.
+
+        Quand on est soul chaque mur tremble qu’on voit double,
+        Disons que chaque œil a son propre point de vue.
+        Du chaos sort alors tout un ordre imprévu
+        Plus proche du réel où tout bout et se trouble.
+
+        Se manifeste alors infinitésimale,
+        Qui me fait percevoir tout le subliminal
+        Du délire éthylique et de sa complexion.
+
+        C’est l’heure où la nature interprète sa danse,
+        Sa danse de Saint Guy sous vos yeux c’est la transe ;
+        L’immortalité provisoire en pleine action.
+      documents:
+        0:
+          version: 1
+    2:
+      name: Le mariage
+      content: |
+        Le bourdon de la cloche est ce soir ténébreux,
+        Bien qu’on est bu du vin, par caisson, toasts et bans,
+        Énoncés et chantés pour ces deux bienheureux,
+        Qui se sont aux klaxons fait sauter les tympans.
+
+        A midi le clocher patoisait en Hébreux,
+        Les portes de l’église avait de blancs rubans,
+        Que le vent balaya sur le tapis terreux.
+        Maintenant qu’il serpente et fugue entre les pans
+
+        De muret, je n’entends par soupires plantureux,
+        Les fleurs fouillées de noirs et jaunes abdomens,
+        Les hymnes s’égrainant dans le soir poussiéreux.
+
+        Plus que mon sang floué de frissons liquoreux,
+        Tandis que grésillant parmi les cyclamens,
+        Le bourdon passe obviant la course des hymens.
+      documents:
+        0:
+          version: 1
+    3:
+      name: Saturnale i
+      content: |
+        L’âne ne poussera que plus tard son hi-han,
+        Tout se taira bientôt, stupeur des alvéoles,
+        Tout se taira des blés retentira le pan,
+        Or Éole serpente entre les auréoles...
+
+        Aprés avoir posé-pesé son bataclan,
+        Et regarder passer la vieille cariole,
+        Le peintre de la plaine avait pris son élan,
+        Ce peintre qu’on disait atteint de la gloriole...
+
+        Que le ciel à plat ventre hisse sur ses épaules,
+        C’est lui qu’on aperçoit, comme à l’arrière plan ;
+        Il a couru d’un bout à l’autre des deux pôles
+
+        Vers la petite insurrection de fumée bran
+        Se rendant l’âme à tire d’aile, tu t’envoles
+        Pour les prochaines saturnales tauroboles !
+      documents:
+        0:
+          version: 1
+    4:
+      name: Saturnale ii
+      content: |
+        Ah, cette époque ou l’on dansait le French-Cancan,
+        Lautrec le nain peignait de longues gaudrioles,
+        Et Gauguin Paul vous parlait du cri du Toucan,
+        L’époque des maudits, des pris pour des marioles.
+
+        Dans le four de l’échec, transcendant les darioles,
+        Toi qui sentait la pierre à l’ombre du volcan,
+        Je te vois regarder après vos cabrioles,
+        Sur la table en noyer, quelques noix de Pécan.
+
+        Toi de la mauvaise herbe, ô petite vérole,
+        Toi le petit Bonheur avec l’odeur du flan,
+        Toi l’âne auquel on accrochait ses casseroles...
+
+        Frère, ô peintre écrivain, fait de bois de Scriban,
+        Toi qui nous voit te regarder sous ton turban,
+        Saturnien soit aux prochaines Tauroboles...
+      documents:
+        0:
+          version: 1
+    5:
+      name: Saturnale iii
+      content: |
+        Sa main brulée qui mesurait tout à l’empan,
+        De ses deux doigts trempait son pinceau dans ses fioles,
+        Mais la gâchette d’un fusil veillait au pan,
+        Coupé d’un mur parmi les nuées lucioles,
+
+        Ô castels Andalous, Ô moulins Espagnols,
+        Toi qui fit si peu pour tant de blés dans leur vent,
+        On a tordu le coup à d’autre rossignol,
+        On les a rendu fou ces dignes fils de pans.
+
+        Et puisqu’on te travaille alors tu te fignoles,
+        En te réglant ton compte au trente-septième ans,
+        Perforateur de confiance, ô vous chignoles,
+
+        Octroyez la vie sauve à qui vous rend l’amant,
+        Docte gâché, verse ta larme aux caïmans
+        Et rendez vous aux saturnales tauroboles.
+      documents:
+        0:
+          version: 1
+    6:
+      name: Saturnale iv
+      content: |
+        Dans le ciel houleux passe un cavalier hulant
+        Qui porte un nez sur la fermentation des gnioles,
+        De fruits séchés, d’arbres tannés, mirobolant,
+        De pruniers, muriers, lauriers, figuiers, cyprès, saules.
+
+        A la détonation, l’âne rendit son bran,
+        La nuée noire avec tous ses corbeaux le frôlent,
+        Au dessus de la plaine, en rut ce vétéran,
+        Traité de fou, de drôle alors reprend son rôle.
+
+        Mais ce n’est pas pour toi, monde qui nous désole,
+        Qu’on souffre de l’asile, et de ces camisoles...
+        C’est pour suivre un envol dans ce grand ouragan !
+
+        Les gens de foire en auront tous pour leurs oboles,
+        Frères du genre escortez moi, faite moi Khân,
+        Mais pas avant les saturnales tauroboles.
+      documents:
+        0:
+          version: 1
+    7:
+      name: Saturnale v
+      content: |
+        Van Gogh peignit encore en rupture de ban,
+        Les corbeaux de sa mort arrivant de traviole...
+        Ces V et W signèrent son ahan,
+        Mire toi société, regarde là ta fiole...
+
+        Ce ne fut pas l’apocalypse de saint Jean,
+        Le culte de Mitra revient d’avant la Gaule,
+        Lorsque blessé à mort se retira Vincent,
+        Le taulier l’entendit tomber seul dans sa taule...
+
+        Quel destin frappera par tant de paraboles
+        Cette arène ou le peuple attend son lot de sang ?
+        En route quittons nous sur ces bonnes paroles...
+
+        Mon frère envole toi sur un tapis persan,
+        le taureau choisi pour est d’un rouge alezan,
+        A l’heure pour les saturnales tauroboles.
+      documents:
+        0:
+          version: 1
+    8:
+      name: Saturnale v
+      content: |
+        Je me forge une enclume aux bigornes rougis...
+        Puisqu’il m’est à mourir dans ce monde navrant,
+        Que du bois les orées se sont tant élargies,
+        A voir la vie passé comme un fantôme errant.
+
+        Et notre cœur d’élytre au grand bal des bougies...
+        Cranes rasés et têtes, dru s’entre-éventrant,
+        Pioches écervelées, cicatrices d’orgie,
+        Je vous regarde enfin, comme un premier mourant.
+
+        La mort a mis mon nom sur toutes vos figures,
+        Je dois aller cueillir la rose au champ des vêpres,
+        Et Jésus s’il en est, leur dire ô pédicure.
+
+        Qu’on partage leur corps depuis le temps des lèpres,
+        Et que s’il m’est à choir dans cette horrible farce,
+        Je vais signant ma femme, aller fleurir la garce.
+
+      documents:
+        0:
+          version: 1
+    9:
+      name: La prophétie
+      content: |
+        Qui sont ces oiseaux de malheur,
+        La vitre ouverte aux citronniers,
+        Rompu de froid givre mon cœur....
+
+        Passeront trois jeunes âniers,
+        Vêtu de lin mais l’air moqueur,
+        Avec leur fabuleux paniers...
+
+        Une bête à la grise odeur,
+        Viendra me renifler les pieds,
+        Que lui dirait tremblant de peur.... ?
+
+        Faut-il mourir de si bonne heure,
+        Que me voudront ces braconniers ?
+
+      documents:
+        0:
+          version: 1
+    10:
+      name: A diable
+      content: |
+        Adieux
+        Le deuil des arbres,
+
+        Adieux,
+        Bel œil de marbre
+
+        Adieux,
+        Rosiers cinabres,
+
+        Adieux,
+        Orgueil macabre,
+
+        Adieux,
+        Horizons flous,
+
+        Adieux,
+        Le clairon fou
+        Qui m’accable,
+
+        Adieux
+        Ou bien peut être à diable...
+      documents:
+        0:
+          version: 1
+    11:
+      name: Le royaume
+      content: |
+        Dans le royaume d’apollon,
+        Le poète est un chercheur d’or,
+        Moi qui n’avait plus un doublon,
+        Dans le royaume d’apollon,
+        Je suis tombé sur le filon,
+        Dont rêva tout conquistador,
+        Dans le royaume d’apollon,
+        Le poète est un chercheur d’or.
+
+        Moi qui n’avait plus un pistole,
+        Après fumé bien des ninas,
+        Ayant fuit loin du capitole,
+        Moi qui n’avait plus un pistole,
+        Méprisant les cours du pactoles,
+        Ou fut jadis plongé Midas,
+        Moi qui n’avait plus un pistoles,
+        Après fumé bien des ninas.
+
+        J’embarquai donc incontinent,
+        Vers la mer et son soleil ivre,
+        M’ouvrit bien plus qu’un continent,
+        J’embarquais donc incontinent,
+        Laissant ma bourse au demeurant,
+        Tout au plus quelques ronds de cuivres,
+        J’embarquai donc incontinent,
+        Vers la mort et son soleil ivre.
+      documents:
+        0:
+          version: 1

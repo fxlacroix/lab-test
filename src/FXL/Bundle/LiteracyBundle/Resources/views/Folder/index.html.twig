@@ -1,0 +1,13 @@
+<a class="new" itemprop="/admin/ajax/node/new" style="text-decoration: none; cursor: pointer; cursor: hand;">
+    <i class="icon-book"></i>
+</a>
+<a class="refresh_tree" style="text-decoration: none; cursor: pointer; cursor: hand;">
+    <i class="icon-refresh"></i>
+</a>
+
+<ul id="browser" class="filetree">
+
+    {% include "FXLLiteracyBundle:Folder:list.html.twig" with {nodes: nodes, level: 0} %}
+</ul>
+
+{% include "FXLCommonBundle:Component:modal.html.twig" %}

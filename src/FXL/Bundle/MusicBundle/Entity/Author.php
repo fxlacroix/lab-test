@@ -55,7 +55,7 @@ class Author extends BaseObject
     private $assets;
 
     /**
-     * @ORM\OneToOne(targetEntity="\FXL\Bundle\UserBundle\Entity\User", mappedBy="author")
+     * @ORM\OneToOne(targetEntity="\FXL\Bundle\CommonBundle\Entity\User", mappedBy="author")
      */
     private $user;
 

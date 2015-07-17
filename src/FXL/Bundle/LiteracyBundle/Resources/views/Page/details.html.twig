@@ -1,0 +1,105 @@
+{% extends "::base.html.twig" %}
+
+
+{% block title %}
+
+{{ group.name }} - {{ group.node.name }} - Littérature - {{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container-fluid">
+
+    {% include 'FXLCommonBundle:Component:breadcrumb.html.twig' with {breadcrumb: breadcrumb, tags: tags} %}
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Articles connexes</li>
+                        {% for literacy in all %}
+                            {% if literacy.id != group.id and group.node.id == literacy.node.id  %}
+                            <li>
+                                <a href="{{ path("details_literacy_node", {"slug":literacy.slug}) }}">{{ literacy.name }}</a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Autres articles</li>
+                        {% for literacy in all %}
+                            {% if group.node.id != literacy.node.id  %}
+                            <li>
+
+                                <a href="{{ path("details_literacy_node", {"slug":literacy.slug}) }}">{{ literacy.name }}</a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="span6" style="box-shadow: 1px 1px 12px #555;padding: 40px 50px 40px 50px;background: white;">
+
+                    <span class="label label-info" style="float: right;margin-right: 2px;">
+
+                        {{ group.updatedAt|localizeddate('long', 'none') }}
+
+                    </span>
+                <h2>{{ group.name }}</h2><br /><br />
+                <p style="font-size: 12px;">
+                    {{ group.getSheetContent|nl2br }}
+                </p>
+            </div>
+            <div class="span3">
+
+                <div class="well sidebar-nav" style="text-align:center;">
+                    <img src="{{ group.path }}" style="margin-left: 5px; max-width: 120px; height: 80px;background: white;border:double 5px #cdcdcd;-moz-border-radius: 0px;-webkit-border-radius: 0px;border-radius: 0px;" />
+                    <br style="clear: both;" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr />
+    {% include 'FXLCommonBundle:Component:footer.html.twig' %}
+
+</div>
+
+<style>
+    .span6 p:first-line{
+        font-weight: bold;
+    }
+
+    .span6 p:first-letter{
+        font-size: 18px;
+    }
+
+    .span6 p{
+        font-size: 12px;
+    }
+
+    .label:contains(poèmes){
+        border: solid 1px blue;
+    }
+    /*:contains(poèmes) ~ .span6 p{
+        padding: 0 0 0 80px;
+    }*/
+</style>
+
+{% endblock %}
+
+{% block js_ready %}
+
+    $(".label:contains(poèmes)").each(function(){
+
+        $(".span6 p, .span6 h2").css("padding", "0 0 0 14%");
+    });
+{% endblock %}

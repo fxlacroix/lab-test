@@ -1,0 +1,66 @@
+<h1>Author creation</h1>
+
+<form action="{{ path('admin_ajax_author_create') }}" method="post" {{ form_enctype(form) }}>
+
+
+      <div  class="clearfix"></div>
+      <div class="left_admin_form">
+
+        {{ form_row(form.lookup) }}
+      </div>
+      <div class="right_admin_form author-list">
+       {{ form_row(form.authors_lookup) }}
+      </div>
+
+<div  class="clearfix"></div>
+
+
+        <div class="left_admin_form">
+        {{ form_row(form.name) }}
+        {{ form_row(form.wikipediaId) }}
+        {{ form_row(form.tracks) }}
+        </div>
+
+        </div>
+
+        <div class="right_admin_form">
+
+        {{ form_row(form.description) }}
+        </div>
+
+
+        <div  class="clearfix"></div>
+
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}
+{% include 'FXLMusicBundle:Component:js/add_author.html.twig' %}
+
+<script type="text/javascript">
+
+
+    $('.author-list select').filterByText($('#fxl_musicbundle_authortype_lookup'));
+
+
+    $('#fxl_musicbundle_authortype_authors_lookup option').click(function(){
+
+         $("#ajax_form").mask();
+
+         $.ajax({
+            type: 'GET',
+            url: "/admin/ajax/author/" + $(this).attr("value") + "/edit?project=" + $("#project-selection option:selected").attr("value"),
+            //data: data,
+            success: function(html){
+
+                $("#ajax_form").html(html);
+
+                $("#ajax_form").unmask();
+
+            }
+        });
+    });
+
+</script>

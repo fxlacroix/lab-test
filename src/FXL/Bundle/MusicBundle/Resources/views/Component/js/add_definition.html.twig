@@ -1,0 +1,18 @@
+<script type="text/javascript">
+
+    var  options = {
+        serviceUrl: "/admin/ajax/component/lookup",
+        minChars:3,
+        deferRequestBy: 200, //miliseconds
+        onSelect: function(value, data, e){
+
+            $('#fxl_musicbundle_authortype_name').val(data.name);
+            $('#fxl_musicbundle_authortype_description').val(data.description);
+            $('#fxl_musicbundle_authortype_wikipediaId').val(data.wikipediaId);
+        },
+
+    };
+
+    var autocomplete = $('#fxl_musicbundle_authortype_lookup').autocomplete(options);
+
+</script>

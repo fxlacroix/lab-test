@@ -1,0 +1,49 @@
+{% extends 'FXLPhotoBundle::base.html.twig' %}
+{% block title %} {{ folderName }} - Photos de {{ userName }} - Azax{% endblock title %}
+{% block content %}
+    <h2>&nbsp;&nbsp;
+        <a href="{{ path('photo_user_list', {'userName': userName}) }}">
+            <span class="glyphicon glyphicon-folder-open"></span></a>
+        &nbsp;{{ folderName|capitalize }}
+    </h2>
+
+    <div class=" col-md-12 clearfix" style="height: 400px;">
+        {% include 'FXLMagicBundle:Common:carousel.html.twig' with {
+        items: folder.files,
+        userName: userName
+        } only %}
+    </div>
+    <hr />
+
+    {% for file in folder.files %}
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target=".bs-modal-lg-{{ file.id }}">
+                <div class="crop" style="text-align: center;">
+                    <img src="{{ ("/uploads/fxlphoto/"~userName~"/photo/"~folderName~"/"~file.name~".jpg") | apply_filter('photo_list')  }}" class="photo"/>
+                </div>
+            </a>
+            <div class="caption">
+                <small>{{ file.name }}</small>
+            </div>
+        </div>
+        {% include 'FXLMagicBundle:Common:modal.html.twig' with {
+            id: file.id,
+            name: file.name,
+            img: file.path
+
+        } only %}
+        {% if loop.index % 4 == 0 %}
+            <div class="clearfix visible-xs-block"></div>
+            <hr/>
+        {% endif %}
+    {% endfor %}
+    <div class="clearfix"/></div>
+    <hr/>
+    <div class="clearfix visible-xs-block"></div>
+    <script>
+        document.oncontextmenu = new Function("return false");
+        $('.carousel').carousel({
+            interval: false
+        });
+    </script>
+{% endblock %}

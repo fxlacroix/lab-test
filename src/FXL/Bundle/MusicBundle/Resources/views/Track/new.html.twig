@@ -1,0 +1,44 @@
+<h1>Track creation</h1>
+
+<form action="{{ path('admin_ajax_track_create') }}" method="post" {{ form_enctype(form) }}>
+      <div class="left_admin_form">
+
+        {{ form_row(form.name) }}
+        {{ form_row(form.number) }}
+
+            <input id="fxl_musicbundle_authortype_lookup" type="text" style="width: 68%;" />
+            <input id="fxl_musicbundle_authortype_name" type="hidden" style="width: 68%;" />
+            <input id="fxl_musicbundle_authortype_description" type="hidden" style="width: 68%;" />
+            <input id="fxl_musicbundle_authortype_wikipediaId" type="hidden" style="width: 68%;" />
+
+            <button id="add-author" type="button" style="position: relative; bottom: 3px;">add</button>
+            <div class="author-list">
+                {{ form_widget(form.authors) }}
+            </div>
+        </div>
+
+
+        <div class="right_admin_form">
+
+            {{ form_row(form.description) }}
+        </div>
+
+        <div  class="clearfix"></div>
+
+        <div class="plain_admin_form">
+        {{ form_row(form.content) }}
+
+        <div  class="clearfix"></div>
+        &nbsp;
+        {{ form_row(form.chords) }}
+        </div>
+
+        {{ form_row(form.project) }}
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}
+{% include 'FXLMusicBundle:Component:js/add_author.html.twig' %}
+{% include 'FXLMusicBundle:Component:js/add_author_list.html.twig' %}

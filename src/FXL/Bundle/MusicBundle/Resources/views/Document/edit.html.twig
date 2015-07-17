@@ -1,0 +1,28 @@
+<h1>Document edit</h1>
+
+<form action="{{ path('admin_ajax_document_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+
+    <div class="left_admin_form">{{ form_row(edit_form.name) }}</div>
+    <div class="right_admin_form">{{ form_row(edit_form.updatedAt) }}</div>
+
+        <div class="left_admin_form">
+        {{ form_row(edit_form.version) }}
+         {{ form_row(edit_form.file) }}
+        {{ form_row(edit_form.path) }}
+        </div>
+
+        <div class="right_admin_form">
+
+            {{ form_row(edit_form.description) }}
+        </div>
+
+        <div  class="clearfix"></div>
+        <span style="display: none;">
+        {{ form_widget(edit_form.track) }}
+        </span>
+
+    <p>
+        <button type="submit">Edit</button>
+    </p>
+</form>
+{% include 'FXLMusicBundle:Component:js/form_ajax.html.twig' %}

@@ -1,9 +1,28 @@
 <?xml version="1.0" ?>
 
 <container xmlns="http://symfony.com/schema/dic/services"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="fxl_photo.consumer.royo.driver.class">FXL\Bundle\PhotoBundle\Consumer\Driver\RoyoDriver</parameter>
+        <parameter key="fxl_photo.filter.loader.paste.class">FXL\Bundle\PhotoBundle\Imagine\Filter\PasteFilterLoader</parameter>
+    </parameters>
 
+
+    <services>
+
+        <service id="imagine.filter.loader.paste" class="%fxl_photo.filter.loader.paste.class%">
+            <tag name="imagine.filter.loader" filter="paste" />
+        </service>
+
+        <!-- driver service -->
+        <service id="fxl_photo.consumer.driver.royo" class="%fxl_photo.consumer.royo.driver.class%"></service>
+
+        <!-- consumers google image -->
+        <service id="fxl_photo.consumer.royo" class="%fxl_component.consumer.class%">
+            <argument type="service" id="fxl_photo.consumer.driver.royo"></argument>
+        </service>
+    </services>
     <!--
     <services>
         <service id="fxl_photo.example" class="FXL\Bundle\PhotoBundle\Example">

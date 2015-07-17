@@ -1,0 +1,45 @@
+
+{% for group in groups %}
+    <li><span><i class="icon-file"></i>&nbsp;{{ group.name }}
+
+    {% if group.published == true %}
+        <a class="unpublish" style="background: greenyellow;" itemprop="/admin/ajax/group/{{ group.id }}/unpublish">[<i class="icon-minus"></i>]</a>
+        <a class="publish" style="display: none;" itemprop="/admin/ajax/group/{{ group.id }}/publish">[<i class="icon-plus"></i>]</a>
+    {% else %}
+        <a class="unpublish" style="display: none;" itemprop="/admin/ajax/group/{{ group.id }}/unpublish">[<i class="icon-minus"></i>]</a>
+        <a class="publish" itemprop="/admin/ajax/group/{{ group.id }}/publish">[<i class="icon-plus"></i>]</a>
+    {% endif %}
+
+    <a class="generate" itemprop="/admin/ajax/group/{{ group.id}}/generate" ><i class="icon-screenshot"></i></a>
+
+    {% if group.sons is not empty or group.sons is empty and group.sheets is empty %}
+        <a class="new" itemprop="/admin/ajax/group/{{ group.id}}/group/new"><i class="icon-file"></i></a>
+    {% endif %}
+
+    {% if group.sheets is not empty or group.sons is empty and group.sheets is empty %}
+        <a class="new" itemprop="/admin/ajax/sheet/group/{{ group.id}}/new"><span class="file" style="display: inline;">&nbsp;</span></a>
+
+    {% endif %}
+
+
+    <a class="edit" itemprop="/admin/ajax/group/{{ group.id }}/edit"><i class="icon-edit"></i></a>
+    <a class="delete" itemprop="/admin/ajax/group/{{ group.id }}/delete"><i class="icon-trash"></i></a></span>
+
+
+
+    <ul id="folder21">
+
+    {% if group.sons is defined and group.sons is not empty %}
+        {% include 'FXLLiteracyBundle:Folder:group.html.twig' with {groups: group.sons} only %}
+    {% endif %}
+
+    {% if group.sheets is defined and group.sheets is not empty %}
+
+        {% include "FXLLiteracyBundle:Folder:sheet.html.twig" with { sheets: group.sheets } only %}
+
+    {% endif %}
+    </ul>
+
+
+    </li>
+    {% endfor %}

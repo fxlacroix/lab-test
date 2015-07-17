@@ -1,0 +1,66 @@
+2:
+  name: Rock on Lisa
+  description: Des chansons pour feu Lisa
+  content: Un grand amour vaut bien un vieux disque de rock
+  logo:  "/logos/rocklisa.jpeg"
+  tracks:
+    0:
+      name: Lisa for Love
+      documents:
+        0:
+          version: 1
+    1:
+      name: I got it bad
+      documents:
+        0:
+          version: 1
+    2:
+      name: Killer inside you
+      documents:
+        0:
+          version: 1
+    3:
+      name: I am gonna wait for you
+      documents:
+        0:
+          version: 1
+    4:
+      name: Not yet established
+      documents:
+        0:
+          version: 1
+    5:
+      name: Personal
+      documents:
+        0:
+          version: 1
+    6:
+      name: Open Minded
+      documents:
+        0:
+          version: 1
+    7:
+      name: Rocky tired
+      documents:
+        0:
+          version: 1
+    8:
+      name: Definitively Rock
+      documents:
+        0:
+          version: 1
+    9:
+      name: Rock And Love
+      documents:
+        0:
+          version: 1
+    10:
+      name: A fly on Lisa
+      documents:
+        0:
+          version: 1
+    11:
+      name: Try to spring
+      documents:
+        0:
+          version: 1

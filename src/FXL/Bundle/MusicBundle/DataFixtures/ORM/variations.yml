@@ -1,0 +1,161 @@
+2:
+  name: Variations de Goldbert
+  description: Tentative de GlennGoulderie
+  content: Dans un but ludique, selon une ligne de conduite sans cesse évolutive, je me permet de poster ma version des variations de Goldberg... Elles sont exécutées sur un piano Roland FP-7, touché lourd.
+  logo:  "/logos/variation.jpeg"
+  tracks:
+    0:
+      name: Aria
+      documents:
+        0:
+          version: 1
+    1:
+      name: var. 1 allegro
+      documents:
+        0:
+          version: 1
+    2:
+      name: var. 2 allegretto
+      documents:
+        0:
+          version: 1
+    3:
+      name: var. 3 canone all unisuono
+      documents:
+        0:
+          version: 1
+    4:
+      name: var. 4 Istesso movemento
+      documents:
+        0:
+          version: 1
+    5:
+      name: var. 5 allegro vivace
+      documents:
+        0:
+          version: 1
+    6:
+      name: var. 6 canone alla seconda
+      documents:
+        0:
+          version: 1
+    7:
+      name: var. 7 al tempo di giga
+      documents:
+        0:
+          version: 1
+    8:
+      name: var. 8 allegro
+      documents:
+        0:
+          version: 1
+    9:
+      name: var. 9 canone alla terza
+      documents:
+        0:
+          version: 1
+    10:
+      name: var. 10 fughetta
+      documents:
+        0:
+          version: 1
+    11:
+      name: var. 11 allegro e leggiero
+      documents:
+        0:
+          version: 1
+    12:
+      name: var. 12 canone alla quarta
+      documents:
+        0:
+          version: 1
+    13:
+      name: var. 13 andantino
+      documents:
+        0:
+          version: 1
+    14:
+      name: var. 14 allegro
+      documents:
+        0:
+          version: 1
+    15:
+      name: var. 15 canone alla quinta
+      documents:
+        0:
+          version: 1
+    16:
+      name: var. 16 ouverture
+      documents:
+        0:
+          version: 1
+    17:
+      name: var. 17 allegro
+      documents:
+        0:
+          version: 1
+    18:
+      name: var. 18 canone alla sesta
+      documents:
+        0:
+          version: 1
+    19:
+      name: var. 19 allegro vivace
+      documents:
+        0:
+          version: 1
+    20:
+      name: var. 20 allegro
+      documents:
+        0:
+          version: 1
+    21:
+      name: var. 21 canone alla settima
+      documents:
+        0:
+          version: 1
+    22:
+      name: var. 22 alla breve
+      documents:
+        0:
+          version: 1
+    23:
+      name: var. 23 allegro moderato
+      documents:
+        0:
+          version: 1
+    24:
+      name: var. 24 canone all octava
+      documents:
+        0:
+          version: 1
+    25:
+      name: var. 25 adagio
+      documents:
+        0:
+          version: 1
+    26:
+      name: var. 26 allegro
+      documents:
+        0:
+          version: 1
+    27:
+      name: var. 27 canone alla nona
+      documents:
+        0:
+          version: 1
+    28:
+      name: var. 28 allegro
+      documents:
+        0:
+          version: 1
+    29:
+      name: var. 29 brillante
+      documents:
+        0:
+          version: 1
+    30:
+      name: var. 30 quodlibet
+      documents:
+        0:
+          version: 1

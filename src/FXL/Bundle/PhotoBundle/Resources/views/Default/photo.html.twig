@@ -1,0 +1,42 @@
+{% extends 'FXLPhotoBundle::base.html.twig' %}
+{% block title %}Photos de {{ userName }} - Azax{% endblock title %}
+{% block navbar %}
+    {{ render(controller('FXLPhotoBundle:Component:menu', { "routeAttributes": app.request.attributes})) }}
+{% endblock %}
+{% block content %}
+    {% for item in folders %}
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="label label-default pull-left">
+                    mis a jour le {{ item.date }}
+                </div>
+                <div class="label label-info pull-right">
+                    {{ item.files.count }} prises
+                </div>
+                {% if item.picture is defined and item.picture is not empty %}
+                    <a href="{{ path('photo_user_list_folder', {
+                    'userName': userName,
+                    'folderName': item.name
+                    }) }}">
+                        <div class="crop" style="text-align: center;">
+
+                            <img data-src="{{ item.picture }}" alt="100%x200" src="{{ item.picture  | apply_filter('paste_home') }}">
+                        </div>
+                    </a>
+                {% endif %}
+                <h3 style="text-align: center;">{{ item.name|capitalize }}</h3>
+                {% if item.content is defined and item.content is not empty %}
+                    <p>{{ item.content }}</p>
+                {% endif %}
+                <div class="clearfix visible-xs-block"></div>
+            </div>
+            {% if loop.index % 3 == 0 %}
+                <br/>
+            {% endif %}
+        </div>
+    {% endfor %}
+    <div class="clearfix visible-xs-block"></div>
+    <script>
+        document.oncontextmenu = new Function("return false");
+    </script>
+{% endblock %}

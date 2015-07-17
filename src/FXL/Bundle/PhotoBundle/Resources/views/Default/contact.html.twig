@@ -1,0 +1,27 @@
+{% extends 'FXLPhotoBundle::base.html.twig' %}
+{% block title %} Contact - Photos de {{ userName }} - Azax{% endblock title %}
+{% block content %}
+    <div class="alert alert-info">
+        Dans le message indiquez :
+        <ul>
+            <li><strong>votre nom</strong></li>
+            <li><strong>votre prénom</strong></li>
+            <li><strong>l'adresse à laquelle devra être envoyé le tirage</strong></li>
+            <li><strong>le pays et le titre de la (des) photo(s) choisie(s).</strong> Attention ne vous trompez pas !
+            </li>
+        </ul>
+    </div>
+    <form action="{{ path('photo_user_contact', {'userName': userName}) }}" method="POST" id="contact_form">
+        {{ form_errors(form) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.subject, {value:'[Achat photo]'}) }}
+        {{ form_row(form.message) }}
+        {{ form_rest(form) }}
+        <input type="submit" value="Envoyer" class="symfony-button-grey"/>
+    </form>
+    <style>
+        textArea {
+            min-height: 300px;
+        }
+    </style>
+{% endblock %}
