@@ -38,21 +38,23 @@ Littérature - {{ parent() }}
 
         <div class="span9 blogart-paper" style="box-shadow: 1px 1px 12px #555;">
 
+            {% if content[0] is defined and all[0] is defined %}
              {% set group = all.0%}
 
              {% set content = group.sheets[0].content|split('\n\n') %}
 
-             {% include "FXLMagicBundle:Component:hero.html.twig" with {
-                'name'      : group.name,
-                'updatedAt' : group.updatedAt,
-                'path'      : group.path,
-                'url'       : path("details_literacy_node", {"slug":group.slug }),
-                'content'   : content[0],
-                'user'      : group.findUser(),
-                'tags'      : [group.node],
-                'labelLink' : group.node.name
-            } only %}
 
+                 {% include "FXLMagicBundle:Component:hero.html.twig" with {
+                    'name'      : group.name,
+                    'updatedAt' : group.updatedAt,
+                    'path'      : group.path,
+                    'url'       : path("details_literacy_node", {"slug":group.slug }),
+                    'content'   : content[0],
+                    'user'      : group.findUser(),
+                    'tags'      : [group.node],
+                    'labelLink' : group.node.name
+                } only %}
+            {% endif %}
             <div class="list-project">
 
                 {% include 'FXLMagicBundle:Component:list.html.twig' with {

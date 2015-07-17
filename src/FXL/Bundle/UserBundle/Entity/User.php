@@ -18,6 +18,15 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $name;
+
+    /**
+     * @ORM\OneToOne(targetEntity="\FXL\Bundle\MusicBundle\Entity\Author", mappedBy="user")
+     */
+    private $author;
 
     public function __construct()
     {
