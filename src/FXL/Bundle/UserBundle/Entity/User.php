@@ -29,6 +29,12 @@ class User extends BaseUser
      */
     private $author;
 
+    /**
+     * @ORM\OneToMany(targetEntity="\FXL\Bundle\LiteracyBundle\Entity\Node", mappedBy="user", cascade={"remove"})
+     * @ORM\JoinColumn(name="id", referencedColumnName="user_id", nullable=true)
+     */
+    protected $nodes;
+
     public function __construct()
     {
         parent::__construct();
@@ -81,6 +87,22 @@ class User extends BaseUser
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @param mixed $nodes
+     */
+    public function setNodes($nodes)
+    {
+        $this->nodes = $nodes;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNodes()
+    {
+        return $this->nodes;
     }
 
 

@@ -24,11 +24,6 @@
 
             {% include "FXLMusicBundle:Component:chords.html.twig" with {track: track, display: "block" } %}
 
-            {% render "FXLMagicBundle:Component:trackList" with {
-                 currentTrackId: track.id,
-                 tracks: track.project.tracks
-               } %}
-
 
         </div><!--/span-->
         <div class="span6">
@@ -98,9 +93,9 @@
 
         <div class="span3">
 
-            {% render "FXLMagicBundle:Component:imageCarousel" with { track: track} %}
+            {# render(controller("FXLMagicBundle:Component:imageCarousel", { track: track} )) #}
 
-            {% render "FXLMagicBundle:Component:projectList" with {currentProjectId: track.project.id} %}
+            {# render(controller("FXLMagicBundle:Component:projectList", {currentProjectId: track.project.id} )) #}
 
         </div>
 
