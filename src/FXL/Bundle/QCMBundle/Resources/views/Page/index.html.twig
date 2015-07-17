@@ -1,4 +1,4 @@
-{% extends "::blogart.html.twig" %}
+{% extends "::base.html.twig" %}
 
 {% block title %}
 
@@ -7,7 +7,7 @@ QCM - {{ parent() }}
 
 {% block body %}
 
-        {% include "FXLMagicBundle:Component:breadcrumb.html.twig" with {
+        {# include "FXLMagicBundle:Component:breadcrumb.html.twig" with {
             breadcrumb:[{
             name     : "Laboratoire",
             routeName : "fxl_laboratory_index"
@@ -16,7 +16,7 @@ QCM - {{ parent() }}
             name     : "Qcm",
             routeName : "fxl_qcm_index"
             }]
-        } %}
+        } #}
       <div class="row-fluid">
         <div class="span3 left-col">
             {% include "FXLMagicBundle:Component:sidebar.html.twig" with {

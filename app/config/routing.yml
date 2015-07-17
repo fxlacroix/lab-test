@@ -3,6 +3,12 @@ fxl_game:
     type:     annotation
     prefix:   /
 
+fxl_qcm:
+    resource: "@FXLQCMBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
 fxl_photo:
     resource: "@FXLPhotoBundle/Controller/"
     type:     annotation
