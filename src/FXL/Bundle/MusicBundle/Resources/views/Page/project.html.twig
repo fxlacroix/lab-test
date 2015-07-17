@@ -33,11 +33,11 @@
                 {% endif %}
             {% endfor %}
 
-            {% render "FXLMagicBundle:Component:projectList" with {currentProjectId: project.id} %}
+            {# render "FXLMagicBundle:Component:projectList", {currentProjectId: project.id} #}
 
 
             {% if project.tracks|length < 10 %}
-                {% render "FXLMagicBundle:Component:thanks" with {project:project} %}
+                {# render "FXLMagicBundle:Component:thanks", {project:project} #}
             {% endif %}
 
         </div><!--/span-->
@@ -137,7 +137,7 @@
 
         <div class="span3">
 
-            {% render "FXLMagicBundle:Component:imageCarousel" with { project: project} %}
+            {# render "FXLMagicBundle:Component:imageCarousel" , { project: project} #}
 
             {% for track in project.tracks %}
                 {% if track.chords is not empty and project.tracks|length > 10 %}
@@ -152,7 +152,7 @@
             } %}
 
             {% if project.tracks|length >= 10 %}
-                {% render "FXLMagicBundle:Component:thanks" with {project:project} %}
+                {# render "FXLMagicBundle:Component:thanks", {project:project} #}
             {% endif %}
 
         </div>
