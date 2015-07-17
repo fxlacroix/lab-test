@@ -53,7 +53,7 @@ class Project extends BaseObject
     protected $authors;
 
     /**
-     * @ORM\ManyToOne(targetEntity="\FXL\Bundle\CommonBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="\FXL\Bundle\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=true)
      */
     private $user;

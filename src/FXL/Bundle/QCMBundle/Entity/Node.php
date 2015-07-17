@@ -3,7 +3,7 @@
 namespace FXL\Bundle\QCMBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use FXL\Component\Entity\Base;
+use FXL\Component\Entity\Base\Base;
 
 /**
  * @ORM\Entity(repositoryClass="FXL\Bundle\QCMBundle\Repository\NodeRepository")

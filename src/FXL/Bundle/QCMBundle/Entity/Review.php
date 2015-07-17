@@ -4,7 +4,7 @@ namespace FXL\Bundle\QCMBundle\Entity;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Doctrine\ORM\Mapping as ORM;
-use FXL\Component\Entity\Base;
+use FXL\Component\Entity\Base\Base;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\Common\Collections\ArrayCollection;
 

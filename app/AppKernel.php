@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new FXL\Bundle\MusicBundle\FXLMusicBundle(),
             new FXL\Bundle\LiteracyBundle\FXLLiteracyBundle(),
             new FXL\Bundle\PhotoBundle\FXLPhotoBundle(),
+            new FXL\Bundle\QCMBundle\FXLQCMBundle(),
             new FXL\Bundle\GameBundle\FXLGameBundle(),
         );
 

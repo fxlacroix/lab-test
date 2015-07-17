@@ -4,7 +4,7 @@ namespace FXL\Bundle\QCMBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use FXL\Component\Entity\AttachedDate;
+use FXL\Component\Entity\Base\AttachedDate;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**

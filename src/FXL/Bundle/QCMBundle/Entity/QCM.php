@@ -4,7 +4,7 @@ namespace FXL\Bundle\QCMBundle\Entity;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Doctrine\ORM\Mapping as ORM;
-use FXL\Component\Entity\Base\Attached;
+use FXL\Component\Entity\Base\AttachedDate;
 
 /**
  *
@@ -12,11 +12,11 @@ use FXL\Component\Entity\Base\Attached;
  * @ORM\Entity()
  * @ORM\Table(name="qcm__qcm")
  */
-class QCM extends Attached
+class QCM extends AttachedDate
 {
 
     /**
-     * @ORM\ManyToOne(targetEntity="\FXL\Bundle\CommonBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="\FXL\Bundle\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=true)
      */
     protected $user;
