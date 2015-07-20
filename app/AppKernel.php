@@ -21,10 +21,10 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new FXL\Bundle\MagicBundle\FXLMagicBundle(),
             new FXL\Bundle\UserBundle\FXLUserBundle(),
-            new FXL\Bundle\MusicBundle\FXLMusicBundle(),
-            new FXL\Bundle\LiteracyBundle\FXLLiteracyBundle(),
-            new FXL\Bundle\PhotoBundle\FXLPhotoBundle(),
-            new FXL\Bundle\QCMBundle\FXLQCMBundle(),
+            //new FXL\Bundle\MusicBundle\FXLMusicBundle(),
+            //new FXL\Bundle\LiteracyBundle\FXLLiteracyBundle(),
+            //new FXL\Bundle\PhotoBundle\FXLPhotoBundle(),
+            //new FXL\Bundle\QCMBundle\FXLQCMBundle(),
             new FXL\Bundle\GameBundle\FXLGameBundle(),
         );
 

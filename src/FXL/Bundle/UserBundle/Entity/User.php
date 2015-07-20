@@ -23,17 +23,6 @@ class User extends BaseUser
      */
     protected $name;
 
-    /**
-     * @ORM\OneToOne(targetEntity="\FXL\Bundle\MusicBundle\Entity\Author", mappedBy="user")
-     * @ORM\JoinColumn(name="author_id", referencedColumnName="id", nullable=true)
-     */
-    private $author;
-
-    /**
-     * @ORM\OneToMany(targetEntity="\FXL\Bundle\LiteracyBundle\Entity\Node", mappedBy="user", cascade={"remove"})
-     * @ORM\JoinColumn(name="id", referencedColumnName="user_id", nullable=true)
-     */
-    protected $nodes;
 
     public function __construct()
     {

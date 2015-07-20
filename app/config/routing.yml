@@ -1,31 +1,36 @@
-fxl_game:
-    resource: "@FXLGameBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-fxl_qcm:
-    resource: "@FXLQCMBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-
-fxl_photo:
-    resource: "@FXLPhotoBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-fxl_literacy:
-    resource: "@FXLLiteracyBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-fxl_music:
-    resource: "@FXLMusicBundle/Controller/"
-    type:     annotation
-    prefix:   /
+#fxl_game:
+#    resource: "@FXLGameBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+#
+#fxl_qcm:
+#    resource: "@FXLQCMBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+#
+#
+#fxl_photo:
+#    resource: "@FXLPhotoBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+#
+#fxl_literacy:
+#    resource: "@FXLLiteracyBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+#
+#fxl_music:
+#    resource: "@FXLMusicBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
 
 fxl_user:
     resource: "@FXLUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fxl_magic:
+    resource: "@FXLMagicBundle/Controller/"
     type:     annotation
     prefix:   /
 
