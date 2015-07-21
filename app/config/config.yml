@@ -52,13 +52,20 @@ assetic:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   pdo_mysql
-        host:     "%database_host%"
-        port:     "%database_port%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
-        password: "%database_password%"
-        charset:  UTF8
+        connections:
+            default:
+                driver:   pdo_mysql
+                host:     %database_host%
+                port:     %database_port%
+                dbname:   %database_name%
+                user:     %database_user%
+                password: %database_password%
+                charset:  UTF8
+            resume:
+                driver:        pdo_sqlite
+                dbname:        "%kernel.root_dir%/db/resume.db"
+                path:          "%kernel.root_dir%/db/resume.db"
+                charset:       UTF8
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
@@ -68,8 +75,18 @@ doctrine:
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
+        #naming_strategy: doctrine.orm.naming_strategy.underscore
+        entity_managers:
+            default:
+                #naming_strategy: doctrine.orm.naming_strategy.underscore
+                connection:       default
+                mappings:
+                    FXLUserBundle: ~
+            resume:
+                #naming_strategy: doctrine.orm.naming_strategy.underscore
+                connection:       resume
+                mappings:
+                    FXLResumeBundle: ~
 
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'

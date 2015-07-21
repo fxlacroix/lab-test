@@ -5,25 +5,29 @@
         <div class="row">
 
             <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVhYjYxZTI5MSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWFiNjFlMjkxIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzQuNSI+MTQweDE0MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="..." class="img-circle">
-            <h1>test CV</h1>
+            <h1></h1>
             <blockquote>
-                <p class="lead">Issu milieu open source bla bla</p>
+                <p class="lead">{{ resume.name }}</p>
             </blockquote>
 
-            <h2>Skills</h2>
+            <h2>Compétences</h2>
             <dl class="dl-horizontal">
-                <dt>PHP</dt>
-                <dd>Expert</dd>
+                {% for skill in resume.skills %}
+                    <dt>{{ skill.name }}</dt>
+                    <dd>{{ skill.level }}</dd>
+                {% endfor %}
             </dl>
 
             <h2>Experience</h2>
             <ul>
+                {% for experience in resume.experiences %}
                 <li>
-                    experience 1
+                    <dl class="dl-horizontal">
+                        <dt>{{ experience.startAt }}</dt>
+                        <dd>{{ experience.name }}</dd>
+                    </dl>
                 </li>
-                <li>
-                    experience 2
-                </li>
+                {% endfor %}
             </ul>
 
             <h2>Loisir</h2>

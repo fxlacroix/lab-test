@@ -1,6 +1,6 @@
 <?php
 
-namespace FXL\Bundle\MusicBundle\Entity;
+namespace FXL\Bundle\ResumeBundle\Entity\Base;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -26,7 +26,7 @@ class DateObject
     /**
      * get created at
      *
-     * @return \atetime
+     * @return \Datetime
      */
     public function getCreatedAt()
     {

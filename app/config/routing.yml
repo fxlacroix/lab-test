@@ -29,6 +29,11 @@ fxl_user:
     type:     annotation
     prefix:   /
 
+fxl_resume:
+    resource: "@FXLResumeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 fxl_magic:
     resource: "@FXLMagicBundle/Controller/"
     type:     annotation

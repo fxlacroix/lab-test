@@ -7,9 +7,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="resume__skill")
+ * @ORM\Table(name="resume__study")
  */
-class Skill
+class Study
 {
 
     /**
@@ -25,12 +25,7 @@ class Skill
     protected $name;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $level;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="skills")
+     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="studies")
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
     protected $resume;
@@ -49,22 +44,6 @@ class Skill
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * @param mixed $level
-     */
-    public function setLevel($level)
-    {
-        $this->level = $level;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLevel()
-    {
-        return $this->level;
     }
 
     /**
