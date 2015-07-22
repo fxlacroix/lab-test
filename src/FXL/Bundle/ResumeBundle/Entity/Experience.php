@@ -22,6 +22,11 @@ class Experience
     /**
      * @ORM\Column(type="string", nullable=true)
      */
+    protected $title;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
     protected $company;
 
     /**
@@ -54,6 +59,22 @@ class Experience
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @param mixed $title
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
     }
 
     /**

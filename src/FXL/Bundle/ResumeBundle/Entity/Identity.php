@@ -30,6 +30,11 @@ class Identity
     protected $lastName;
 
     /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $dateOfBirth;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Resume", inversedBy="identity")
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
@@ -99,6 +104,20 @@ class Identity
         return $this->resume;
     }
 
+    /**
+     * @param mixed $dateOfBirth
+     */
+    public function setDateOfBirth($dateOfBirth)
+    {
+        $this->dateOfBirth = $dateOfBirth;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getDateOfBirth()
+    {
+        return $this->dateOfBirth;
+    }
 
 }

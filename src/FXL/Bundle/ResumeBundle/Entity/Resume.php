@@ -21,13 +21,18 @@ class Resume extends BaseObject
     protected $id;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    protected $yearsOfExperience;
+
+    /**
      * @ORM\OneToOne(targetEntity="Identity", cascade={"persist"})
      * @ORM\JoinColumn(name="project_id", referencedColumnName="id", nullable=true)
      */
     protected $identity;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Skill", mappedBy="resume", cascade={"persist"})
+     * @ORM\oneToMany(targetEntity="Skill", mappedBy="resume", cascade={"persist"})
      */
     protected $skills;
 
@@ -95,6 +100,22 @@ class Resume extends BaseObject
     public function getIdentity()
     {
         return $this->identity;
+    }
+
+    /**
+     * @param mixed $yearsOfExperience
+     */
+    public function setYearsOfExperience($yearsOfExperience)
+    {
+        $this->yearsOfExperience = $yearsOfExperience;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getYearsOfExperience()
+    {
+        return $this->yearsOfExperience;
     }
 
     /**

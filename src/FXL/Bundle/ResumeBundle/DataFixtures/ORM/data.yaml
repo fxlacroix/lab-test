@@ -1,0 +1,41 @@
+resume:
+
+  name:                Ingénieur Informatique - spécialisé Web
+  description:         …Issu du milieu Open Source et de nature créative pour le design, l'ergonomie et l'architecture d'applications PHP, mon métier d'ingénieur se décline sur l'écoute attentive de la demande client, le respect des engagements et le partage des connaissances.
+  years_of_experience: 10 ans d'expérience
+
+  identity:
+    first_name:     François-Xavier
+    last_name:      LACROIX
+    date_of_birth:  1979-08-03
+
+  skill:
+    PHP:        Expert
+    Mysql:      Expert
+    JavaScript: Expert
+
+  experience:
+    -
+      company:  Qobuz
+      title:    Chef de projet technique
+      start_at: 2012-06-01
+    -
+      company:  Alten
+      title:    Consultant
+      start_at: 2009-02-01
+    -
+      company:  Clever-Age
+      title:    développeur
+      start_at: 2005-06-01
+
+  study:
+    -
+      school: EFREI
+    -
+      school: Saint-Thomas de Villeneuve
+
+
+  leisure:
+    - Piano
+    - Echecs
+    - Cinéma

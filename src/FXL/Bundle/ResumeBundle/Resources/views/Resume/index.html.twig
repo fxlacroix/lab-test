@@ -1,42 +1,50 @@
 {% extends 'FXLResumeBundle::base.html.twig' %}
 
+{% block title %}CV {% endblock %}
+
 {% block body %}
     <div class="container-fluid">
         <div class="row">
-
-            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVhYjYxZTI5MSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWFiNjFlMjkxIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzQuNSI+MTQweDE0MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="..." class="img-circle">
-            <h1></h1>
-            <blockquote>
-                <p class="lead">{{ resume.name }}</p>
-            </blockquote>
-
-            <h2>Compétences</h2>
-            <dl class="dl-horizontal">
-                {% for skill in resume.skills %}
-                    <dt>{{ skill.name }}</dt>
-                    <dd>{{ skill.level }}</dd>
-                {% endfor %}
-            </dl>
-
-            <h2>Experience</h2>
-            <ul>
-                {% for experience in resume.experiences %}
-                <li>
-                    <dl class="dl-horizontal">
-                        <dt>{{ experience.startAt }}</dt>
-                        <dd>{{ experience.name }}</dd>
-                    </dl>
-                </li>
-                {% endfor %}
-            </ul>
-
-            <h2>Loisir</h2>
-            <ul>
-                <li>
-                    piano
-                </li>
-            </ul>
-
+            <div class="col-md-1" role="main"></div>
+            <div class="col-md-9" role="main">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVhYjYxZTI5MSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWFiNjFlMjkxIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzQuNSI+MTQweDE0MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                             alt="" class="img-circle pull-right">
+                        <h3> {{ resume.identity.lastName}} {{ resume.identity.firstName }}</h3>
+                        <blockquote>
+                            <p class="lead">{{ resume.name }}</p>
+                        </blockquote>
+                        <div class="well" style="margin-top: 40px;">{{ resume.description }}</div>
+                        <h3>Compétences</h3>
+                        <dl class="dl-horizontal">
+                            {% for skill in resume.skills %}
+                                <dt>{{ skill.name }}</dt>
+                                <dd>{{ skill.level }}</dd>
+                            {% endfor %}
+                        </dl>
+                        <h3>Expérience</h3>
+                        {% for experience in resume.experiences %}
+                            <dl class="dl-horizontal">
+                                <dt>{{ experience.startAt|date('d / m / Y') }}</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                                <dt>{{ experience.company }}</dt>
+                                <dd>{{ experience.title }}</dd>
+                            </dl>
+                        {% endfor %}
+                        <h3>Loisir</h3>
+                        <ul>
+                            {% for leisure in resume.leisures %}
+                                <li>
+                                    {{ leisure.name }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

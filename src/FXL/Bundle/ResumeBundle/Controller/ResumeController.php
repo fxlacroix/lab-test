@@ -12,7 +12,7 @@ class ResumeController extends Controller
      * @Route("/resume")
      * @Template()
      */
-    public function indexAction()
+    public function resumeAction()
     {
         $resume = $this->getDoctrine()
             ->getManager('resume')
@@ -28,4 +28,5 @@ class ResumeController extends Controller
 
         return array('resume'   => $resume);
     }
+
 }

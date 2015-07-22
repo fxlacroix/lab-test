@@ -4,61 +4,42 @@ namespace FXL\Bundle\ResumeBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
+use FXL\Bundle\ResumeBundle\Entity\Leisure;
 use FXL\Bundle\ResumeBundle\Entity\Resume;
 use FXL\Bundle\ResumeBundle\Entity\Identity;
 use FXL\Bundle\ResumeBundle\Entity\Skill;
 use FXL\Bundle\ResumeBundle\Entity\Experience;
 use FXL\Bundle\ResumeBundle\Entity\Study;
+use Symfony\Component\Yaml\Parser;
 
 class LoadResumeData implements FixtureInterface
 {
-    static public $skills = array(
-        'PHP'           =>  'Expert',
-        'MySQL'         =>  'Expert',
-        'JavaScript'    =>  'Expert'
-    );
-
-    static public $experiences = array(
-        array(
-            'company'   =>  'Qobuz',
-            'start_at'   =>  '2012-06-01'
-        ),
-        array(
-            'company'   =>  'Alten',
-            'start_at'   =>  '2009-02-01'
-        ),
-        array(
-            'company'   =>  'Clever-Age',
-            'start_at'   =>  '2005-06-01'
-        ),
-    );
-
-    static public $studies = array(
-        array(
-            'school'   =>  'EFREI',
-        ),
-        array(
-            'school'   =>  'Saint Thomas de Villeneuve',
-        ),
-    );
     /**
      * {@inheritDoc}
      */
     public function load(ObjectManager $manager)
     {
+        $yaml = new Parser();
+        $data = $yaml->parse(file_get_contents(__DIR__.'/data.yaml'));
+        $resumeParams = $data['resume'];
+
         // Resume
         $resume = new Resume();
-        $resume->setName('Ingénieur Informatique - spécialisé Web');
-        $resume->setDescription('Issu du milieu open source bla bla');
+        $resume->setName($resumeParams['name']);
+        $resume->setDescription($resumeParams['description']);
+        $resume->setYearsOfExperience($resumeParams['years_of_experience']);
 
         // Identity
+        $identityParam = $resumeParams['identity'];
         $identity = new Identity();
-        $identity->setFirstName('François-Xavier');
-        $identity->setLastName('LACROIX');
-        $resume->setIdentity($identity);
+        $identity->setFirstName($identityParam['first_name']);
+        $identity->setLastName($identityParam['last_name']);
+        $identity->setDateOfBirth($identityParam['date_of_birth']);
+        $resume->setIdentity($identityParam);
 
         // Skills
-        foreach(self::$skills as $skillName => $skillLevel){
+        $skillParams = $resumeParams['skill'];
+        foreach($skillParams as $skillName => $skillLevel){
 
             $skill = new Skill();
             $skill->setName($skillName);
@@ -69,7 +50,8 @@ class LoadResumeData implements FixtureInterface
         }
 
         // Studies
-        foreach(self::$studies as $studyParam){
+        $studyParams = $resumeParams['study'];
+        foreach($studyParams as $studyParam){
 
             $study = new Study();
             $study->setName($studyParam['school']);
@@ -79,14 +61,27 @@ class LoadResumeData implements FixtureInterface
         }
 
         // Experiences
-        foreach(self::$experiences as $experienceParam){
+        $experienceParams = $resumeParams['study'];
+        foreach($experienceParams as $experienceParam){
 
             $experience = new Experience();
             $experience->setCompany($experienceParam['company']);
-            $experience->setStartAt(new \DateTime($experienceParam['start_at']));
+            $experience->setTitle($experienceParam['title']);
+            $experience->setStartAt($experienceParam['start_at']);
             $experience->setResume($resume);
 
             $resume->addExperience($experience);
+        }
+
+        // Leisures
+        $leisureParams = $resumeParams['leisure'];
+        foreach($leisureParams as $leisureName){
+
+            $leisure = new Leisure();
+            $leisure->setName($leisureName);
+            $leisure->setResume($resume);
+
+            $resume->addLeisure($leisure);
         }
 
         $manager->persist($resume);
