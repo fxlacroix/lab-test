@@ -18,15 +18,17 @@ class ResumeController extends Controller
             ->getManager('resume')
             ->getRepository('FXLResumeBundle:Resume')
             ->find(1);
-        /*
-        $q = $this
-            ->createQueryBuilder('u')
-            ->select('u, g')
-            ->leftJoin('u.groups', 'g')
-            ;
-        */
 
-        return array('resume'   => $resume);
+        $tags = $this->getDoctrine()
+            ->getManager('resume')
+            ->getRepository('FXLResumeBundle:Tag')
+            ->findAll();
+
+
+        return array(
+            'resume'   => $resume,
+            'tags'     => $tags
+        );
     }
 
 }

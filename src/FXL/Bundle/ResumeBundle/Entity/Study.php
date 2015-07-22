@@ -25,6 +25,21 @@ class Study
     protected $name;
 
     /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $description;
+
+    /**
+     * @ORM\Column(type="datetime", name="start_at", nullable=true)
+     */
+    protected $startAt;
+
+    /**
+     * @ORM\Column(type="datetime", name="finish_at", nullable=true)
+     */
+    protected $finishAt;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Resume", inversedBy="studies")
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
@@ -78,6 +93,52 @@ class Study
         return $this->resume;
     }
 
+    /**
+     * @param mixed $finishAt
+     */
+    public function setFinishAt($finishAt)
+    {
+        $this->finishAt = $finishAt;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getFinishAt()
+    {
+        return $this->finishAt;
+    }
+
+    /**
+     * @param mixed $startAt
+     */
+    public function setStartAt($startAt)
+    {
+        $this->startAt = $startAt;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStartAt()
+    {
+        return $this->startAt;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
 
 }

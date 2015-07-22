@@ -1,6 +1,6 @@
 {% extends 'FXLResumeBundle::base.html.twig' %}
 
-{% block title %}CV {% endblock %}
+{% block title %}CV de {{ resume.identity.firstName }} {{ resume.identity.lastName }}{% endblock %}
 
 {% block body %}
     <div class="container-fluid">

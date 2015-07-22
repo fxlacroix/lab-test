@@ -21,7 +21,7 @@ class Resume extends BaseObject
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $yearsOfExperience;
 
@@ -32,7 +32,7 @@ class Resume extends BaseObject
     protected $identity;
 
     /**
-     * @ORM\oneToMany(targetEntity="Skill", mappedBy="resume", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Skill", mappedBy="resume", cascade={"persist"})
      */
     protected $skills;
 
@@ -53,6 +53,16 @@ class Resume extends BaseObject
     private $studies;
 
     /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $language;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Trump", mappedBy="resume", cascade={"persist"})
+     */
+    private $trumps;
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -61,6 +71,7 @@ class Resume extends BaseObject
         $this->experiences = new \Doctrine\Common\Collections\ArrayCollection();
         $this->leisures = new \Doctrine\Common\Collections\ArrayCollection();
         $this->studies = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->trumps= new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -250,5 +261,59 @@ class Resume extends BaseObject
         return $this->studies;
     }
 
+    /**
+     * @param mixed $trumps
+     */
+    public function setTrumps($trumps)
+    {
+        $this->trumps = $trumps;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTrumps()
+    {
+        return $this->trumps;
+    }
+
+    /**
+     * Add $trumps
+     *
+     * @param \FXL\Bundle\ResumeBundle\Entity\Trump $trumps
+     * @return Resume
+     */
+    public function addTrump(\FXL\Bundle\ResumeBundle\Entity\Trump $trumps)
+    {
+        $this->trumps[] = $trumps;
+
+        return $this;
+    }
+
+    /**
+     * Remove $trumps
+     *
+     * @param \FXL\Bundle\ResumeBundle\Entity\Trump $trumps
+     */
+    public function removeTrump(\FXL\Bundle\ResumeBundle\Entity\Trump $trumps)
+    {
+        $this->studies->removeElement($trumps);
+    }
+
+    /**
+     * @param mixed $language
+     */
+    public function setLanguage($language)
+    {
+        $this->language = $language;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLanguage()
+    {
+        return $this->language;
+    }
 
 }

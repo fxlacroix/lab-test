@@ -30,10 +30,21 @@ class Skill
     protected $level;
 
     /**
+     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="skills")
+     * @ORM\JoinTable(name="skill_tags")
+     */
+    protected $tags;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Resume", inversedBy="skills")
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
     protected $resume;
+
+    public function __construct(){
+
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * @param mixed $id
@@ -99,6 +110,28 @@ class Skill
         return $this->resume;
     }
 
+    /**
+     * @param mixed $tag
+     */
+    public function setTag($tag)
+    {
+        $this->tag = $tag;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getTag()
+    {
+        return $this->tag;
+    }
+
+    /**
+     * @param mixed $tag
+     */
+    public function addTag($tag)
+    {
+        $this->tag[] = $tag;
+    }
 
 }

@@ -30,9 +30,14 @@ class Identity
     protected $lastName;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="datetime", name="date_of_birth", nullable=true)
      */
     protected $dateOfBirth;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $email;
 
     /**
      * @ORM\ManyToOne(targetEntity="Resume", inversedBy="identity")
@@ -118,6 +123,22 @@ class Identity
     public function getDateOfBirth()
     {
         return $this->dateOfBirth;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
     }
 
 }
