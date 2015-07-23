@@ -27,6 +27,26 @@ class Experience
     /**
      * @ORM\Column(type="string", nullable=true)
      */
+    protected $description;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $city;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $type;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $website;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
     protected $company;
 
     /**
@@ -44,6 +64,11 @@ class Experience
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
     protected $resume;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Task", mappedBy="experience", cascade={"persist"})
+     */
+    protected $tasks;
 
     /**
      * @param mixed $id
@@ -126,6 +151,70 @@ class Experience
     }
 
     /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $city
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param mixed $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param mixed $website
+     */
+    public function setWebsite($website)
+    {
+        $this->website = $website;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWebsite()
+    {
+        return $this->website;
+    }
+
+    /**
      * @param mixed $resume
      */
     public function setResume($resume)
@@ -139,6 +228,30 @@ class Experience
     public function getResume()
     {
         return $this->resume;
+    }
+
+    /**
+     * @param mixed $tasks
+     */
+    public function setTasks($tasks)
+    {
+        $this->tasks = $tasks;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTasks()
+    {
+        return $this->tasks;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function addTask($task)
+    {
+        return $this->tasks[] = $task;
     }
 
 

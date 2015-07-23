@@ -42,7 +42,7 @@
 
         <h2 class="heading-2 heading-big-separator marginb20">Expérience professionnelle</h2>
 
-
+        {#
         <h4><span class="date">09/2007 - Aujourd'hui</span><span class="poste">Webdesigner &amp; Développeur Web Freelance  <em>(Bordeaux,
                     Paris)</em></span></h4>
 
@@ -52,16 +52,25 @@
             d'accueil, je suis également en charge du référencement de chacun de ces dossiers. Pour des raisons
             de confidentialité, je peux vous fournir <a href="http://www.marchesson.com/#contact">d'autres
                 références sur demande</a>.</p>
-        <h4><span class="date">04/2007 - 07/2007</span><span class="poste">Agence Internet <a
-                        href="http://www.systonic.fr/" rel="nofollow">Systonic</a> <em>(Bordeaux)</em></span>
-        </h4>
 
-        <p>Responsable du <strong>développement</strong> de plusieurs plusieurs projets internet.</p>
-        <ul class="listeEmploi">
-            <li>Gestion de projets d’envergure (vin, restauration, hôtellerie)</li>
-            <li>Programmation ASP, .Net, PHP, AJAX</li>
-            <li>Mise en place d'une politique d’accessibilité sur plusieurs sites</li>
-        </ul>
+        #}
+
+        {% for experience in resume.experiences %}
+            <h4><span class="date">{{ experience.startAt|date('Y-m') }} - {{ experience.finishAt|date('Y-m') }}</span>
+                <span class="poste">{{ experience.type }}
+                    <a href="http://{{ experience.website }}" rel="nofollow">{{ experience.company }}</a>
+                    <em>({{ experience.city }})</em>
+                </span>
+            </h4>
+            <p>{{ experience.description }}</p>
+
+            <ul class="listeEmploi">
+                {% for task in experience.tasks %}
+                <li>{{ task.name }}</li>
+                {% endfor %}
+            </ul>
+
+        {% endfor %}
 
         <h2 class="heading-2 heading-big-separator marginb20">Cursus scolaire</h2>
         {% for study in resume.studies %}

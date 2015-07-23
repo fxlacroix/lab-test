@@ -40,18 +40,42 @@ resume:
   experience:
     -
       company:  Qobuz
-      title:    Chef de projet technique
+      type: Service de musique en ligne
+      website: www.qobuz.com
+      description: blabla Qobuz
+      city: Paris
+      title: Chef de projet technique
       start_at: '2012-06-01'
+      tasks:
+        - blabla task number 1
+        - blabla task number 3
+        - blabla task number 2
     -
-      company:  Alten
-      title:    Consultant
+      company:  Altensir
+      type: Société de services technologiques
+      website: www.alten.com
+      description: blabla ALten
+      city: Paris
+      title: Consultant
       start_at: '2009-02-01'
       finish_at: '2012-05-30'
+      tasks:
+        - blabla task number 1
+        - blabla task number 3
+        - blabla task number 2
     -
       company:  Clever-Age
+      description: blabla clever-age
+      type: société de service et agence web
+      website: 'www.clever-age.com'
+      city: Paris
       title:    développeur
       start_at: '2005-06-01'
       finish_at: '2009-01-31'
+      tasks:
+        - blabla task number 1
+        - blabla task number 3
+        - blabla task number 2
 
   study:
      -

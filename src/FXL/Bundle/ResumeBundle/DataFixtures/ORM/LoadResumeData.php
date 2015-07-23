@@ -11,6 +11,7 @@ use FXL\Bundle\ResumeBundle\Entity\Skill;
 use FXL\Bundle\ResumeBundle\Entity\Experience;
 use FXL\Bundle\ResumeBundle\Entity\Study;
 use FXL\Bundle\ResumeBundle\Entity\Tag;
+use FXL\Bundle\ResumeBundle\Entity\Task;
 use FXL\Bundle\ResumeBundle\Entity\Trump;
 use Symfony\Component\Validator\Constraints\DateTime;
 use Symfony\Component\Yaml\Parser;
@@ -91,9 +92,21 @@ class LoadResumeData implements FixtureInterface
 
             $experience = new Experience();
             $experience->setCompany($experienceParam['company']);
+            $experience->setDescription($experienceParam['description']);
+            $experience->setWebsite($experienceParam['company']);
+            $experience->setType($experienceParam['type']);
+            $experience->setCity($experienceParam['city']);
             $experience->setTitle($experienceParam['title']);
             $experience->setStartAt(new \DateTime($experienceParam['start_at']));
             $experience->setResume($resume);
+
+            foreach($experienceParam['tasks'] as $taskParam){
+
+                $task = new Task();
+                $task->setName($taskParam);
+                $task->setExperience($experience);
+                $experience->addTask($task);
+            }
 
             $resume->addExperience($experience);
         }
