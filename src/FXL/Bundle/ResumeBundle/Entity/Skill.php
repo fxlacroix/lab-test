@@ -30,13 +30,13 @@ class Skill
     protected $level;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="skills")
+     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="skills", cascade={"all"})
      * @ORM\JoinTable(name="skill_tags")
      */
     protected $tags;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="skills")
+     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="skills", cascade={"persist"})
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
     protected $resume;
@@ -132,6 +132,7 @@ class Skill
     public function addTag($tag)
     {
         $this->tag[] = $tag;
+
     }
 
 }

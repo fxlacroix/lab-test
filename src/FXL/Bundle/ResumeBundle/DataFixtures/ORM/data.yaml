@@ -2,12 +2,15 @@ tag:
   -
     id: 1
     name: Langages et frameworks de développement Web
+    weight: 10
   -
     id: 2
     name: Logiciels et frameworks de développement
+    weight: 5
   -
     id: 3
     name: Autres compétence
+    weight: 0
 
 
 resume:
@@ -33,9 +36,17 @@ resume:
   language: Français, Anglais (fluent) & Allemand (notion)
 
   skill:
-    PHP:        Expert
-    Mysql:      Expert
-    JavaScript: Expert
+    PHP:
+      level: Expert
+      tag_id: 1
+
+    Mysql:
+      level: Expert
+      tag_id: 1
+
+    JavaScript:
+      level: Expert
+      tag_id: 1
 
   experience:
     -

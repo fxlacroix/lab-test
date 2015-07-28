@@ -40,12 +40,6 @@ class Identity
     protected $email;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="identity")
-     * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
-     */
-    protected $resume;
-
-    /**
      * @param mixed $id
      */
     public function setId($id)

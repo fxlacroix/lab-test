@@ -13,11 +13,12 @@ use FXL\Bundle\ResumeBundle\Entity\Study;
 use FXL\Bundle\ResumeBundle\Entity\Tag;
 use FXL\Bundle\ResumeBundle\Entity\Task;
 use FXL\Bundle\ResumeBundle\Entity\Trump;
-use Symfony\Component\Validator\Constraints\DateTime;
 use Symfony\Component\Yaml\Parser;
 
 class LoadResumeData implements FixtureInterface
 {
+    static $tags = array();
+
     /**
      * {@inheritDoc}
      */
@@ -33,7 +34,11 @@ class LoadResumeData implements FixtureInterface
             $tag = new Tag();
             $tag->setId($tagParams['id']);
             $tag->setName($tagParams['name']);
+            $tag->setWeight($tagParams['weight']);
             $manager->persist($tag);
+
+            $tags[$tag->getId()] = $tag;
+            $manager->flush();
         }
 
         // Resume
@@ -50,6 +55,7 @@ class LoadResumeData implements FixtureInterface
         $identity->setLastName($identityParam['last_name']);
         $identity->setDateOfBirth(new \DateTime($identityParam['date_of_birth']));
         $identity->setEmail($identityParam['email']);
+        $identity->setResume($resume);
         $resume->setIdentity($identity);
 
         // Trump
@@ -61,17 +67,29 @@ class LoadResumeData implements FixtureInterface
             $resume->addTrump($trump);
         }
 
+        $manager->persist($resume);
+        $manager->flush();
         // Skills
         $skillParams = $resumeParams['skill'];
-        foreach($skillParams as $skillName => $skillLevel){
+        foreach($skillParams as $skillName => $skillParam){
 
             $skill = new Skill();
             $skill->setName($skillName);
-            $skill->setLevel($skillLevel);
+            $skill->setLevel($skillParam['level']);
             $skill->setResume($resume);
-
             $resume->addSkill($skill);
+            $manager->persist($skill);
+            $manager->flush();
+
+            $skill->setTag($tags[$skillParam['tag_id']]);
+            $tags[$skillParam['tag_id']]->addSkill($skill);
+            $manager->persist($skill);
+            $manager->persist($tags[$skillParam['tag_id']]);
+            $manager->flush();
+
         }
+
+
 
         // Studies
         $studyParams = $resumeParams['study'];
@@ -93,7 +111,7 @@ class LoadResumeData implements FixtureInterface
             $experience = new Experience();
             $experience->setCompany($experienceParam['company']);
             $experience->setDescription($experienceParam['description']);
-            $experience->setWebsite($experienceParam['company']);
+            $experience->setWebsite($experienceParam['website']);
             $experience->setType($experienceParam['type']);
             $experience->setCity($experienceParam['city']);
             $experience->setTitle($experienceParam['title']);

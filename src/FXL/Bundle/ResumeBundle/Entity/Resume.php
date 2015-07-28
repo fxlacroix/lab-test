@@ -27,12 +27,12 @@ class Resume extends BaseObject
 
     /**
      * @ORM\OneToOne(targetEntity="Identity", cascade={"persist"})
-     * @ORM\JoinColumn(name="project_id", referencedColumnName="id", nullable=true)
-     */
+     * @ORM\JoinColumn(name="identity_id", referencedColumnName="id")
+     **/
     protected $identity;
 
     /**
-     * @ORM\OneToMany(targetEntity="Skill", mappedBy="resume", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Skill", mappedBy="resume", cascade={"all"})
      */
     protected $skills;
 

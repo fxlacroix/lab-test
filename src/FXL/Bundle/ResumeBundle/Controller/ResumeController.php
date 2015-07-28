@@ -22,7 +22,7 @@ class ResumeController extends Controller
         $tags = $this->getDoctrine()
             ->getManager('resume')
             ->getRepository('FXLResumeBundle:Tag')
-            ->findAll();
+            ->findTagsWithSkills();
 
 
         return array(

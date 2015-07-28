@@ -13,9 +13,15 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Tag extends BaseObject
 {
     /**
-     * @ORM\ManyToMany(targetEntity="Skill", mappedBy="tags")
+     * @ORM\ManyToMany(targetEntity="Skill", mappedBy="tags", cascade={"all"})
      */
     protected $skills;
+
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $weight;
 
     public function __construct(){
 
@@ -36,6 +42,31 @@ class Tag extends BaseObject
     public function getSkills()
     {
         return $this->skills;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function addSkill($skill)
+    {
+        return $this->skills[] = $skill;
+    }
+
+    /**
+     * @param mixed $weight
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWeight()
+    {
+        return $this->weight;
     }
 
 }

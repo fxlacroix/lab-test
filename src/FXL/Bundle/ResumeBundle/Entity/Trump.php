@@ -13,7 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Trump extends BaseObject
 {
     /**
-     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="studies")
+     * @ORM\ManyToOne(targetEntity="Resume", inversedBy="trumps")
      * @ORM\JoinColumn(name="resume_id", referencedColumnName="id", nullable=true)
      */
     protected $resume;
