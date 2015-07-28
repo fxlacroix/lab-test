@@ -35,10 +35,10 @@ class LoadResumeData implements FixtureInterface
             $tag->setId($tagParams['id']);
             $tag->setName($tagParams['name']);
             $tag->setWeight($tagParams['weight']);
-            $manager->persist($tag);
-
             $tags[$tag->getId()] = $tag;
+            $manager->persist($tag);
             $manager->flush();
+
         }
 
         // Resume
@@ -67,8 +67,6 @@ class LoadResumeData implements FixtureInterface
             $resume->addTrump($trump);
         }
 
-        $manager->persist($resume);
-        $manager->flush();
         // Skills
         $skillParams = $resumeParams['skill'];
         foreach($skillParams as $skillName => $skillParam){
@@ -77,20 +75,9 @@ class LoadResumeData implements FixtureInterface
             $skill->setName($skillName);
             $skill->setLevel($skillParam['level']);
             $skill->setResume($resume);
+            $skill->addTag($tags[$skillParam['tag_id']]);
             $resume->addSkill($skill);
-            $manager->persist($skill);
-            $manager->flush();
-
-            $skill->setTag($tags[$skillParam['tag_id']]);
-            $tags[$skillParam['tag_id']]->addSkill($skill);
-            $manager->persist($skill);
-            $manager->persist($tags[$skillParam['tag_id']]);
-            $manager->flush();
-
         }
-
-
-
         // Studies
         $studyParams = $resumeParams['study'];
         foreach($studyParams as $studyParam){
