@@ -21,8 +21,13 @@
     <h3 class="heading-3 heading-small-separator">Compétences Techniques</h3>
 
     <ul class="listeCV">
-    {% for tag in tags %}
-    <li><strong>{{tag.name }}</strong> :
+    {% for tagSkills in tagsWithSkills %}
+
+        <li><strong>{{ tagSkills.0.tags.0.name }}</strong> :
+        {% for skill in tagSkills %}
+            {{ skill.name }}{% if not loop.last %},{% endif %}
+       {% endfor %}
+       </li>
     {% endfor %}
     </ul>
 
@@ -42,18 +47,6 @@
 
         <h2 class="heading-2 heading-big-separator marginb20">Expérience professionnelle</h2>
 
-        {#
-        <h4><span class="date">09/2007 - Aujourd'hui</span><span class="poste">Webdesigner &amp; Développeur Web Freelance  <em>(Bordeaux,
-                    Paris)</em></span></h4>
-
-        <p><strong>Webdesigner</strong> et <strong>Développeur Web</strong> pour plusieurs sociétés. J'exécute
-            en moyenne 3/4 missions chaque mois. Vous pouvez voir les <a
-                    href="http://www.marchesson.com/#realisations">dernières réalisations</a> sur la page
-            d'accueil, je suis également en charge du référencement de chacun de ces dossiers. Pour des raisons
-            de confidentialité, je peux vous fournir <a href="http://www.marchesson.com/#contact">d'autres
-                références sur demande</a>.</p>
-
-        #}
 
         {% for experience in resume.experiences %}
             <h4><span class="date">{{ experience.startAt|date('Y-m') }} - {{ experience.finishAt|date('Y-m') }}</span>

@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="FXL\Bundle\ResumeBundle\Repository\SkillRepository")
  * @ORM\Table(name="resume__skill")
  */
 class Skill

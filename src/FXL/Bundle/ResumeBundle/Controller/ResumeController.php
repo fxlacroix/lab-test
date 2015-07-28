@@ -19,15 +19,15 @@ class ResumeController extends Controller
             ->getRepository('FXLResumeBundle:Resume')
             ->find(1);
 
-        $tags = $this->getDoctrine()
+        $tagsWithSkills = $this->getDoctrine()
             ->getManager('resume')
-            ->getRepository('FXLResumeBundle:Tag')
-            ->findTagsWithSkills();
+            ->getRepository('FXLResumeBundle:Skill')
+            ->findSkillsGroupByTags();
 
 
         return array(
-            'resume'   => $resume,
-            'tags'     => $tags
+            'resume'             => $resume,
+            'tagsWithSkills'     => $tagsWithSkills
         );
     }
 

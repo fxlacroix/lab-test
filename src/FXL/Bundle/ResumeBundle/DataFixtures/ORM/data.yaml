@@ -39,14 +39,45 @@ resume:
     PHP:
       level: Expert
       tag_id: 1
-
     Mysql:
       level: Expert
       tag_id: 1
-
     JavaScript:
       level: Expert
       tag_id: 1
+    Html:
+      level: Expert
+      tag_id: 1
+    Css:
+      level: Expert
+      tag_id: 1
+    jQuery:
+      level: Expert
+      tag_id: 1
+    Shell:
+      level: Expert
+      tag_id: 1
+    Extjs:
+      level: Expert
+      tag_id: 1
+    #
+    PhpStorm:
+      level: Expert
+      tag_id: 2
+    GIT:
+      level: Expert
+      tag_id: 2
+    SVN:
+      level: Expert
+      tag_id: 2
+    #
+    Maintenance serveur:
+      level: Expert
+      tag_id: 3
+
+
+
+
 
   experience:
     -
@@ -90,13 +121,13 @@ resume:
 
   study:
      -
-      school:      EFREI
+      school:      EFREI (école)
       graduate:    Ingénieur
       description: Formation Ingénieur
       start_at:    '2001-09-01'
       finish_at:   '2004-06-01'
      -
-       school:     EFREI
+       school:     EFREI (prépa)
        graduate:   ~
        description: Formation Sup/Spé intégrée
        start_at:   '1998-09-01'
